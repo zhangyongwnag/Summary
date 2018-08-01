@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>对象</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="selected">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 对象 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 对象</h1>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 中的对象，和其它编程语言中的对象一样，可以比照现实生活中的对象来理解它。 JavaScript 中对象的概念可以比照着现实生活中实实在在的物体来理解。<br /></span>
+    <span class="md_line">在 JavaScript 中，一个对象可以是一个单独的拥有属性和类型的实体。拿它和一个杯子做下类比，一个杯子是一个对象，拥有属性。杯子有颜色、图案、重量等等。同样， JavaScript 对象也有属性来定义它的特征。<br /></span>
+    <span class="md_line">方法 是关联到某个对象的函数，或者简单地说，一个方法是一个值为某个函数的对象属性。定义方法就象定义普通的函数，除了它们必须被赋给对象的某个属性。</span>
+</p>
+
+
+<h2 id="toc_1">1.1 对象分类</h2>
+
+<ul>
+<li>
+<p class="md_block">
+    <span class="md_line">内置对象/原生对象</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">就是 JavaScript 语言预定义的对象。在 ECMAScript 标准定义，由 JavaScript 解释器/引擎提供具体实现。</span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">宿主对象</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">指的是 JavaScript 运行环境提供的对象。一般是由浏览器厂商提供实现（目前也有独立的 JavaScript 解释器/引擎提供实现），主要分为 BOM 和 DOM。</span>
+</p></li>
+<li>
+<p class="md_block">
+    <span class="md_line">自定义对象</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">就是由开发人员自主创建的对象。</span>
+</p></li>
+</ul>
+
+<h1 id="toc_2">2. 创建对象</h1>
+
+<h2 id="toc_3">2.1 对象初始化器方式</h2>
+
+<p class="md_block">
+    <span class="md_line">使用对象初始化器也被称作通过字面值创建对象。通过对象初始化器创建对象的语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">property_1</span><span class="o">:</span> <span class="nx">value_1</span><span class="p">,</span> <span class="c1">// property_# 作为一个标示符</span>
+    <span class="nx">property_2</span><span class="o">:</span> <span class="nx">value_2</span><span class="p">,</span> <span class="c1">// 标示符可以是一个数字值</span>
+    <span class="c1">// ...,</span>
+    <span class="s2">&quot;property_n&quot;</span><span class="o">:</span> <span class="nx">value_n</span> <span class="c1">// 标示符也可以是一个字符串</span>
+<span class="p">};</span> 
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>obj 是创建的对象名称。</li>
+<li>标示符和值都是可选的。</li>
+</ul>
+
+<h2 id="toc_4">2.2 构造函数方式</h2>
+
+<ul>
+<li>通过 JavaScript 提供的预定义类型的构造函数来创建对象，如下示例:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">date</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span><span class="c1">// 创建一个 Date 对象</span>
+<span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s2">&quot;this is string.&quot;</span><span class="p">);</span><span class="c1">// 创建一个 String 对象</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Number</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="c1">// 创建一个 Number 对象</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>通过 JavaScript 提供的 Object 类型的构造函数来创建自定义对象，如下示例:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span><span class="c1">// 创建一个自定义对象</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_5">2.3 Object.create() 方法</h2>
+
+<p class="md_block">
+    <span class="md_line">Object.create() 方法创建一个拥有指定原型和若干个指定属性的对象。语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">proto</span><span class="p">,</span> <span class="p">[</span> <span class="nx">propertiesObject</span> <span class="p">])</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">参数:</span>
+</p>
+
+
+<ul>
+<li>proto 参数: 一个对象，作为新创建对象的原型。</li>
+<li>propertiesObject 参数: 可选。该参数对象是一组属性与值，该对象的属性名称将是新创建的对象的属性名称，值是属性描述符。</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">通过 Object.create() 方法创建一个新对象，同时扩展自有属性:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">flyer</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="o">:</span> <span class="s2">&quot;A380&quot;</span><span class="p">,</span>
+    <span class="nx">speed</span> <span class="o">:</span> <span class="mi">1000</span> 
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">plane</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span> <span class="nx">flyer</span><span class="p">,{</span>
+    <span class="nx">capacity</span> <span class="o">:</span> <span class="p">{</span> 
+        <span class="nx">value</span> <span class="o">:</span> <span class="mi">555</span><span class="p">,</span>
+        <span class="nx">writable</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">enumerable</span> <span class="o">:</span> <span class="kc">true</span> 
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">Object.create() 方法的一些特殊用法:</span>
+</p>
+
+
+<ul>
+<li>创建一个原型为 null 的空对象。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span> <span class="kc">null</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>实现子类型构造函数的原型继承父类型构造函数的原型。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">Sub</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span> <span class="nx">Super</span><span class="p">.</span><span class="nx">prototype</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>创建普通空对象。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span> <span class="p">);</span>
+<span class="c1">// 等效于 var o = {}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_6">3. 对象的属性</h1>
+
+<h2 id="toc_7">3.1 定义对象的属性</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">一个 JavaScript 对象有很多属性。一个对象的属性可以被解释成一个附加到对象上的变量。对象的属性和普通的 JavaScript 变量基本没什么区别，仅仅是属性属于某个对象。</span>
+</p>
+
+
+<ul>
+<li>可以通过点符号来访问一个对象的属性。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myCar</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+
+<span class="nx">myCar</span><span class="p">.</span><span class="nx">make</span> <span class="o">=</span> <span class="s2">&quot;Ford&quot;</span><span class="p">;</span>
+<span class="nx">myCar</span><span class="p">.</span><span class="nx">model</span> <span class="o">=</span> <span class="s2">&quot;Mustang&quot;</span><span class="p">;</span>
+<span class="nx">myCar</span><span class="p">.</span><span class="nx">year</span> <span class="o">=</span> <span class="mi">1969</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>JavaScript 对象的属性也可以通过方括号访问。对象有时也被叫作关联数组, 因为每个属性都有一个用于访问它的字符串值。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myCar</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+
+<span class="nx">myCar</span><span class="p">[</span><span class="s2">&quot;make&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Ford&quot;</span><span class="p">;</span>
+<span class="nx">myCar</span><span class="p">[</span><span class="s2">&quot;model&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Mustang&quot;</span><span class="p">;</span>
+<span class="nx">myCar</span><span class="p">[</span><span class="s2">&quot;year&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1969</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">3.2 访问对象的属性</h2>
+
+<ul>
+<li>JavaScript 可以通过点符号来访问一个对象的属性。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">ename</span> <span class="o">:</span> <span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="nx">salary</span> <span class="o">:</span> <span class="mi">3500</span> <span class="p">};</span>
+
+<span class="nx">emp</span><span class="p">.</span><span class="nx">ename</span> <span class="o">=</span> <span class="s1">&#39;Tommy&#39;</span><span class="p">;</span><span class="c1">// 修改属性的值</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">emp</span><span class="p">.</span><span class="nx">ename</span><span class="p">);</span><span class="c1">// 获取属性的值</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>JavaScript 对象的属性也可以通过方括号访问。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">ename</span> <span class="o">:</span> <span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="nx">salary</span> <span class="o">:</span> <span class="mi">3500</span> <span class="p">};</span>
+
+<span class="nx">emp</span><span class="p">[</span> <span class="s1">&#39;ename&#39;</span> <span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Tony&#39;</span><span class="p">;</span><span class="c1">// 修改属性的值</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">emp</span><span class="p">[</span> <span class="s2">&quot;ename&quot;</span> <span class="p">]);</span><span class="c1">// 获取属性的值</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_9">3.3 遍历（枚举）属性</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">JavaScript 提供了三种原生方法用于遍历或枚举对象的属性:</span>
+</p>
+
+
+<ul>
+<li>for…in 循环: 该方法依次访问一个对象及其原型链中所有可枚举的属性。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">ename</span> <span class="o">:</span> <span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="nx">salary</span> <span class="o">:</span> <span class="mi">3500</span> <span class="p">};</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">n</span> <span class="k">in</span> <span class="nx">emp</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span><span class="p">,</span> <span class="nx">emp</span><span class="p">[</span><span class="nx">n</span><span class="p">]);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>Object.keys( object ) 方法: 该方法返回一个对象 o 自身包含（不包括原型中）的所有属性的名称的数组。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">ename</span> <span class="o">:</span> <span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="nx">salary</span> <span class="o">:</span> <span class="mi">3500</span> <span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">emp</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span><span class="nx">emp</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]]);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>Object.getOwnPropertyNames( object ) 方法: 该方法返回一个数组，它包含了对象 o 所有拥有的属性（无论是否可枚举）的名称。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">ename</span> <span class="o">:</span> <span class="s1">&#39;Tom&#39;</span><span class="p">,</span> <span class="nx">salary</span> <span class="o">:</span> <span class="mi">3500</span> <span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">getOwnPropertyNames</span><span class="p">(</span><span class="nx">emp</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span><span class="nx">emp</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]]);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_10">3.4 属性访问出错</h2>
+
+<p class="md_block">
+    <span class="md_line">当不确定对象是否存在、对象的属性是否存在时，可以使用错误处理结构 try…catch 语句块来捕捉抛出的错误，避免程序异常终止。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">//访问未声明的变量</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">emp</span> <span class="p">);</span><span class="c1">// ReferenceEerror</span>
+
+<span class="c1">//访问未声明的属性 </span>
+<span class="kd">var</span> <span class="nx">emp</span> <span class="o">=</span> <span class="p">{</span> <span class="p">};</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">ename</span> <span class="p">);</span><span class="c1">// undefined</span>
+
+<span class="c1">//访问未声明的属性的成员</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">ename</span><span class="p">.</span><span class="nx">length</span> <span class="p">);</span><span class="c1">// TypeError </span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_11">3.5 检测对象的属性</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">可以使用如下四种方法检测对象中是否存在指定属性:</span>
+</p>
+
+
+<ul>
+<li>使用 in 关键字。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s1">&#39;ename&#39;</span> <span class="k">in</span> <span class="nx">emp</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>使用 Object 对象的 hasOwnProperty() 方法。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span> <span class="s1">&#39;ename&#39;</span> <span class="p">));</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>使用 undefined 进行判断。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">ename</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>使用 if 语句进行判断。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">if</span><span class="p">(</span> <span class="nx">emp</span><span class="p">.</span><span class="nx">ename</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s1">&#39;ename属性存在&#39;</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_12">3.6 删除对象的属性</h2>
+
+<p class="md_block">
+    <span class="md_line">可以用 delete 操作符删除一个不是继承而来的属性。如下示例:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 创建一个 myobj 对象，具有 a 和 b 属性</span>
+<span class="kd">var</span> <span class="nx">myobj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">;</span>
+<span class="nx">myobj</span><span class="p">.</span><span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="nx">myobj</span><span class="p">.</span><span class="nx">b</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+
+<span class="c1">// 删除 myobj 对象的自有属性 a</span>
+<span class="k">delete</span> <span class="nx">myobj</span><span class="p">.</span><span class="nx">a</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_13">4. 对象的方法</h1>
+
+<h2 id="toc_14">4.1 定义对象的方法</h2>
+
+<p class="md_block">
+    <span class="md_line">定义方法就象定义普通的函数，除了它们必须被赋给对象的某个属性。如下示例:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">sayMe</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;this is me.&quot;</span> <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="o">:</span> <span class="s2">&quot;javascript&quot;</span><span class="p">,</span>
+    <span class="nx">sayMe</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;this is me.&quot;</span> <span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_15">4.2 调用对象的方法</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">对象方法的调用类似于对象属性的调用，同样具有以下两种方式:</span>
+</p>
+
+
+<ul>
+<li>通过点符号来访问一个对象的方法。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">();</span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">sayMe</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;this is me.&quot;</span> <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">obj</span><span class="p">.</span><span class="nx">sayMe</span><span class="p">();</span><span class="c1">// 调用 obj 对象的 sayMe 方法</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>也可以通过方括号访问一个对象的方法。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="o">:</span> <span class="s2">&quot;javascript&quot;</span><span class="p">,</span>
+    <span class="nx">sayMe</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;this is me.&quot;</span> <span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">obj</span><span class="p">[</span> <span class="s2">&quot;sayMe&quot;</span> <span class="p">]();</span><span class="c1">// 访问 obj 对象的 sayMe 方法</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_16">4.3 删除对象的方法</h2>
+
+<p class="md_block">
+    <span class="md_line">可以用 delete 操作符删除对象的方法，如下示例:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="o">:</span> <span class="s2">&quot;javascript&quot;</span><span class="p">,</span>
+    <span class="nx">sayMe</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;this is me.&quot;</span> <span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">delete</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">sayMe</span><span class="p">;</span><span class="c1">// 这里没有 &quot;()&quot;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 删除对象的方法时，不需要小括号“()”。如果有小括号则删除失败。</span>
+</p>
+
+</blockquote> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

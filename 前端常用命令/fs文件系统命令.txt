@@ -1,0 +1,90 @@
+1.Buffer（缓冲区）
+	- Buffer是Node中新增加的对象，它的作用和ES中数组类似
+	- 不同的是Buffer专门用来存储一些二进制数据
+	- Buffer是直接对系统的内存进行操作的，所以它的性能比较好
+	- Buffer的大小一旦确定就不能修改
+	- Buffer每个元素大小限制1个字节
+	- Buffer的使用
+		- 创建一个指定大小的buffer
+			var buf = Buffer.alloc(size);
+			var buf2 = Buffer.allocUnsafe(size);
+				- allocUnsafe()创建的buffer有可能包含敏感数据，但是性能较好
+				
+		- 将一个字符串转换为Buffer
+			var buf = Buffer.from(str);
+			
+		- 将Buffer转换为字符串
+			var str = buf.toString();
+			
+	
+
+2.文件系统(File System)
+	- 文件系统是一个服务器的基础
+	- 在node中通过fs模块来操作文件系统
+	- fs模块中大部分的方法都提供了两个版本
+		不带sync，异步方法
+		带sync，同步方法
+	- 要使用文件系统，必须先引入fs模块
+		var fs = require("fs");
+		
+	- 写入文件
+		1.同步写入
+		2.异步写入
+		3.简单写入
+		4.流式写入
+
+	- 读取文件	
+		1.同步读取
+		2.异步读取
+		3.简单读取
+		4.流式读取
+		
+	- 常用的API（应用程序的接口）	
+		fs.open(path, flags[, mode],callback)
+		fs.openSync(path, flags[, mode])
+			- 打开文件
+			
+		fs.write(fd, string[, position[, encoding]],callback)	
+		fs.writeSync(fd, string[, position[, encoding]])
+			- 写入文件
+			
+		fs.close(fd,callback);	
+		fs.closeSync(fd)
+			- 关闭文件
+			
+		fs.writeFile(file, data[, options], callback)
+		fs.writeFileSync(file, data[, options])	
+			- 直接向文件中写入内容
+			
+		- 流式文件写入
+			- 适合较大的文件
+			- 例子
+				var ws = fs.createWriteStream(path);
+				ws.write(data);
+				ws.write(data);
+				ws.write(data);
+				ws.end();
+				
+		- fs.readFile(path[, options], callback)
+		- fs.readFileSync(path[, options])
+			- 读取文件中的内容
+			
+		- 流式文件读取
+			var rs = fs.createReadStream(path);
+			rs.on("data",function(data){
+				//...
+			});
+		
+				
+				
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	

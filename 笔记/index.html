@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5课程基础阶段笔记</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="./asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="./asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="./asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="./asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="./asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <ul id="sidebar_body">
+
+
+
+
+
+
+
+
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+
+
+
+            <ul>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/04 列表.html" class="">列表</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+
+            </ul>
+
+
+
+
+
+
+
+
+
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+
+
+
+            <ul>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./02 CSS/09 定位.html" class="">定位</a>
+                </li>
+
+            </ul>
+
+
+
+
+
+
+
+
+
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+
+
+
+            <ul>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+
+            </ul>
+
+
+
+
+
+
+
+
+
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+
+
+
+            <ul>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./04 DOM/08 事件.html" class="">事件</a>
+                </li>
+
+            </ul>
+
+
+
+
+
+
+
+
+
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+
+
+
+            <ul>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+
+
+
+
+                 <li class="level_2">
+                    <a href="./05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+
+            </ul>
+
+
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> HTML5课程基础阶段笔记 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 开班资料下载</h1>
+
+<p class="md_block">
+    <span class="md_line">以下两个软件是上课必用的，请点击[下载]按钮下载到本地电脑，并安装。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>软件名</th>
+<th>说明</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>飞Q</td>
+<td>局域网通信软件(每天课程资料通过这个软件下发)</td>
+<td><a class="md_compiled" href="./">下载</a></td>
+</tr>
+<tr>
+<td>红蜘蛛</td>
+<td>电脑屏幕共享软件(每天通过这个软件共享屏幕讲解)</td>
+<td><a class="md_compiled" href="./">下载</a></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_1">2. 开发工具教程</h1>
+
+<p class="md_block">
+    <span class="md_line">以下两个开发工具是学习必用的，请点击[下载]按钮下载教程到本地电脑。请提前阅读安装及基本使用教程。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>软件名</th>
+<th>说明</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>WebStorm</td>
+<td>前端开发集成工具</td>
+<td><a class="md_compiled" href="./">下载</a></td>
+</tr>
+<tr>
+<td>SVN</td>
+<td>版本控制软件</td>
+<td><a class="md_compiled" href="./">下载</a></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_2">3. 笔记版权说明</h1>
+
+<p class="md_block">
+    <span class="md_line">本笔记的内容免费开源，任何人都可以免费学习、分享，甚至可以进行修改。但需要注明作者及来源，并且不能用于商业。<br /></span>
+    <span class="md_line">本笔记采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可。</span>
+</p>
+
+
+<h1 id="toc_3">4. 讲师联系方式</h1>
+<img onerror="this.src='imgs/connection.png';this.onerror=null;"  class="" src="imgs/connection.png" alt="" title="" > </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

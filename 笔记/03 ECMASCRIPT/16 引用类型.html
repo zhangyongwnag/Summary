@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>引用类型</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="selected">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 引用类型 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 引用类型</h1>
+
+<p class="md_block">
+    <span class="md_line">引用类型通常被叫做类（class）。但在 ECMAScript 2015 版本之前的 JavaScript 中并没有类的概念，在 JavaScript 中通常叫做对象定义。也就是说，使用引用类型其实就是使用对象。<br /></span>
+    <span class="md_line">JavaScript 中预定义了很多的引用类型，其中包含之前学习的包装类型 Boolean、Number 和 String。<br /></span>
+    <span class="md_line">下述列表罗列了 JavaScript 中所提供的引用类型:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>引用类型</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Date类型</td>
+<td>获取和设置当前日期时间。</td>
+</tr>
+<tr>
+<td>Math类型</td>
+<td>用于数学计算。</td>
+</tr>
+<tr>
+<td>Global类型</td>
+<td>全局对象，提供全局属性和全局方法。</td>
+</tr>
+<tr>
+<td>Array类型</td>
+<td>用于有序的存储多个值。</td>
+</tr>
+<tr>
+<td>RegExp类型</td>
+<td>用于对字符串模式匹配及检索替换，是对字符串执行模式匹配的强大工具。</td>
+</tr>
+<tr>
+<td>Error类型</td>
+<td>用于匹配代码错误并提供对应提示内容。</td>
+</tr>
+<tr>
+<td>Functions类型</td>
+<td>用于定义 JavaScript 中的函数。</td>
+</tr>
+<tr>
+<td>Object类型</td>
+<td>用于定义 JavaScript 中的对象。</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_1">2. Date类型</h1>
+
+<h2 id="toc_2">2.1 创建 Date 对象</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 中并没有提供日期的数据类型，而是通过 Date 对象的大量方法对日期和时间进行存储或操作。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 使用指定的年月日[时分秒]进行初始化</span>
+<span class="kd">var</span> <span class="nx">d1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">d2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">2008</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">18</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">d3</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span> <span class="s1">&#39;2008/8/8&#39;</span> <span class="p">);</span> <span class="c1">// 把string转换为Date</span>
+<span class="c1">// 初始化为系统时间</span>
+<span class="kd">var</span> <span class="nx">d3</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">()</span> 
+<span class="kd">var</span> <span class="nx">d4</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">d5</span> <span class="o">=</span> <span class="nb">Date</span><span class="p">();</span> <span class="c1">// 构建一个string，值为当前系统时间</span>
+<span class="c1">// 初始化为距离计算机元年指定毫秒数的时间 </span>
+<span class="kd">var</span> <span class="nx">d6</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">d7</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span> <span class="mi">1000</span><span class="o">*</span><span class="mi">3600</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">365</span> <span class="p">);</span> 
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">2.2 获取日期方法</h2>
+
+<p class="md_block">
+    <span class="md_line">通过使用如下方法，获取日期和时间:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>getDate( )</td>
+<td>返回Date对象“日期”部分数值(1 ~ 31)。</td>
+</tr>
+<tr>
+<td>getDay( )</td>
+<td>返回Date对象“星期”部分的数值(0 ~ 6)。</td>
+</tr>
+<tr>
+<td>getFullYear( )</td>
+<td>返回Date对象“年份”部分的实际数值。</td>
+</tr>
+<tr>
+<td>getHours( )</td>
+<td>返回Date对象“小时”部分的数值(0 ~ 23)。</td>
+</tr>
+<tr>
+<td>getMilliseconds( )</td>
+<td>返回Date对象“毫秒”部分的数值(0 ~ 999)。</td>
+</tr>
+<tr>
+<td>getMinutes( )</td>
+<td>返回Date对象“分钟”部分的数值(0 ~ 59)。</td>
+</tr>
+<tr>
+<td>getMonth( )</td>
+<td>返回Date对象“月份”部分的数值(0 ~ 11)。</td>
+</tr>
+<tr>
+<td>getSeconds( )</td>
+<td>返回Date对象“秒”部分的数值(0 ~ 59)。</td>
+</tr>
+<tr>
+<td>getTime( )</td>
+<td>返回Date对象与UTC时间1970年1月1日午夜之间相差的毫秒数。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_4">2.3 设置日期方法</h2>
+
+<p class="md_block">
+    <span class="md_line">通过使用如下方法，设置日期和时间:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>setDate( )</td>
+<td>设置Date对象中“日期”部分的数值(1 ~ 31，但不限于)。</td>
+</tr>
+<tr>
+<td>setFullYear( )</td>
+<td>设置Date对象中“年份”部分的实际数值。</td>
+</tr>
+<tr>
+<td>setHours( )</td>
+<td>设置Date对象中“小时”部分的数值(0 ~ 23，但不限于)。</td>
+</tr>
+<tr>
+<td>setMilliseconds( )</td>
+<td>设置Date对象中“毫秒”部分的数值(0 ~ 999，但不限于)。</td>
+</tr>
+<tr>
+<td>setMinutes( )</td>
+<td>设置Date对象中“分钟”部分的数值(0 ~ 59，但不限于)。</td>
+</tr>
+<tr>
+<td>setMonth( )</td>
+<td>设置Date对象中“月份”部分的数值(0 ~ 11，但不限于)。</td>
+</tr>
+<tr>
+<td>setSeconds( )</td>
+<td>设置Date对象中“秒”部分的数值(0 ~ 59，但不限于)。</td>
+</tr>
+<tr>
+<td>setTime( )</td>
+<td>以毫秒值设置Date对象。</td>
+</tr>
+<tr>
+<td>setDate( )</td>
+<td>设置Date对象中“日期”部分的数值(1 ~ 31，但不限于)。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_5">2.4 日期格式化方法</h2>
+
+<p class="md_block">
+    <span class="md_line">通过使用如下方法，对日期和时间进行格式化:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>toString()</td>
+<td>返回Date对象的字符串形式。</td>
+</tr>
+<tr>
+<td>toDateString()</td>
+<td>返回Date对象“日期”部分(年月日)的字符串形式。</td>
+</tr>
+<tr>
+<td>toTimeString()</td>
+<td>返回Date对象“时间”部分(时分秒)的字符串形式。</td>
+</tr>
+<tr>
+<td>toLocaleString()</td>
+<td>基于本地时间格式，返回Date对象的字符串形式。</td>
+</tr>
+<tr>
+<td>toLocaleDateString()</td>
+<td>基于本地时间格式，返回Date对象“ 日期”部分(年月日)的字符串形式。</td>
+</tr>
+<tr>
+<td>toLocaleTimeString()</td>
+<td>基于本地时间格式，返回Date对象“时间”部分(时分秒)的字符串形式。</td>
+</tr>
+<tr>
+<td>toGMTString()</td>
+<td>基于GMT时间格式，返回Date对象的字符串形式。</td>
+</tr>
+<tr>
+<td>toUTCString()</td>
+<td>基于UTC时间格式，返回Date对象的字符串形式。</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_6">3. Math类型</h1>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 为保存数学公式和信息提供了一个公共位置，即 Math 对象。与直接编写的计算功能相比，Math 对象提供的计算功能执行起来要快得多。<br /></span>
+    <span class="md_line">Math 对象是 JavaScript 中的一个全局对象，它并没有构造函数，而是直接使用 Math 对象名称即可。如下所示:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Math</span><span class="p">();</span><span class="c1">// 这种写法是错误的</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="p">);</span><span class="c1">// 直接使用对象名调用属性</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="p">);</span><span class="c1">// 直接使用对象名调用方法</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">3.1 Math 对象的属性</h2>
+
+<p class="md_block">
+    <span class="md_line">Math 对象具有如下成员属性:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>E</td>
+<td>返回算术常量 e，即自然对数的底数（约等于2.718）。</td>
+</tr>
+<tr>
+<td>LN2</td>
+<td>返回 2 的自然对数（约等于0.693）。</td>
+</tr>
+<tr>
+<td>LN10</td>
+<td>返回 10 的自然对数（约等于2.302）。</td>
+</tr>
+<tr>
+<td>LOG2E</td>
+<td>返回以 2 为底的 e 的对数（约等于 1.414）。</td>
+</tr>
+<tr>
+<td>LOG10E</td>
+<td>返回以 10 为底的 e 的对数（约等于0.434）。</td>
+</tr>
+<tr>
+<td>PI</td>
+<td>返回圆周率（约等于3.14159）。</td>
+</tr>
+<tr>
+<td>SQRT1_2</td>
+<td>返回2 的平方根的倒数（约等于 0.707）。</td>
+</tr>
+<tr>
+<td>SQRT2</td>
+<td>返回 2 的平方根（约等于 1.414）。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_8">3.2 Math 对象的方法</h2>
+
+<p class="md_block">
+    <span class="md_line">Math 对象具有如下方法:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>abs(x)</td>
+<td>返回数的绝对值。</td>
+</tr>
+<tr>
+<td>ceil(x)</td>
+<td>对数进行上舍入。</td>
+</tr>
+<tr>
+<td>exp(x)</td>
+<td>返回 e 的指数。</td>
+</tr>
+<tr>
+<td>log(x)</td>
+<td>返回数的自然对数（底为e）。</td>
+</tr>
+<tr>
+<td>floor(x)</td>
+<td>对数进行下舍入。</td>
+</tr>
+<tr>
+<td>max(x, y)</td>
+<td>返回 x 和 y 中的最高值。</td>
+</tr>
+<tr>
+<td>min(x, y)</td>
+<td>返回 x 和 y 中的最低值。</td>
+</tr>
+<tr>
+<td>pow(x, y)</td>
+<td>返回 x 的 y 次幂。</td>
+</tr>
+<tr>
+<td>round(x)</td>
+<td>把数四舍五入为最接近的整数。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_9">3.3 三角函数</h2>
+
+<p class="md_block">
+    <span class="md_line">Math 对象提供了常见的三角函数计算的方法:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>acos(x)</td>
+<td>返回数的反余弦值。</td>
+</tr>
+<tr>
+<td>asin(x)</td>
+<td>返回数的反正弦值。</td>
+</tr>
+<tr>
+<td>atan(x)</td>
+<td>以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。</td>
+</tr>
+<tr>
+<td>atan2(x)</td>
+<td>返回从 x 轴到点 (x,y) 的角度（介于 -PI/2 与 PI/2 弧度之间）。</td>
+</tr>
+<tr>
+<td>cos(x)</td>
+<td>返回数的余弦。</td>
+</tr>
+<tr>
+<td>sin(x)</td>
+<td>返回数的正弦。</td>
+</tr>
+<tr>
+<td>tan(x)</td>
+<td>返回角的正切。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_10">3.4 随机数</h2>
+
+<p class="md_block">
+    <span class="md_line">Math 对象提供了生成随机数的方法:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>random()</td>
+<td>返回 0 ~ 1 之间的随机数。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">i</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span><span class="c1">// 0&lt;=i&lt;1</span>
+
+<span class="kd">var</span> <span class="nx">max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">i</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="nx">max</span> <span class="p">;</span><span class="c1">// 0&lt;=i&lt;max</span>
+<span class="nx">i</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="nx">max</span> <span class="p">);</span><span class="c1">// 0&lt;=i&lt;max</span>
+
+<span class="kd">var</span> <span class="nx">min</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span> 
+<span class="nx">i</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="nx">max</span><span class="o">-</span><span class="nx">min</span><span class="p">)</span> <span class="p">)</span> <span class="o">+</span> <span class="nx">min</span><span class="p">;</span><span class="c1">// min&lt;=i&lt;max</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_11">4. Global 类型</h1>
+
+<h2 id="toc_12">4.1 全局对象</h2>
+
+<p class="md_block">
+    <span class="md_line">Global（全局）对象是 JavaScript 中最特别的对象，因为这个对象感觉上并不存在似的。<br /></span>
+    <span class="md_line">不属于任何其他对象的属性和方法，实际上都是 Global 对象的属性和方法。<br /></span>
+    <span class="md_line">事实上，也没有全局属性和全局方法，所有在全局域中定义的属性和方法，都是 Global 对象的属性和方法。例如之前学习的 isNaN( )、parseInt( ) 和 parseFloat( ) 方法等，都是 Global 对象的方法。</span>
+</p>
+
+
+<h2 id="toc_13">4.2 全局属性</h2>
+
+<p class="md_block">
+    <span class="md_line">Global 对象提供的属性，即全局属性。在 JavaScript 中的任何位置都可以使用。具体属性如下列表:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Infinity</td>
+<td>正的无穷大的数值。</td>
+</tr>
+<tr>
+<td>NaN</td>
+<td>某个值是不是数字值。</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td>未定义的值。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_14">4.3 全局方法</h2>
+
+<p class="md_block">
+    <span class="md_line">Global 对象提供的方法，即全局方法。在 JavaScript 中的任何位置都可以使用。具体方法如下列表:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>eval( )</td>
+<td>对一串字符串形式的JavaScript代码字符求值。</td>
+</tr>
+<tr>
+<td>uneval( )</td>
+<td>创建的一个Object的源代码的字符串表示。</td>
+</tr>
+<tr>
+<td>isFinite( )</td>
+<td>判断传入的值是否是有限的数值。</td>
+</tr>
+<tr>
+<td>isNaN( )</td>
+<td>判断一个值是否不是数字值。</td>
+</tr>
+<tr>
+<td>parseInt( )</td>
+<td>解析字符串参数，并返回指定的整数。</td>
+</tr>
+<tr>
+<td>parseFloat( )</td>
+<td>解析字符串参数，并返回一个浮点数。</td>
+</tr>
+<tr>
+<td>decodeURI( )</td>
+<td>对已编码的统一资源标识符(URI)进行解码，并返回其非编码形式。</td>
+</tr>
+<tr>
+<td>encodeURI( )</td>
+<td>对统一资源标识符(URI)进行编码，并返回编码后的URI字符串。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_15">4.4 深入理解 eval( )</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">eval( ) 方法存在安全问题。因为 eval( ) 方法会执行任意传给它的代码，而这段代码可能是未知的或者是来自不信任的源。<br /></span>
+    <span class="md_line">大部分使用 eval( ) 方法实现时，都会具有不使用 eval( ) 方法实现的方式。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">一般建议在任何情况下，都不要使用 eval( ) 方法。</span>
+</p>
+
+</blockquote> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

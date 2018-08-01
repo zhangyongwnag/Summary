@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>初识事件</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="selected">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 初识事件 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 事件是什么</h1>
+
+<p class="md_block">
+    <span class="md_line">所谓事件，就是 HTML 页面或者浏览器窗口发生的一些交互瞬间。比如用户点击了 HTML 页面中的一个按钮，HTML 页面为用户提示一些内容，这个效果就是通过事件来完成的。</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>按钮<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+            <span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+            <span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你点中了我...&#39;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span> 
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">也就是说，JavaScript 与 HTML 页面之间的交互是通过事件实现的。</span>
+</p>
+
+
+<h1 id="toc_1">2. 常用的事件</h1>
+
+<p class="md_block">
+    <span class="md_line">在 DOM 中提供了一些标准的事件，我们可以直接使用。</span>
+</p>
+
+
+<h2 id="toc_2">2.1 键盘事件</h2>
+
+<p class="md_block">
+    <span class="md_line">键盘事件表示当用户操作键盘时发生。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>事件名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>keydown</td>
+<td>用户按下一个按键</td>
+</tr>
+<tr>
+<td>keyup</td>
+<td>用户松开一个按键</td>
+</tr>
+<tr>
+<td>keypress</td>
+<td>用户输入了一个字符（ keydown + keyup 的组合）</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_3">2.2 鼠标事件</h2>
+
+<p class="md_block">
+    <span class="md_line">鼠标事件表示当用户操作鼠标、触摸板或触摸屏时发生。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>事件名称</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>click</td>
+<td>用户单击鼠标按键</td>
+</tr>
+<tr>
+<td>dblclick</td>
+<td>用户双击鼠标按键</td>
+</tr>
+<tr>
+<td>mousedown</td>
+<td>用户按下鼠标按键</td>
+</tr>
+<tr>
+<td>mouseup</td>
+<td>用户松开鼠标按键</td>
+</tr>
+<tr>
+<td>mouseover</td>
+<td>用户将鼠标移到指定标签上</td>
+</tr>
+<tr>
+<td>mousemove</td>
+<td>用户移动鼠标</td>
+</tr>
+<tr>
+<td>mouseout</td>
+<td>用户将鼠标从指定标签上移开</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 这里我们并没有将所有的事件全部罗列，而是罗列了键盘和鼠标对应的事件。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_4">3. 事件的执行流程</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ol">
+    <span class="md_line">实现事件的步骤仅仅需要 3 步:</span>
+</p>
+
+
+<ol>
+<li>获取 HTML 页面中指定的标签。</li>
+<li>为指定标签绑定指定事件。</li>
+<li>编写事件发生时的逻辑代码。</li>
+</ol>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 1. 获取 HTML 页面中指定的标签。</span>
+<span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="c1">// 2. 为指定标签绑定指定事件。</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// 3. 编写事件发生时的逻辑代码。</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你点中了我...&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_5">4. 元素的事件属性</h1>
+
+<p class="md_block">
+    <span class="md_line">事件的绑定除了可以通过 JavaScript 代码方式实现之外，HTML 页面的标签同样提供了一系列的事件属性可以使用。<br /></span>
+    <span class="md_line">例如通过 JavaScript 代码实现事件绑定的示例代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>按钮<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+            <span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+            <span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你点中了我...&#39;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">可以通过 HTML 页面标签提供的事件属性进行改写:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>事件属性<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;console.log(&#39;你点中了我...&#39;)&quot;</span><span class="p">&gt;</span>按钮<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 通过 HTML 页面标签提供的事件属性实现绑定事件，导致 HTML 页面代码和 JavaScript 代码之间的耦合性过高。<strong>并不建议使用这种方式!</strong></span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_6">5. HTML 文档的加载</h1>
+
+<p class="md_block">
+    <span class="md_line">浏览器加载 HTML 页面的顺序是自上向下的。所以，当 JavaScript 代码放置在 <code>&lt;body&gt;</code> 标签后或者对应 HTML 页面标签后，运行效果是正确的。（我们之前一直都是这样做的！）<br /></span>
+    <span class="md_line">但，如果我们想把 JavaScript 代码放置在  <code>&lt;head&gt;</code> 标签中，如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>HTML文档的加载<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+            <span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+            <span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你点中了我...&#39;</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span><span class="p">&gt;</span>按钮<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">但是，运行之后，会出现如下错误:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../04 DOM/imgs/document_load.png';this.onerror=null;"  class="" src="imgs/document_load.png" alt="" title="" ><br /></span>
+    <span class="md_line">并且，按钮的点击事件并没有绑定成功。因为 HTML 页面的加载是自上向下的顺序，所以在执行 JavaScript 代码时，浏览器并没有加载 <code>&lt;body&gt;</code> 标签中的内容。所以，最终的结果就是报错。<br /></span>
+    <span class="md_line">想要解决这个问题，我们需要在 JavaScript 代码中加入如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// JavaScript 代码</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">window 对象表示的是浏览器窗口，onload 事件表示加载。所以，window.onload 就表示浏览器窗口在加载完毕时发生。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

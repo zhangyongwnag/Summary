@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>显示与隐藏</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="selected">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 显示与隐藏 </h1>
+            <div class="doc_post"> <p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">CSS 中的 display 和 visibility 都可以设置一个元素在浏览器中的显示或隐藏效果。</span>
+</p>
+
+
+<ul>
+<li>display: 隐藏某个元素时，不会占用任何空间。换句话讲，不会影响布局。</li>
+<li>visibility: 隐藏某个元素时，仍需占用与未隐藏之前一样的空间。换句话讲，会影响布局。</li>
+</ul>
+
+<h1 id="toc_0">1. display 属性</h1>
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>none</td>
+<td>此元素不会被显示。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">当将一个元素的 CSS 属性 display 设置为 none 时，该元素会被隐藏。并且被隐藏的元素不会占用 HTML 页面的任何空间。<br /></span>
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当为第一个 <code>&lt;div&gt;</code> 标签设置 display 属性值为 none 时，该 <code>&lt;div&gt;</code> 标签会被隐藏。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>block</td>
+<td>此元素将显示为块级元素。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">该值主要作用于<strong>内联元素</strong>。如果将内联元素的 CSS 属性 display 设置为 block 时，该内联元素将在浏览器中显示成块级元素效果。<br /></span>
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#s1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#s2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;s1&quot;</span><span class="p">&gt;</span>这是一个span<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">span</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;s2&quot;</span><span class="p">&gt;</span>这是一个span<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当为第一个 <code>&lt;span&gt;</code> 标签设置 display 属性值为 block 时，该 <code>&lt;span&gt;</code> 标签会呈现块级元素效果。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>inline</td>
+<td>默认值，此元素会被显示为内联元素。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">该值主要作用于<strong>块级元素</strong>。如果将内联元素的 CSS 属性 display 设置为 inline 时，该内联元素将在浏览器中显示成内联元素效果。<br /></span>
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;</span>这是一个div<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;</span>这是一个div<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当为第一个 <code>&lt;div&gt;</code> 标签设置 display 属性值为 inline 时，该 <code>&lt;div&gt;</code> 标签会呈现内联元素样式。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>inline-block</td>
+<td>行内块元素。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">当将 CSS 属性 display 设置为 inline-block 时，该元素在浏览器中显示为内联块级效果。即每个元素呈现块级元素效果，元素之间呈现内联元素效果。<br /></span>
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;</span>这是一个div<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;</span>这是一个div<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">分别为两个 <code>&lt;div&gt;</code> 标签设置 display 属性值为 inline-block 时，这两个 <code>&lt;div&gt;</code> 会显示在一行中。</span>
+</p>
+
+
+<h1 id="toc_1">2. visibility 属性</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">visibility 属性指定一个元素是否是可见的。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> visibility 属性设置元素不可见的元素，但会占据页面上的空间。请使用 display 属性来创建不占据页面空间的不可见元素。</span>
+</p>
+
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>visible</td>
+<td>默认值，元素是可见的。</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>元素是不可见的。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;</span>这是一个div<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;</span>这是一个div<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当为第一个 <code>&lt;div&gt;</code> 标签设置 visibility 属性值为 hidden 时，该 <code>&lt;div&gt;</code> 会被隐藏。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

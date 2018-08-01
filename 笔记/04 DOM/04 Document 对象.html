@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document 对象</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="selected">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> Document 对象 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. Document 对象</h1>
+
+<p class="md_block">
+    <span class="md_line">Document 对象表示浏览器加载的 HTML 页面，并作为查找 HTML 页面内容的入口。它提供了全局函数，例如如何从 HTML 页面中查找指定标签或者在 HTML 页面中如何创建标签等。<br /></span>
+    <span class="md_line">我们可以通过如下代码来测试 Document 对象:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">通过浏览器的 console 查看会得到如下效果:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../04 DOM/imgs/document_object.png';this.onerror=null;"  class="" src="imgs/document_object.png" alt="" title="" ><br /></span>
+    <span class="md_line">通过上面的测试结果，我们可以很清晰地看到，通过 Document 对象可以得到整个 HTML 页面。</span>
+</p>
+
+
+<h1 id="toc_1">2. DOM 查询</h1>
+
+<p class="md_block">
+    <span class="md_line">获取 HTML 标签就是查找 HTML 页面中的元素节点，也可以称为 DOM 查询。基本有 5 种方式可以使用。</span>
+</p>
+
+
+<h2 id="toc_2">2.1 通过标签的 id 属性值获取</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 HTML 页面标签的 id 属性值获取指定标签。语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="nx">id属性值</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">下面我们通过一个简单的案例来了解掌握 getElementById() 方法的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn1&#39;</span><span class="p">);</span>
+<span class="nx">btn1</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="nx">one</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightskyblue&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 在 HTML 页面标签的 id 属性值是唯一的，所以通过 id 只能获取 HTML 页面中唯一的指定标签元素。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_3">2.2 通过标签的 name 属性值获取</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 HTML 页面标签的 name 属性值获取指定标签。语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="nx">name属性值</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">下面我们通过一个简单的案例来了解掌握 getElementsByName() 方法的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn2&#39;</span><span class="p">);</span>
+<span class="nx">btn2</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">lis</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByName</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">lis</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">2.3 通过标签名获取</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 HTML 页面标签名获取指定标签。语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">标签名</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">下面我们通过一个简单的案例来了解掌握 getElementsByTagName() 方法的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn3</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn3&#39;</span><span class="p">);</span>
+<span class="nx">btn3</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">lis</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">lis</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightcoral&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_5">2.4 通过标签的 class 属性值获取</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 HTML 页面标签的 class 属性值获取指定标签。语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="nx">标签名</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">下面我们通过一个简单的案例来了解掌握 getElementsByClassName() 方法的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn4</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn4&#39;</span><span class="p">);</span>
+<span class="nx">btn4</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">lis</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="s1">&#39;list-group-item&#39;</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">lis</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightseagreen&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> getElementsByClassName() 方法在 IE 浏览器中，只能是 IE 9 版本之后才支持。换句话讲，getElementsByClassName() 方法存在浏览器兼容问题。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_6">2.5 通过 CSS 选择器方式获取</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">在 HTML5 新特性中提供了两个可以通过 CSS 选择器方式来获取 HTML 页面标签的方法:</span>
+</p>
+
+
+<ul>
+<li>querySelector(selector): 返回第一个选择器匹配的 HTML 页面元素。</li>
+<li>querySelectorAll(selector): 返回全部选择器匹配的 HTML 页面元素。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 这两个方法只能是 IE 8 版本之后才执行。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn5</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn5&#39;</span><span class="p">);</span>
+<span class="nx">btn5</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">two</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#two&#39;</span><span class="p">);</span>
+    <span class="nx">two</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightskyblue&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">btn6</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn6&#39;</span><span class="p">);</span>
+<span class="nx">btn6</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">lis</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.list-group-item&#39;</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">lis</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightseagreen&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">2.6 DOM 查询分类</h2>
+
+<h3 id="toc_8">传统方式</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">传统方式的 DOM 查询有 getElementById()、getElementsByName()、getElementsByTagName() 和 getElementsByClassName() 方法。</span>
+</p>
+
+
+<ul>
+<li>优点: 性能好、查询速度快</li>
+<li>缺点: 使用麻烦</li>
+</ul>
+
+<h3 id="toc_9">HTML5新增</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">HTML5新增的 DOM 查询有 querySelector() 和 querySelectorAll() 方法。</span>
+</p>
+
+
+<ul>
+<li>优点: 使用简便</li>
+<li>缺点: 性能差、查询速度慢</li>
+</ul>
+
+<h1 id="toc_10">3. 补充内容(了解)</h1>
+
+<h2 id="toc_11">3.1 缓存 DOM 查询</h2>
+
+<p class="md_block">
+    <span class="md_line">当我们通过 DOM 查询获取 HTML 页面中指定的标签后，如果需要多次操作同一个标签时，应该使用一个变量来保存 DOM 查询的结果。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn1&#39;</span><span class="p">);</span>
+<span class="nx">btn1</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="nx">one</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightskyblue&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当把 DOM 查询的结果保存在一个变量后，实际上是把获取的指定标签在 DOM 节点树中的位置保存在变量中。这个元素节点（标签）的属性和方法可以通过这个变量来使用。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../04 DOM/imgs/cache_dom.png';this.onerror=null;"  class="" src="imgs/cache_dom.png" alt="" title="" ></span>
+</p>
+
+
+<h2 id="toc_12">3.2 动态和静态 NodeList</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">NodeList 是一组元素节点的集合，每个节点都有索引值（从 0 开始的数字，类似数组）。元素节点在 NodeList 中保存的顺序和它们在 HTML 页面中出现的顺序一致。<br /></span>
+    <span class="md_line">当使用 DOM 查询获取 HTML 页面中指定的元素时，如下使用如下查询方法:</span>
+</p>
+
+
+<ul>
+<li>getElementsByName() 方法</li>
+<li>getElementsByTagName() 方法</li>
+<li>getElementsByClassName() 方法</li>
+<li>querySelectorAll() 方法</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">上述方法所返回的就是一个 NodeList 集合。<br /></span>
+    <span class="md_line">通过 NodeList 集合我们可以从中选择需要操作的元素，也可以遍历 NodeList 中的每个元素。</span>
+</p>
+
+
+<h3 id="toc_13">动态 NodeList</h3>
+
+<p class="md_block">
+    <span class="md_line">通过 getElementsByName()、getElementsByTagName() 和 getElementsByClassName() 方法获取的 NodeList 就是动态的 NodeList。<br /></span>
+    <span class="md_line">在动态 NodeList 中，当脚本更新 HTML 页面之后，NodeList 也会同样进行更新。例如如下示例:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>动态NodeList<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/style.css&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">body</span> <span class="p">{</span>
+                <span class="nb">padding</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;data&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;one&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 one 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;two&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;list&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 two 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;three&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 three 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;four&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;list&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 four 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;five&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 five 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="kd">var</span> <span class="nx">lis</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+        
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="c1">// &lt;li&gt; 标签的数量为 5</span>
+        
+        <span class="c1">// 向 &lt;ul&gt; 标签中添加一个新的 &lt;li&gt; 标签</span>
+        <span class="kd">var</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">);</span>
+        <span class="nx">data</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+        
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="c1">// &lt;li&gt; 标签的数量为 6</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_14">静态 NodeList</h3>
+
+<p class="md_block">
+    <span class="md_line">通过 querySelectorAll() 方法获取的 NodeList 就是动态的 NodeList。<br /></span>
+    <span class="md_line">在动态 NodeList 中，当脚本更新 HTML 页面之后，NodeList 也不会进行更新。例如如下示例:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>静态NodeList<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/style.css&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">body</span> <span class="p">{</span>
+                <span class="nb">padding</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;data&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;one&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 one 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;two&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;list&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 two 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;three&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 three 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;four&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;list&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 four 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;five&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 five 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="kd">var</span> <span class="nx">lis</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+        
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="c1">// &lt;li&gt; 标签的数量为 5</span>
+        
+        <span class="c1">// 向 &lt;ul&gt; 标签中添加一个新的 &lt;li&gt; 标签</span>
+        <span class="kd">var</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">);</span>
+        <span class="nx">data</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+        
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lis</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="c1">// &lt;li&gt; 标签的数量为 5</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_15">4. 创建节点</h1>
+
+<h2 id="toc_16">4.1 创建元素节点</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 Document 对象创建一个新的元素节点（标签），具体语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">标签名</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过一个案例，对 createElement() 方法进行学习:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 1. 创建新的 &lt;li&gt; 标签（元素节点）</span>
+<span class="kd">var</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+<span class="c1">// 设置新创建的 &lt;li&gt; 标签的样式</span>
+<span class="nx">li</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;list-group-item active&#39;</span><span class="p">;</span>
+<span class="c1">// 2. 获取 HTML 页面的 &lt;ul&gt; 标签</span>
+<span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;container&#39;</span><span class="p">);</span>
+<span class="c1">// 3. 将新创建的 &lt;li&gt; 标签添加到 &lt;ul&gt; 标签中</span>
+<span class="nx">ul</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_17">4.2 创建文本节点</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 Document 对象创建一个新的文本节点（文本内容），具体语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="nx">文本内容</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过一个案例，对 createTextNode() 方法进行学习:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 1. 创建文本节点</span>
+<span class="kd">var</span> <span class="nx">textNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span><span class="s1">&#39;我是新来滴...&#39;</span><span class="p">);</span>
+<span class="c1">// 2. 获取 id 为 five 的 &lt;li&gt; 标签</span>
+<span class="kd">var</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;five&#39;</span><span class="p">);</span>
+<span class="c1">// 3. 将文本节点作为 &lt;li&gt; 标签的子节点添加</span>
+<span class="nx">li</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">textNode</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_18">4.3 创建属性节点</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 Document 对象创建一个新的属性节点，具体语法格式如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nb">document</span><span class="p">.</span><span class="nx">createAttribute</span><span class="p">(</span><span class="nx">属性名称</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 由于属性节点并不是子节点。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">在实际开发中，创建属性节点使用的场景较少，只需要了解即可。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 1. 获取 &lt;div&gt; 标签</span>
+<span class="kd">var</span> <span class="nx">node</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">);</span>
+<span class="c1">// 2. 创建属性节点</span>
+<span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createAttribute</span><span class="p">(</span><span class="s2">&quot;my_attrib&quot;</span><span class="p">);</span>
+<span class="c1">// 3. 设置属性节点的 nodeValue</span>
+<span class="nx">a</span><span class="p">.</span><span class="nx">nodeValue</span> <span class="o">=</span> <span class="s2">&quot;属性值&quot;</span><span class="p">;</span>
+<span class="c1">// 4. 将属性节点添加到 &lt;div&gt; 标签中</span>
+<span class="nx">node</span><span class="p">.</span><span class="nx">setAttributeNode</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">属性节点的具体操作，主要分为以下两方面:</span>
+</p>
+
+
+<ul>
+<li>为属性设置值: 通过 nodeValue 进行设置。</li>
+<li>将属性节点添加到元素节点中: 通过 setAttributeNode() 方法实现。</li>
+</ul> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

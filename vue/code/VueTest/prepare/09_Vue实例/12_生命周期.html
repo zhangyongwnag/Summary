@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>12_生命周期</title>
+</head>
+<body>
+<div>
+  <button @click="destoryVue">destory vue</button>
+  <p v-show="isShowing">{{msg}}</p>
+</div>
+
+<!--
+1. vue对象的生命周期
+  1). 初始化显示
+    * beforeCreate()
+    * created()
+    * beforeMount()
+    * mounted()
+  2). 更新状态
+    * beforeUpdate()
+    * updated()
+  3). 销毁vue实例: vm.$destory()
+    * beforeDestory()
+    * destoryed()
+2. 常用的生命周期方法
+  created()/mounted(): 发送ajax请求, 启动定时器等异步任务
+  beforeDestory(): 做收尾工作, 如: 清除定时器
+-->
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript">
+  var vue = new Vue({
+    el: 'div',
+    data: {
+      msg: 'atguigu',
+      isShowing: true,
+      persons: []
+    },
+    beforeCreate () {
+      console.log('beforeCreate() msg=' + this.msg)
+    },
+    created () {
+      console.log('created() msg='+this.msg)
+
+      this.intervalId = setInterval(() => {
+        console.log('-----')
+        this.isShowing = !this.isShowing
+      }, 1000)
+
+      //发送ajax请求, 得到 persons
+      var persons = [{name:'Tom'},{name:'JACK'}]
+      this.persons = persons
+    },
+
+    beforeMount () {
+      console.log('beforeMount() msg='+this.msg)
+    },
+    mounted () {
+      console.log('mounted() msg='+this.msg)
+    },
+
+    beforeUpdate() {
+      console.log('beforeUpdate isShowing='+this.isShowing)
+    },
+    updated () {
+      console.log('updated isShowing='+this.isShowing)
+    },
+
+    beforeDestroy () {
+      console.log('beforeDestroy() msg='+this.msg)
+      clearInterval(this.intervalId)
+    },
+
+    destroyed () {
+      console.log('destroyed() msg='+this.msg)
+    },
+
+    methods: {
+      destoryVue () {
+        vue.$destroy()
+      }
+    }
+  })
+</script>
+</body>
+</html>

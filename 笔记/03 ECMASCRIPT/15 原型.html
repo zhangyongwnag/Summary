@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>原型</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="selected">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 原型 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 原型是什么</h1>
+
+<p class="md_block">
+    <span class="md_line">在 JavaScript 中，函数是一个包含属性和方法的 Function 类型的对象。而原型（Prototype）就是 Function 类型对象的一个属性。<br /></span>
+    <span class="md_line">在函数定义时就包含了 prototype 属性，它的初始值是一个空对象。在 JavaScript 中并没有定义函数的原型类型，所以原型可以是任何类型。<br /></span>
+    <span class="md_line">原型是用于保存对象的共享属性和方法的，原型的属性和方法并不会影响函数本身的属性和方法。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="k">typeof</span> <span class="nx">foo</span><span class="p">.</span><span class="nx">prototype</span> <span class="p">);</span><span class="c1">// object</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_1">2. 获取原型</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">通过如下两种方式可以获取对象的原型，从而设置共享的属性和方法:</span>
+</p>
+
+
+<ul>
+<li>通过构造函数的 prototype 属性。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Person</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Person instantiated&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>通过 Object 对象的 getPrototypeOf( obj ) 方法。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">Person</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Person instantiated&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">getPrototypeOf</span><span class="p">(</span> <span class="nx">Person</span> <span class="p">)</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_2">3. 原型的属性和方法</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">通过如下两种方式可以设置原型的属性和方法:</span>
+</p>
+
+
+<ul>
+<li>原型的属性和方法单独进行定义。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">构造函数</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">属性名</span> <span class="o">=</span> <span class="nx">属性值</span><span class="p">;</span>
+
+<span class="nx">构造函数</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">方法名</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>直接为原型定义一个新对象。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">构造函数</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">属性名</span> <span class="o">:</span> <span class="nx">属性值</span><span class="p">,</span>
+    <span class="nx">方法名</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(){}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_3">4. <code>__proto__</code> 属性</h1>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">functon</span> <span class="nx">Hero</span><span class="p">(){}</span>
+
+<span class="nx">Hero</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span> <span class="o">:</span> <span class="s2">&quot;Mary&quot;</span><span class="p">,</span>
+    <span class="nx">salary</span> <span class="o">:</span> <span class="mi">3800</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">hero</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Hero</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">hero</span><span class="p">.</span><span class="nx">name</span> <span class="p">);</span><span class="c1">// Mary</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">上述代码说明 hero 对象存在一个指向构造函数 Hero 的原型，这个链接被叫做 <code>__proto__</code> 属性。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line"><strong>值得注意的是:</strong> <code>__proto__</code> 属性与 prototype 属性并不等价。</span>
+</p>
+
+
+<ul>
+<li><code>__proto__</code> 属性是指定对象的属性。</li>
+<li>prototype 属性是指定构造函数的属性。</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">再有就是，<code>__proto__</code> 属性只能在学习或调试的时候使用。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_4">5.  原型链</h1>
+
+<p class="md_block">
+    <span class="md_line">构造函数或构造器具有 prototype 属性，对象具有 <code>__proto__</code> 属性，这就是之前学习的原型。<br /></span>
+    <span class="md_line">如果构造函数或对象 A ，A 的原型指向构造函数或对象 B，B 的原型再指向构造函数或对象 C，以此类推，最终的构造函数或对象的原型指向 Object 的原型。由此形成一条链状结构，被称之为原型链。<br /></span>
+    <span class="md_line">按照上述的描述，在 B 中定义的属性或方法，可以直接在 A 中使用并不需要定义。这就是继承，它允许每个对象来访问其原型链上的任何属性或方法。<br /></span>
+    <span class="md_line">原型链是 ECMAScript 标准中指定的默认实现继承的方式。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

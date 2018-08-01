@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element 对象</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="selected">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> Element 对象 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. DOM 元素树</h1>
+
+<p class="md_block">
+    <span class="md_line">还记得下面这张图吗？<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../04 DOM/imgs/dom_node_tree2.png';this.onerror=null;"  class="" src="imgs/dom_node_tree2.png" alt="" title="" ><br /></span>
+    <span class="md_line">DOM 访问或操作 HTML 页面内容主要是依靠 DOM 节点树这个模型。但在 DOM 中的三个主要对象，除了 Document 和 Node 之外，还有一个就是 Element 对象。<br /></span>
+    <span class="md_line">Element 对象描述了所有相同种类的元素所普遍具有的方法和属性，也是访问和操作 HTML 页面内容的主要途径之一。<br /></span>
+    <span class="md_line">Element 对象和 Node 对象类似，同样提供了一个 DOM 元素树这个模型。如下图所示:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../04 DOM/imgs/dom_element_tree.png';this.onerror=null;"  class="" src="imgs/dom_element_tree.png" alt="" title="" ></span>
+</p>
+
+
+<h1 id="toc_1">2. 遍历元素</h1>
+
+<h2 id="toc_2">2.1 获取父元素</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 HTML 页面的指定标签查找其父元素，我们可以通过如下属性实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">parentElement</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过如下示例来学习 parentElement 的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn1&#39;</span><span class="p">);</span>
+<span class="nx">btn1</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">childDiv1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;childDiv1&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">parentDiv</span> <span class="o">=</span> <span class="nx">childDiv1</span><span class="p">.</span><span class="nx">parentElement</span><span class="p">;</span>
+    <span class="nx">parentDiv</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">2.2 获取子元素</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">通过 HTML 页面的指定标签查找其子元素，我们可以通过如下属性实现:</span>
+</p>
+
+
+<ul>
+<li>firstElementChild: 获取指定标签的第一个子元素。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn2&#39;</span><span class="p">);</span>
+<span class="nx">btn2</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">parentDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;parentDiv&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">firstChild</span> <span class="o">=</span> <span class="nx">parentDiv</span><span class="p">.</span><span class="nx">firstElementChild</span><span class="p">;</span>
+    <span class="nx">firstChild</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>lastElementChild: 获取指定标签的最后一个子元素。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn3</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn3&#39;</span><span class="p">);</span>
+<span class="nx">btn3</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">parentDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;parentDiv&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">lastChild</span> <span class="o">=</span> <span class="nx">parentDiv</span><span class="p">.</span><span class="nx">lastElementChild</span><span class="p">;</span>
+    <span class="nx">lastChild</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>children: 获取指定标签的所有子元素。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn4</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn4&#39;</span><span class="p">);</span>
+<span class="nx">btn4</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">parentDiv</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;parentDiv&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">children</span> <span class="o">=</span> <span class="nx">parentDiv</span><span class="p">.</span><span class="nx">children</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">children</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">children</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">style</span><span class="p">.</span><span class="nx">backgroundColor</span> <span class="o">=</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">2.3 获取兄弟元素</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">通过 HTML 页面的指定标签查找兄弟元素，我们可以通过如下属性实现:</span>
+</p>
+
+
+<ul>
+<li>previousElementSibling: 获取指定节点的前一个兄弟节点。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn5</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn5&#39;</span><span class="p">);</span>
+<span class="nx">btn5</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">two</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;two&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nx">two</span><span class="p">.</span><span class="nx">previousElementSibling</span><span class="p">;</span>
+    <span class="nx">one</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;list-group-item active&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>nextElementSibling: 获取指定节点的后一个兄弟节点。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn6</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn6&#39;</span><span class="p">);</span>
+<span class="nx">btn6</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">two</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;two&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">three</span> <span class="o">=</span> <span class="nx">two</span><span class="p">.</span><span class="nx">nextElementSibling</span><span class="p">;</span>
+    <span class="nx">three</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;list-group-item active&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_5">3. 操作属性</h1>
+
+<p class="md_block">
+    <span class="md_line">Element 对象提供的属性操作的方法，是实际开发中应用最多的。<strong>（因为 Element 对象操作属性要比 Node 对象简便。）</strong></span>
+</p>
+
+
+<h2 id="toc_6">3.1 获取属性</h2>
+
+<p class="md_block">
+    <span class="md_line">获取 HTML 页面标签的指定属性值，我们可以通过以下方法实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="nx">属性名</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过如下示例来学习 getAttribute() 的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn1&#39;</span><span class="p">);</span>
+<span class="nx">btn1</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">titleValue</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">titleValue</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">3.2 设置属性</h2>
+
+<p class="md_block">
+    <span class="md_line">设置 HTML 页面标签的指定属性，我们可以通过以下方法实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="nx">属性名</span><span class="p">,</span> <span class="nx">属性值</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过如下示例来学习 setAttribute() 的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn2&#39;</span><span class="p">);</span>
+<span class="nx">btn2</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="nx">one</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;this is a new li element&#39;</span><span class="p">);</span>
+            
+    <span class="kd">var</span> <span class="nx">titleValue</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">titleValue</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">3.3 删除属性</h2>
+
+<p class="md_block">
+    <span class="md_line">删除 HTML 页面标签的指定属性，我们可以通过以下方法实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="nx">属性名</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过如下示例来学习 removeAttribute() 的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn3</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn3&#39;</span><span class="p">);</span>
+<span class="nx">btn3</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="nx">one</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+            
+    <span class="kd">var</span> <span class="nx">titleValue</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">getAttribute</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">titleValue</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_9">3.4 判断是否含有属性</h2>
+
+<p class="md_block">
+    <span class="md_line">判断 HTML 页面标签的是否含有属性，我们可以通过以下方法实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">hasAttribute</span><span class="p">(</span><span class="nx">属性名</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过如下示例来学习 hasAttribute() 的使用:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn4</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn4&#39;</span><span class="p">);</span>
+<span class="nx">btn4</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">hasAttribute</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_10">4. 获取或更新文本</h1>
+
+<h2 id="toc_11">4.1 通过 nodeValue 属性获取或更新文本</h2>
+
+<p class="md_block">
+    <span class="md_line">通过学习 DOM 查询我们知道，获取或更新文本就是对文本节点的操作。文本节点的 nodeValue 属性可以得到文本内容，也可以设置文本内容。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">textNode</span><span class="p">.</span><span class="nx">nodeValue</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们可以通过如下示例来学习如何通过 nodeValue 属性获取或更新文本:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn1</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn1&#39;</span><span class="p">);</span>
+<span class="nx">btn1</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">firstChild</span><span class="p">.</span><span class="nx">nodeValue</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_12">4.2 通过 innerText 或 textContent 属性获取或更新文本</h2>
+
+<p class="md_block">
+    <span class="md_line">innerText 或 textContent 属性都可以用于获取或更新文本。我们先来掌握如何使用这两个属性，再来讨论它们之间的区别。<br /></span>
+    <span class="md_line">我们可以通过如下示例来学习如何通过 innerText 属性获取或更新文本:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn2</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn2&#39;</span><span class="p">);</span>
+<span class="nx">btn2</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">innerText</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">学习如何通过 textContent 属性获取或更新文本:</span>
+</p>
+
+
+<pre class="lang_javascipt"><code>var btn2 = document.getElementById('btn2');
+btn2.onclick = function(){
+    var one = document.getElementById('one');
+    var text = one.textContent;
+    console.log(text);
+}</code></pre>
+
+<!--block_code_end-->
+<h3 id="toc_13">innerText 与 textContent 属性的区别</h3>
+
+<p class="md_block">
+    <span class="md_line">那 innerText 或 textContent 属性之间有什么区别呢？我们还是先通过一个示例入手:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>文本操作<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/style.css&quot;</span> <span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
+            <span class="nt">i</span> <span class="p">{</span>
+                <span class="nb">display</span><span class="o">:</span> <span class="nb">none</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;one&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 id 为 one 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;two&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;list&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;</span>这是一个 <span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>id<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> 为 two 的选项<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>说明:</strong> 在上述 HTML 页面中，<code>&lt;i&gt;</code> 标签被 CSS 样式隐藏。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">我们获取 id 为 two 的 <code>&lt;li&gt;</code> 标签的文本内容并打印。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn4</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn4&#39;</span><span class="p">);</span>
+<span class="nx">btn4</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">two</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;two&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text1</span> <span class="o">=</span> <span class="nx">two</span><span class="p">.</span><span class="nx">innerText</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;innerText 属性获取的文本内容: &#39;</span><span class="o">+</span><span class="nx">text1</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text2</span> <span class="o">=</span> <span class="nx">two</span><span class="p">.</span><span class="nx">textContent</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;textContent 属性获取的文本内容: &#39;</span><span class="o">+</span><span class="nx">text2</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">运行代码后得到的结果如下:</span>
+</p>
+
+
+<pre><code>innerText 属性获取的文本内容: 这是一个 为 two 的选项
+textContent 属性获取的文本内容: 这是一个 id 为 two 的选项</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">通过得到的结果，我们可以知道:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名</th>
+<th>获取文本的结果</th>
+<th>浏览器支持情况</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>innerText</td>
+<td>不能获取被 CSS 样式隐藏的文本内容</td>
+<td>Firefox 不支持</td>
+</tr>
+<tr>
+<td>textContent</td>
+<td>可以获取全部文本内容</td>
+<td>IE 8及之前版本不支持</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_14">获取或更新 HTML</h1>
+
+<p class="md_block">
+    <span class="md_line">我们可以通过 innerHTML 属性来获取或更新 HTML 页面的指定标签所包含的 HTML 代码内容。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">one</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;one&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="nx">one</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+    <span class="nx">content</span> <span class="o">=</span> <span class="s1">&#39;&lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;&#39;</span> <span class="o">+</span> <span class="nx">content</span><span class="p">;</span>
+    <span class="nx">one</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">content</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

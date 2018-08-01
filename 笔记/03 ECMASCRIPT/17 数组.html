@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>数组</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="selected">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 数组 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 数组是什么</h1>
+
+<p class="md_block">
+    <span class="md_line">数组是值的有序集合。数组中的每个值叫做一个元素，而每个元素在数组中都有一个唯一的位置。这个位置用数字表示，叫做索引数据；用字符串表示，叫做关联数组。<br /></span>
+    <span class="md_line">JavaScript 数组是无类型的：数组的元素可以是任何类型，例如字符串、数字值、布尔值等，而且每个数组中的不同元素可能是不同类型。<br /></span>
+    <span class="md_line">JavaScript 数组是动态的：根据需要，可以动态地向数组插入新的元素，或者从数组中删除指定的元素。</span>
+</p>
+
+
+<h1 id="toc_1">2. 一维数组</h1>
+
+<h2 id="toc_2">2.1 定义数组</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">数组的最大作用就是用于存储多个值。定义数组分别两种形式:</span>
+</p>
+
+
+<ul>
+<li>使用数组字面量方式:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span> <span class="p">];</span>
+<span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span> <span class="p">];</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>使用数组关键字方式:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span> <span class="p">);</span>
+<span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 在一个数组中的不同元素可以是不同数据类型。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_3">2.2 索引数组</h2>
+
+<p class="md_block">
+    <span class="md_line">索引数组就是存储元素的位置使用数字值来表示，一般称之为下标或角标。具体创建方式如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 索引数组的下标是从 0 开始的。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_4">2.3 关联数组</h2>
+
+<p class="md_block">
+    <span class="md_line">关联数组就是存储元素的位置使用字符串来表示，一般称之为名称（name或key）。具体创建方式如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;bool&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 关联数组的名称（name或key）是字符串，必需使用单引号或双引号将其包裹。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_5">2.4 稀疏数组</h2>
+
+<p class="md_block">
+    <span class="md_line">稀疏数组就是包含 0 开始的不连续索引的数组。具体创建方式如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">(</span> <span class="mi">10</span> <span class="p">);</span><span class="c1">// 数组没有任何元素，数组的长度为 10</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span><span class="c1">// 创建一个空数组</span>
+<span class="nx">arr</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span><span class="c1">// 向下标为 100 的位置添加一个元素 a</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 上述代码中的第一行，并不是创建一个数组包含一个元素 10，而是创建一个不包含任何元素的数组长度为 10。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_6">2.5 数组的长度</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">每个数组都有一个length属性，表示数组的长度。</span>
+</p>
+
+
+<ul>
+<li>如果为非稀疏数组的话，length 属性的值表示当前数组包含元素的个数。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span> <span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr1</span><span class="p">.</span><span class="nx">length</span> <span class="p">);</span><span class="c1">// 输出 3</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>如果为稀疏数组的话，length 属性的值大于当前数组包含元素的个数。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr2</span><span class="p">[</span><span class="mi">14</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr2</span><span class="p">.</span><span class="nx">length</span> <span class="p">);</span><span class="c1">// 输出 15</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">2.6 数组元素的读取</h2>
+
+<p class="md_block">
+    <span class="md_line">数组的主要作用是用于存储和读取数据信息，之前已经对数组存储数据信息掌握了。下面来看看如何从数组中读取指定的元素:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 a</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;bool&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 a</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">2.7 数组元素的修改</h2>
+
+<p class="md_block">
+    <span class="md_line">不仅可以从数组中读取指定的元素，还可以根据需求修改数组中指定的元素值。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 a</span>
+<span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;b&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 b</span>
+
+<span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 a</span>
+<span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;b&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="s1">&#39;str&#39;</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 b</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_9">2.8 数组元素的删除</h2>
+
+<p class="md_block">
+    <span class="md_line">不仅可以根据需求修改数组中指定的元素值，也可以删除数组中指定的元素值。数组删除指定元素值使用 delete 关键字。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="k">delete</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 输出字符串 undefined</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 上述代码使用 delete 关键字执行删除数组元素值的操作时，并不影响数组的长度。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="k">delete</span> <span class="nx">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="p">);</span><span class="c1">// 输出 3</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_10">2.9 遍历数组元素</h2>
+
+<p class="md_block">
+    <span class="md_line">使用for语句是遍历数组元素最常见的方法:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">也可以从数组的最后向前（倒序）进行遍历:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_11">for in 语句</h3>
+
+<p class="md_block">
+    <span class="md_line">在 ECMAScript 5 中新增了 for in 语句，同样也可以用于遍历数组:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">i</span> <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong></span>
+</p>
+
+
+<ul>
+<li>for 关键字后定义的变量 i 表示当前数组的下标。</li>
+<li>for in 语句不仅会遍历数组的所有元素，还有一些数组自带的属性。一般建议使用 for 语句进行数组遍历。</li>
+</ul>
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">for in 语句还可以用于遍历稀疏数组，循环的每次将一个有效元素返回。不存在的索引将不会遍历到:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr</span><span class="p">[</span><span class="mi">100</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">arr</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">i</span> <span class="o">+</span> <span class="s2">&quot; : &quot;</span> <span class="o">+</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_12">3. 二维数组</h1>
+
+<p class="md_block">
+    <span class="md_line">数组是可以嵌套的，这就意味着一个数组可以作为一个元素被包含在另外一个数组里面。利用JavaScript 这个特点，创建二维数组，即数组的数组。</span>
+</p>
+
+
+<h2 id="toc_13">3.1 定义二维数组</h2>
+
+<ul>
+<li>定义一个规整的二维数组:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">],</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">],</span> <span class="p">[</span><span class="mi">31</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">33</span><span class="p">]</span> <span class="p">];</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>定义一个不规整的二维数组:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nx">arr2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">101</span> <span class="p">];</span>
+<span class="nx">arr2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">201</span><span class="p">,</span> <span class="mi">202</span> <span class="p">];</span>
+<span class="nx">arr2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">301</span><span class="p">,</span> <span class="mi">302</span><span class="p">,</span> <span class="mi">303</span> <span class="p">];</span> 
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_14">3.2 使用二维数组</h2>
+
+<ul>
+<li>读取二维数组中的具体元素:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">],</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">23</span><span class="p">],</span> <span class="p">[</span><span class="mi">31</span><span class="p">,</span><span class="mi">32</span><span class="p">,</span><span class="mi">33</span><span class="p">]</span> <span class="p">]</span> <span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="p">);</span><span class="c1">// 值为11</span>
+<span class="nx">arr1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">230</span><span class="p">;</span><span class="c1">// 把23更改为230</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>二维数组的遍历需要使用循环嵌套来实现:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr1</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span> <span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">arr1</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_15">4. 数组的常见方法</h1>
+
+<h2 id="toc_16">4.1 检测数组</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ol">
+    <span class="md_line">如何确定当前是一个数组，JavaScript 提供如下几种方式:</span>
+</p>
+
+
+<ol>
+<li>typeof 无法检测数组对象：typeof [] 返回 object</li>
+<li>instanceof ：[] instanceof Array 返回 true/false</li>
+<li>Object.prototype.toString.call( [] )：返回 [ object Array ]</li>
+<li>Array.prototype.isPrototypeOf( [] )：返回 true/false</li>
+<li>ES5 中新方法： Array.isArray( [] ) : 返回 true/false</li>
+</ol>
+
+<h2 id="toc_17">4.2 转换方法</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 提供了如下方法，用于数组的转换:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>toString()</td>
+<td>把数组转换为字符串，并返回结果。</td>
+</tr>
+<tr>
+<td>valueOf()</td>
+<td>返回数组对象的原始值。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">];</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span> <span class="p">);</span><span class="c1">// red,blue,green</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">valueOf</span><span class="p">()</span> <span class="p">);</span><span class="c1">// red,blue,green</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_18">4.3 进出栈方法</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 提供了如下方法，用于数组的进出栈操作:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>push()</td>
+<td>向数组的末尾添加一个或更多元素，并返回新的长度。</td>
+</tr>
+<tr>
+<td>pop()</td>
+<td>删除数组的最后一个元素并返回删除的元素。</td>
+</tr>
+<tr>
+<td>shift()</td>
+<td>删除并返回数组的第一个元素。</td>
+</tr>
+<tr>
+<td>unshift()</td>
+<td>向数组的开头添加一个或更多元素，并返回新的长度。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">];</span>
+<span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="s2">&quot;black&quot;</span> <span class="p">);</span><span class="c1">// 4</span>
+<span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span><span class="c1">// black</span>
+<span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span> <span class="s2">&quot;pink&quot;</span> <span class="p">);</span><span class="c1">// 4</span>
+<span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">shift</span><span class="p">();</span><span class="c1">// pink</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_19">4.4 排序方法</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 提供了如下方法，用于数组的排序操作:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>reverse()</td>
+<td>反转数组的元素顺序。</td>
+</tr>
+<tr>
+<td>sort()</td>
+<td>对数组的元素进行排序。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">values</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span> <span class="p">];</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">values</span><span class="p">.</span><span class="nx">sort</span><span class="p">()</span> <span class="p">);</span><span class="c1">// 0,1,10,20,5</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">values</span><span class="p">.</span><span class="nx">reverse</span><span class="p">()</span> <span class="p">);</span><span class="c1">// 20,10,5,1,0</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> reverse( ) 和 sort( ) 方法的返回值是经过排序之后的数组。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_20">4.5 连接方法</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 提供了如下方法，用于多个数组之间的连接操作:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>concat()</td>
+<td>连接两个或更多的数组，并返回结果。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span> <span class="p">];</span>
+<span class="kd">var</span> <span class="nx">colors2</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span> <span class="s2">&quot;yellow&quot;</span><span class="p">,</span> <span class="p">[</span> <span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;pink&quot;</span> <span class="p">]</span> <span class="p">);</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">colors2</span> <span class="p">);</span>
+<span class="c1">// red,blue,green,yellow,black,pink</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_21">4.6 操作方法</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 提供了如下方法，用于数组的删除、插入和替换操作:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>slice()</td>
+<td>选取数组的的一部分，并返回一个新数组。</td>
+</tr>
+<tr>
+<td>splice()</td>
+<td>从数组中添加或删除元素。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">colors</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span> <span class="p">];</span>
+<span class="kd">var</span> <span class="nx">colors2</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span> <span class="mi">1</span> <span class="p">);</span><span class="c1">// blue,green,yellow</span>
+<span class="kd">var</span> <span class="nx">colors3</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="p">);</span><span class="c1">// blue,green</span>
+<span class="kd">var</span> <span class="nx">removed1</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="p">);</span><span class="c1">// red</span>
+<span class="nx">colors</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span> <span class="p">);</span><span class="c1">// red,orange,blue,green,yellow</span>
+<span class="kd">var</span> <span class="nx">removed2</span> <span class="o">=</span> <span class="nx">colors</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;purple&quot;</span> <span class="p">);</span><span class="c1">// blue</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">colors</span> <span class="p">);</span><span class="c1">// red,purple,green,yellow</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_22">4.7 位置方法</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 提供了如下方法，用于获取数组中指定元素的索引值:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>indexOf()</td>
+<td>搜索数组中的元素，并返回它所在的位置。</td>
+</tr>
+<tr>
+<td>lastIndexOf()</td>
+<td>返回一个指定的字符串值最后出现的位置，在一个字符串中的指定位置从后向前搜索。</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span> <span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">];</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">);</span><span class="c1">// 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span> <span class="mi">4</span> <span class="p">)</span> <span class="p">);</span><span class="c1">// 5</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+MongoDB
+	文档间的关系
+		- 一对一(one to one)
+		- 一对多 / 多对一 (one to many / many to one)
+		- 多对多 (many to many)
+		
+	分页相关的方法
+		sort() 用来指定排序规则
+			- 需要一个对象作为参数：
+				{字段:1 , 字段:-1}
+		
+		skip() 用来指定跳过文档的数量
+		limit() 限制显示文档的最大数量
+		
+	投影
+		- 通过投影可以限制查询结果返回的字段
+		- 投影可以在查询方法的第二个参数中指定
+		- 规则：
+			{字段:1 , 字段:0}
+			
+Mongoose
+	- mongoose是node中的一个模块
+	- 通过mongoose可以对MongoDB数据做各种操作
+	- mongoose是一个ODM库
+		mongoose通过将node中的对象，和MongoDB中文档做了一个映射，
+		让我们可以直接通过操作对象来管理数据库。
+	- mongoose中的核心对象：
+		Schema（模式对象）
+			- 通过模式对象可以对文档进行约束，规定文档中有哪些字段，字段是哪些类型
+			
+		Model（模型）
+			- 模型和数据库中集合相对应，通过模型可以对集合（集合中的文档）做各种的操作
+		
+		Document（文档）
+			- 文档和数据库中的文档相对应，数据库中文档在node中就是以Document对象的形式体现的
+				文档就是模型的实例
+				
+	- mongoose的使用
+		1.下载安装mongoose
+			npm i mongoose --save
+			
+		2.引入mongoose
+			var mongoose = require("mongoose");
+			
+		3.连接数据库
+			mongoose.connect("mongodb://ip地址:端口号/数据库名" , {useMongoClient:true});
+			
+		4.创建Schema
+			var Schema = mongoose.Schema;
+			var xxSchema = new Schema({
+				字段:类型,
+				字段:类型,
+				字段:类型
+			});
+			
+		5.创建Model
+			var XxxModel = mongoose.model("集合名",xxSchema);
+			
+		5.创建Document
+			var doc = new XxxModel({
+				属性:值,
+				属性:值
+			});
+			
+	- Model的方法
+		Model.create()
+		Model.find()
+		Model.findOne()
+		Model.findById()
+		Model.count()
+		Model.update()
+		Model.updateOne()
+		Model.updateMany()
+		Model.replaceOne()
+		Model.remove()
+		Model.deleteOne()
+		Model.deleteMany()
+		
+
+	- Document的方法	
+		- doc.save()
+		- doc.update()
+		- doc.remove()
+		- doc.get()
+		- doc.set()
+		- doc.id / doc._id
+		- doc.toObject()
+		
+Express
+	- Express是Node中的web框架，通过Express可以快速的在node中搭建起一个web服务器
+	- 基于 Node.js 平台，快速、开放、极简的 web 开发框架。
+	- Express的使用：
+		1.下载安装express
+			npm i express --save
+		2.引入express
+			var express = require("express");
+		3.创建应用对象
+			var app = express();
+		4.配置静态资源的目录
+			app.use(express.static("public"));
+		5.监听端口并启动服务器
+			app.listen(3000,function(){
+				//....
+			});
+			
+			
+		
+		
+		
+		
+		
+		
+		

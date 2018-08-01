@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>事件</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="selected">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 事件 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 事件监听</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">为 HTML 页面指定标签绑定指定事件，可以通过以下三种方式实现:</span>
+</p>
+
+
+<ul>
+<li>HTML 标签的事件属性: 这种方式 HTML 代码和 JavaScript 逻辑不能很好地分离，所以不建议使用。</li>
+<li>DOM 标准的事件: 这种方式只能为指定的一个标签绑定一个事件，并且只能具有一个事件处理函数。</li>
+<li>事件监听器: 这种方式是目前最受欢迎的一种方式。**但 IE 8 及之前的版本不支持！**</li>
+</ul>
+
+<h2 id="toc_1">1.1 事件监听器</h2>
+
+<p class="md_block">
+    <span class="md_line">DOM 提供了事件监听器，可以同时绑定多个事件，并且具有多个事件处理函数。具体监听器语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">eventName</span><span class="p">,</span> <span class="nx">functionName</span><span class="p">,</span> <span class="kr">boolean</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">该方法的参数说明如下:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>eventName</td>
+<td>为元素指定具体的事件名称（例如单击事件是 click 等）</td>
+</tr>
+<tr>
+<td>functionName</td>
+<td>绑定事件的处理函数</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>设置事件是捕获阶段还是冒泡阶段。为 false 时为冒泡阶段，一般都是这个值</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">我们可以通过以下代码进行学习:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你终于点中了我...&#39;</span><span class="p">);</span>
+<span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">addEventListener() 方法还可以为指定一个元素绑定一个事件同时具有多个处理函数。如下代码示例:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你终于点中了我...&#39;</span><span class="p">);</span>
+<span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你终于又点中了我...&#39;</span><span class="p">);</span>
+<span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">通过 addEventListener() 方法绑定事件，可以同时执行两个处理函数的逻辑。</span>
+</p>
+
+
+<h2 id="toc_2">1.2 IE 8 及之前的监听器</h2>
+
+<p class="md_block">
+    <span class="md_line">IE 8 及之前的版本浏览器并不支持 addEventListener() 方法，而提供了如下方法实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="nx">eventName</span><span class="p">,</span> <span class="nx">functionName</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">该方法的参数说明如下:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>eventName</td>
+<td>为元素指定具体的事件名称（例如单击事件是 click 等）</td>
+</tr>
+<tr>
+<td>functionName</td>
+<td>绑定事件的处理函数</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> attachEvent() 方法的 eventName 参数与 addEventListener() 方法的 eventName 参数不同。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">我们可以通过以下代码进行学习:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="s1">&#39;onclick&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;你终于点中了我...&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">1.3 监听器的兼容方案</h2>
+
+<p class="md_block">
+    <span class="md_line">我们可以封装一个函数专门来解决事件监听器的浏览器之间兼容问题。具体代码示例如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">bind</span><span class="p">(</span><span class="nx">elem</span><span class="p">,</span> <span class="nx">event</span><span class="p">,</span> <span class="nx">callback</span><span class="p">){</span>
+    <span class="c1">// 判断是否存在 addEventListener</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">elem</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">){</span>
+        <span class="nx">elem</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="nx">elem</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="s1">&#39;on&#39;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">1.4 事件中的 this</h2>
+
+<p class="md_block">
+    <span class="md_line">在事件的处理函数中，可以通过 this 关键字来指代绑定该事件的标签。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">btn</span><span class="p">.</span><span class="nx">textContent</span><span class="p">)</span>
+<span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述代码可以使用 this 关键字进行改写:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">textContent</span><span class="p">)</span>
+<span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_5">1.5 监听器的兼容优化方案</h2>
+
+<p class="md_block">
+    <span class="md_line">通过 addEventListener() 方法为 HTML 页面的标签绑定事件时，this 关键字指代绑定该事件的标签元素。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">通过 attachEvent() 方法为 HTML 页面的标签绑定事件时，this 关键字指代绑定 window 对象。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="s1">&#39;onclick&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">由于在 addEventListener() 方法中的 this 和在 attachEvent() 方法中的 this 指代不同，我们需要进一步优化我们的兼容方案。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">bind</span><span class="p">(</span><span class="nx">elem</span><span class="p">,</span> <span class="nx">event</span><span class="p">,</span> <span class="nx">callback</span><span class="p">){</span>
+    <span class="c1">// 判断是否存在 addEventListener</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">elem</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">){</span>
+        <span class="nx">elem</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">callback</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="nx">elem</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="s1">&#39;on&#39;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="nx">callback</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">elem</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_6">2. 事件对象</h1>
+
+<p class="md_block">
+    <span class="md_line">HTML 页面的标签绑定事件的处理函数中，提供了一个事件对象（event）。这个事件对象会返回关于该事件的信息，以及该事件绑定在哪个元素中。<br /></span>
+    <span class="md_line">事件对象是以事件的处理函数中的参数形式出现，并不需要我们自己创建，直接使用即可。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">element</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="nx">eventName</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="c1">// event 就是事件对象</span>
+<span class="p">},</span> <span class="kr">boolean</span><span class="p">)</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">2.1 兼容的事件对象</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">使用 DOM 标准的事件绑定时，Event 事件对象在 IE 8 及之前的版本浏览器情况有所不同。</span>
+</p>
+
+
+<ul>
+<li>IE 9 及之后的版本和其他浏览器: 通过事件的处理函数的形参直接得到 Event 对象。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">ar</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>IE 8 及之前的版本浏览器: Event 事件对象被提供在 window 对象中。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">event</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">想要实现 Event 事件对象的兼容，我们可以在事件的处理函数中添加以下代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">event</span> <span class="o">=</span> <span class="nx">event</span> <span class="o">||</span> <span class="nb">window</span><span class="p">.</span><span class="nx">event</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">2.2 事件的目标元素</h2>
+
+<p class="md_block">
+    <span class="md_line">Event 事件对象提供了 target 属性用于获取触发事件的目标元素（标签）。<br /></span>
+    <span class="md_line">我们可以通过以下案例进行学习 target 属性:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>事件的目标元素<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;ul&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+        <span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">);</span>
+        <span class="nx">ul</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">)</span>
+        <span class="p">},</span><span class="kc">false</span><span class="p">);</span>   
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果点击 <code>&lt;a&gt;</code> 标签，target 属性则打印 <code>&lt;a&gt;</code> 标签:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果点击 <code>&lt;li&gt;</code> 标签，target 属性则打印 <code>&lt;li&gt;</code> 标签:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果点击 <code>&lt;ul&gt;</code> 标签，target 属性则打印 <code>&lt;ul&gt;</code> 标签:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;li&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_9">IE 8 及之前的目标元素</h3>
+
+<p class="md_block">
+    <span class="md_line">IE 8 及之前的版本浏览器不支持 target 属性，而是提供了 srcElement 属性进行替换。<br /></span>
+    <span class="md_line">所以，上述示例代码在 IE 8 及之前的版本浏览器中，应该是如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;ul&#39;</span><span class="p">);</span>
+<span class="nx">ul</span><span class="p">.</span><span class="nx">attachEvent</span><span class="p">(</span><span class="s1">&#39;onclick&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">srcElement</span><span class="p">)</span>
+<span class="p">});</span>   
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_10">浏览器兼容方案</h3>
+
+<p class="md_block">
+    <span class="md_line">如果提供兼容解决方案的话，我们可以在事件的处理函数中加入如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">target</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">){</span>
+    <span class="nx">target</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">;</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="nx">target</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">srcElement</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">或者如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">target</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">target</span> <span class="o">||</span> <span class="nx">event</span><span class="p">.</span><span class="nx">srcElement</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_11">2.3 阻止默认行为</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">HTML 页面的一些标签具有默认行为。所谓默认行为，就是不用编写 JavaScript 代码就可以实现的动态效果。例如如下标签:</span>
+</p>
+
+
+<ul>
+<li><code>&lt;a&gt;</code> 标签: 用户点击 <code>&lt;a&gt;</code> 标签，会发生页面跳转行为。</li>
+<li><code>&lt;form&gt;</code> 标签: 用户点击表单的提交按钮，表单会发生提交行为。</li>
+</ul>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">阻止默认行为，就是不让 HTML 页面这些标签的默认行为发生。想要阻止默认行为可以通过 Event 事件对象提供的属性实现:</span>
+</p>
+
+
+<ul>
+<li>IE 8 及之前版本的浏览器: returnValue 属性</li>
+<li>IE 9 及之后版本和其他浏览器: preventDefault() 方法</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">想要提供兼容方案，可以使用如下代码实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">){</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">returnValue</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_12">2.4 获取鼠标坐标</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">当 HTML 页面中标签绑定的事件被触发时，我们还可以通过 Event 事件对象获取鼠标当前的坐标值。</span>
+</p>
+
+
+<ul>
+<li>pageX 和 pageY: 表示鼠标在整个页面中的位置。如果页面过大（存在滚动条），部分页面可能存在可视区域之外。</li>
+<li>clientX 和 clientY: 表示鼠标在整个可视区域中的位置。</li>
+<li>screenX 和 screenY: 表示鼠标在整个屏幕中的位置。从屏幕（不是浏览器）的左上角开始计算。</li>
+<li>offsetX 和 offsetY: 表示鼠标相对于定位父元素的位置。</li>
+</ul>
+
+<h1 id="toc_13">3. 事件周期</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ol">
+    <span class="md_line">还记得 addEventListener() 方法的第三个参数吗？这个参数表示是捕获阶段还是冒泡阶段。根据 W3C 标准事件的发生流程可以分为捕获阶段、触发阶段以及冒泡阶段。</span>
+</p>
+
+
+<ol>
+<li>捕获阶段: 事件根据 DOM 树结构从最上层节点向下传播，直到绑定该事件节点为止。</li>
+<li>触发阶段: 事件发生，执行对应的处理函数的逻辑代码。</li>
+<li>冒泡阶段: 事件根据 DOM 树结构从绑定事件节点向上传播。</li>
+</ol>
+
+<p class="md_block">
+    <span class="md_line">通过以下代码示例，我们可以测试事件的捕获阶段:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>事件周期<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nn">#d1</span><span class="o">,</span> <span class="nn">#d2</span><span class="o">,</span> <span class="nn">#d3</span> <span class="p">{</span>
+                <span class="nb">cursor</span><span class="o">:</span> <span class="nb">pointer</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nn">#d1</span> <span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+                <span class="nb">position</span><span class="o">:</span> <span class="nb">relative</span><span class="p">;</span>
+                <span class="nb">background</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nn">#d2</span> <span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nb">margin</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+                <span class="nb">position</span><span class="o">:</span> <span class="nb">absolute</span><span class="p">;</span>
+                <span class="nb">background</span><span class="o">:</span> <span class="nb">lightgreen</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nn">#d3</span> <span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">margin</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+                <span class="nb">background</span><span class="o">:</span> <span class="nb">lightcoral</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d3&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果 addEventListener() 方法的第三个参数值为 true，表示捕获阶段:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">divs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">divs</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">divs</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+    <span class="p">},</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果 addEventListener() 方法的第三个参数值为 false，表示冒泡阶段:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">divs</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">divs</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">divs</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+    <span class="p">},</span><span class="kc">false</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> IE 8 及之前版本的浏览器不支持捕获阶段。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_14">3.1 事件冒泡</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">如果在上述示例中的冒泡阶段，我们可以看到事件会从最底层节点向上传播。如果只想触发当前节点的事件，而不继续向上冒泡，我们可以通过 Event 事件对象提供的属性来完成:</span>
+</p>
+
+
+<ul>
+<li>IE 8 及之前版本的浏览器: cancelBubble 属性</li>
+<li>IE 9 及之后版本和其他浏览器: stopPropagation() 方法</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">想要提供兼容方案，可以使用如下代码实现:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">){</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="nx">event</span><span class="p">.</span><span class="nx">cancelBubble</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_15">4. 事件委托</h1>
+
+<p class="md_block">
+    <span class="md_line">在讨论什么是事件委托之前，我们先来看一个示例:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;btn&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;</span>添加<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;parent&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;list-group-item&quot;</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>链接<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们为上述页面的 <code>&lt;a&gt;</code> 标签绑定 onclick 事件:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">allA</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="nx">allA</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="nx">allA</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;我是一个链接.&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当动态为 <code>&lt;ul&gt;</code> 标签添加子标签 <code>&lt;li&gt;</code> 时，如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn&#39;</span><span class="p">);</span>
+<span class="nx">btn</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">ul</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;parent&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">li</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
+    <span class="nx">li</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;class&#39;</span><span class="p">,</span><span class="s1">&#39;list-group-item&#39;</span><span class="p">);</span>
+    <span class="nx">li</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;&lt;a href=&quot;#&quot;&gt;链接&lt;/a&gt;&#39;</span><span class="p">;</span>
+    <span class="nx">ul</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">li</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">我们会发现，新添加的选项的 <code>&lt;a&gt;</code> 标签并没有 onclick 事件。如果我们想为新添加的 <code>&lt;a&gt;</code> 标签同样绑定 onclick 事件，需要在添加之前就完成事件绑定。<br /></span>
+    <span class="md_line">除了上述方式可以解决这个问题之外，我们还可以将事件绑定到所有 <code>&lt;a&gt;</code> 标签共有的祖先元素上。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">ul</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">nodeName</span> <span class="o">===</span> <span class="s1">&#39;A&#39;</span><span class="p">){</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;我是一个链接.&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">这种将事件绑定其祖先元素的方式，我们可以称之为事件委托。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Advertise Version="1.0">
+	<Support
+	language="chinese"
+	/>
+	<Item
+	FileName="福昕PDF套件.bmp"
+	URL="http://www.fuxinsoftware.com.cn/products/phantomPDF"
+	Tip="新增OCR文本识别和PDF对比等，功能更强大！"
+	/>
+	<Item
+	FileName="Joyinker1.bmp"
+	URL="http://www.joyinker.com/?prod_id=5001"
+	Tip="设计，印刷，送货一站到位！"
+	/>
+	<Item
+	FileName="Joyinker2.bmp"
+	URL="www.joyinker.com/?prod_id=5002"
+	Tip="佳印网感恩回馈，名片谢卡双面印刷满5盒免运费"
+	/>
+</Advertise>

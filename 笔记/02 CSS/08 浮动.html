@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>浮动</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="selected">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 浮动 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 什么是浮动</h1>
+
+<p class="md_block">
+    <span class="md_line">CSS 的 Float（浮动），会使元素脱离文档流，向左或向右移动。其他元素会被重新排列。<br /></span>
+    <span class="md_line">Float（浮动），往往是用于图像，但它在布局时一样非常有用。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>none</td>
+<td>默认值。元素不浮动。</td>
+</tr>
+<tr>
+<td>left</td>
+<td>元素向左浮动。</td>
+</tr>
+<tr>
+<td>right</td>
+<td>元素向右浮动。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">设置元素浮动效果时，以下四种情况比较特殊。</span>
+</p>
+
+
+<h4 id="toc_1">1.1 子元素只能在父元素的区域中进行浮动（子元素浮动不能超出父元素的范围）。</h4>
+
+<p class="md_block">
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签为父子元素，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当为子元素 <code>&lt;div&gt;</code> 标签设置 float 属性值为 right 时，该 <code>&lt;div&gt;</code> 为浮动效果。</span>
+</p>
+
+
+<h4 id="toc_2">1.2 兄弟元素同时设置相同浮动效果时，会进行自动排列。</h4>
+
+<p class="md_block">
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签为兄弟元素，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">当同时为两个 <code>&lt;div&gt;</code> 标签设置 float 属性值为 left 时，这两个 <code>&lt;div&gt;</code> 为浮动效果。</span>
+</p>
+
+
+<h4 id="toc_3">2.3 如果兄弟元素中，前一个兄弟元素没有设置浮动，而后一个兄弟元素设置浮动的话，后一个兄弟元素的浮动不能超过前一个兄弟元素。</h4>
+
+<p class="md_block">
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签为兄弟元素，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">当为第二个 <code>&lt;div&gt;</code> 标签设置 float 属性值为 right 时，该 <code>&lt;div&gt;</code> 为浮动效果。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 所有浮动元素的层级要高于文档流中的元素的层级。但文字是个例外，文字不会被浮动元素所覆盖，而是环绕在浮动元素的周围。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_4">2. 块级元素浮动</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">块级元素设置浮动之后，会从文档流中脱离，并且具有以下特点:</span>
+</p>
+
+
+<ul>
+<li>块级元素不会独占 HTML 页面的一行。换句话讲，多个块级元素可以处在一行。</li>
+<li>块级元素的宽度和高度等于所有后代元素的总和。</li>
+</ul>
+
+<h1 id="toc_5">3. 内联元素浮动</h1>
+
+<p class="md_block">
+    <span class="md_line">内联元素设置浮动之后，也会从文档流中脱离，并且会呈现块级元素的效果。特点也与设置浮动的块级元素相同。</span>
+</p>
+
+
+<h1 id="toc_6">4. 清除浮动</h1>
+
+<p class="md_block">
+    <span class="md_line">clear 属性指定元素的左侧或右侧不允许浮动的元素。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>none</td>
+<td>默认值。允许浮动元素出现在两侧。</td>
+</tr>
+<tr>
+<td>left</td>
+<td>在左侧不允许浮动元素。</td>
+</tr>
+<tr>
+<td>right</td>
+<td>在右侧不允许浮动元素。</td>
+</tr>
+<tr>
+<td>both</td>
+<td>在左右两侧均不允许浮动元素。</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_7">5. 高度塌陷</h1>
+
+<p class="md_block">
+    <span class="md_line">在 HTML 页面中定义两个 <code>&lt;div&gt;</code> 标签为父子元素，并设置 CSS 样式，具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="nn">#d1</span> <span class="p">{</span>
+        <span class="nb">border</span><span class="o">:</span> <span class="m">10px</span> <span class="nb">black</span> <span class="nb">solid</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">lightskyblue</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nn">#d2</span> <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+        <span class="nb">background-color</span><span class="o">:</span> <span class="nb">green</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d1&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;d2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">为作为子元素 <code>&lt;div&gt;</code> 设置 float 属性值为 left 时，该 <code>&lt;div&gt;</code> 为浮动效果。<br /></span>
+    <span class="md_line">由于并没有为作为父元素的 <code>&lt;div&gt;</code> 设置高度，作为父元素的 <code>&lt;div&gt;</code> 实际的高度与作为子元素的 <code>&lt;div&gt;</code> 的高度相等。<br /></span>
+    <span class="md_line">但作为子元素的 <code>&lt;div&gt;</code> 设置浮动后，脱离了文档流，导致作为父元素的 <code>&lt;div&gt;</code> 没有了高度。<br /></span>
+    <span class="md_line">现在所看到的效果，就被称为<strong>高度塌陷</strong>。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line">所谓<strong>高度塌陷</strong>，就是指在没有为父元素设置指定高度，并且设置子元素为浮动时，父元素的高度丢失的情况。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">高度塌陷的问题，可以通过 BFC（Block Formatting Context）块级格式化环境进行解决。</span>
+</p>
+
+
+<h1 id="toc_8">6. BFC 块级格式化环境</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">BFC（Block Formatting Context）是元素的隐含属性。默认情况下 BFC 是关闭的，当元素开启 BFC 以后，将会具有如下特性:</span>
+</p>
+
+
+<ul>
+<li>文档流中的元素不会被设置为浮动的元素所覆盖。</li>
+<li>子元素的垂直方向的外边距不会传递给父元素。</li>
+<li>元素可以包含浮动的子元素。</li>
+</ul>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">当然，并不能直接去开启 BFC，而需要使用一些特殊的样式来间接的打开元素的 BFC。</span>
+</p>
+
+
+<ul>
+<li>设置元素为浮动（float）</li>
+<li>设置元素的 display 为 inline-block</li>
+<li>设置元素为绝对定位（后面的内容）</li>
+<li>将元素的 overflow 设置为一个非 visible 的值（一般设置为 hidden）</li>
+<li>在所有子元素的最后新增一个子元素，并设置 clear 属性值为 both</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 开启 BFC 都会有一些副作用，需要选择一些副作用小的方式。</span>
+</p>
+
+</blockquote> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

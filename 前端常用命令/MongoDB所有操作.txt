@@ -1,0 +1,250 @@
+1.下载
+2.安装
+3.需要将MongoDB的bin目录，添加到环境变量path下
+	C:\Program Files\MongoDB\Server\3.2\bin
+4.在C盘根目录，创建一个文件夹
+		data/db
+5.进入命令行工具，输入mongod来启动数据库服务器	
+		注意：32位系统第一次启动时，需要输入如下指令
+			mongod --storageEngine=mmapv1
+6.打开新的命令行窗口，输入mongo来进入客户端
+	
+	
+	
+MongoDB默认的端口号 27017
+	-port 端口号 65535
+	--dbpath 指定数据库的目录 
+
+
+服务器
+	- 安装服务器对数据库中的数据做存储
+	
+客户端
+	- 通过客户端访问服务器进而操作服务器中的数据
+	
+- 将MongoDB添加为windows系统服务
+	1.在C盘根目录创建如下文件夹
+		data/db
+		data/log
+	2.在MongoDB的安装目录创建一个配置文件 *****
+		mongod.cfg
+	3.以管理员的身份打开命令行窗口	
+	4.执行以下指令 *****
+		sc.exe create MongoDB binPath= "\"C:\Program Files\MongoDB\Server\3.2\bin\mongod.exe\" --service --config=\"C:\Program Files\MongoDB\Server\3.2\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+		
+		
+		sc.exe create MongoDB binPath= "\"mongodb的bin目录\mongod.exe\" --service --config=\"mongodb的安装目录\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+		
+	5.启动MongoDB服务	
+	
+	6.如果启动失败：
+		在命令行窗口输入如下指令：sc delete MongoDB , 并关闭服务管理的窗口
+	
+	7.重复1	
+	
+	
+- 基本的概念
+		数据库（database）
+			- 一个服务器中可以有多个数据库，数据库用来存放集合
+		
+		集合（collection）
+			- 一个数据库中可以有多个集合，集合用来存放文档
+			
+		文档（document）
+			- 一个集合中可以有多个文档，文档就是我们要操作的数据
+			- 文档实际上就是一个JSON，也可以说是一个增强版的json，叫做BSON
+			
+		- 默认情况下不需要创建数据库和集合，
+			当我们向集合中第一次插入文档时，集合和数据库会自动创建
+			
+			
+- 基本的操作：
+		show dbs / databases	
+			- 显示当前的所有数据库
+			
+		use 数据库名
+			- 进入到指定的数据库
+			
+		db	
+			- 变量，表示当前所在的数据库的对象
+			
+		show collections
+			- 显示当前数据库中的所有集合
+			
+		db.collection.insert(doc(s))
+			- 向集合中插入文档
+			- db.stus.insert({name:"sunwukong",age:18})
+			
+		db.collection.find();
+			- 查询集合中的文档
+
+
+
+
+
+
+/*
+	向数据库中插入文档
+		- db.collection.insert(doc(s))
+			- 向集合中插入一个或多个文档
+			- 在插入文档时，如果不为文档添加_id属性，则MongoDB会自动生成一个_id属性，
+				它就是通过ObjectId()来生成的，它的作用就是来确保文档的唯一性
+			- 如果我们自己指定一个_id，则此时MongoDB不会自动为我们添加，
+				但是注意自己指定的id也需要确保其唯一性，尽量不要自己指定_id
+				
+		- db.collection.insertOne(doc)
+			- 向集合中插入一个文档
+		
+		- db.collection.insertMany(docs)	
+			- 向集合中插入多个文档	
+*/
+db.stus.find();
+
+db.stus.insert({name:"沙和尚",age:38});
+
+db.stus.insert([
+	{name:"唐僧",age:16},
+	{name:"白骨精",age:18},
+	{name:"蜘蛛精",age:16}
+]);
+
+
+db.stus.insert({
+	_id:"hello",
+	name:"牛魔王",
+	age:88
+});
+
+ObjectId();
+
+/*
+	查询文档
+		- db.collection.find(查询条件);
+			- find()用于查询集合中所有符合条件的文档，如果不传条件，则会查询所有文档
+			- 需要使用一个js对象作为查询条件
+			- find()返回的结果是一个数组，无论查询到结果有几个都是数组
+			
+		- db.collection.findOne(查询条件);
+			- 查询符合条件的第一个文档，该方法总会返回一个文档对象	
+			
+		- db.collection.count(查询条件)
+			- 查询符合条件的文档的数量	
+*/
+db.stus.find({age:16});
+db.stus.find({name:"sunwukong"})[0].name;
+db.stus.find({name:"唐僧",age:16});
+
+db.stus.findOne().name;
+
+db.stus.count({name:"sunwukong"});
+
+
+
+
+
+
+/*
+	修改文档
+		- db.collection.update(查询条件,新的文档)
+			- 用来修改(替换)一个或多个文档
+			- 如果不使用修改器（修改操作符），则会使用新的文档去替换旧文档
+			- 修改器的语法：
+				<update operator>: { <field1>: <value1>, ... },
+				- 修改器使用$开头 ：
+					$set 设置一个文档中的指定属性
+			- update()默认情况下只会修改第一个符合条件的文档，
+				如果需要修改多个,则可以通过配置对象来设置multi为true即可	
+				
+		- db.collection.updateOne()
+			- 修改一个
+		- db.collection.updateMany()
+			- 修改多个
+		- db.collection.replaceOne()	
+			- 替换一个		
+*/
+db.stus.find();
+
+db.stus.update({name:"sunwukong"},{age:17})
+db.stus.update({age:17},{$set:{name:"孙悟空"}});
+db.stus.update({age:16},{$set:{age:17}},{multi:true});
+
+
+
+
+
+
+
+/*
+	- 所有的删除操作，都要慎用
+	
+	db.colletion.remove(查询条件)
+		- 从集合中删除一个或多个文档（默认多个）
+		- 如果希望删除第一个，则可以在第二个参数传递一个true
+		- 使用remove()传递一个空对象作为条件，会清空集合中的文档
+		
+	db.collection.deleteOne()
+		- 删除符合条件的第一个文档
+	
+	db.collection.deleteMany()	
+		- 删除符合条件的所有文档
+	
+	db.collection.drop()
+		- 删除集合
+		- 如果集合是数据库中唯一的集合，则会连同数据库一起删除
+	
+	db.dropDatabase();
+		- 删除整个数据库	
+*/
+	
+
+db.stus.find()
+
+db.stus.remove({});
+
+show collections;
+
+db.stus.drop();
+
+show dbs;
+
+db.dropDatabase();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	

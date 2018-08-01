@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>语句</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="selected">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 语句 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 语句</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">在 JavaScript 中，语句使用分号（;）进行分隔。可以在每行编写一条语句，也可以在每行编写多条语句。<br /></span>
+    <span class="md_line">分类:</span>
+</p>
+
+
+<ul>
+<li>条件语句: JavaScript 解释器根据一个值判断是执行还是跳过指定语句。</li>
+<li>循环语句: JavaScript 解释器根据一个值判断是否重复执行指定语句。</li>
+<li>跳转语句: 使 JavaScript 解释器跳转到指定语句。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> <br /></span>
+    <span class="md_line">- 建议每行编写一条语句，便于提高代码的阅读性。<br /></span>
+    <span class="md_line">- JavaScript解释器按照语句的编写顺序依次执行。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_1">1.1 语句块</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 中使用一对花括号（{}）表示一个语句块。使用语句块为语句进行分组，这样使语句的结构清晰明了。如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">arguigu</span> <span class="o">=</span> <span class="s2">&quot;arguigu&quot;</span><span class="p">;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arguigu</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- 语句块的结尾不需要分号。<br /></span>
+    <span class="md_line">- 语句块中的行都有缩进，但并不是必需的。<br /></span>
+    <span class="md_line">- 语句中声明变量是全局变量（后面的课程学习）。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_2">1.2 空语句</h2>
+
+<p class="md_block">
+    <span class="md_line">空语句允许包含 0 条语句，JavaScript 解释器执行空语句时，不会执行任何动作。空语句如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 如果有特殊目的使用空语句时，最好在代码中添加注释。这样可以更好地说明这条空语句是有用的。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_3">1.3 流程控制语句</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 解释器按照语句的编写顺序依次执行，但也可以编写一些复杂的语句块，基本分为下述三种:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/02-2.png';this.onerror=null;"  class="" src="imgs/02-2.png" alt="" title="" ></span>
+</p>
+
+
+<h1 id="toc_4">2. 条件语句</h1>
+
+<p class="md_block">
+    <span class="md_line">条件语句就是指通过判断指定的计算结果，来决定是执行还是跳过指定的语句块。<br /></span>
+    <span class="md_line">如果说 JavaScript 解释器是按照代码的“路径”执行的话，那条件语句就是这条路径上的分叉点，代码执行到这里时必须选择其中一条路径继续执行。<br /></span>
+    <span class="md_line">JavaScript 提供了两种条件语句：if else 语句和 switch case 语句。</span>
+</p>
+
+
+<h2 id="toc_5">2.1 if 语句</h2>
+
+<p class="md_block">
+    <span class="md_line">if 语句是条件判断语句，也是最基本的流程控制语句。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/03.png';this.onerror=null;"  class="" src="imgs/03.png" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span> <span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">num</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- if 关键字后面的小括号不能被省略。<br /></span>
+    <span class="md_line">- if 关键字后面的条件判断的结果必须是布尔值。如果结果为非布尔值的话，JavaScript 会自动转换为布尔值。<br /></span>
+    <span class="md_line">- if 语句中的大括号（{}）可以被省略，但建议编写，以提高代码阅读性。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_6">2.2 if else 语句</h2>
+
+<p class="md_block">
+    <span class="md_line">if else 语句是条件判断语句，但与 if 语句的执行流程并不相同。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/04.png';this.onerror=null;"  class="" src="imgs/04.png" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">score</span> <span class="o">=</span> <span class="mi">68</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span> <span class="nx">score</span> <span class="o">&lt;</span> <span class="mi">60</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;不及格&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;及格&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> if else 语句中的大括号（{}）可以被省略，但建议编写，以提高代码阅读性。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_7">2.3 if else 语句嵌套</h2>
+
+<p class="md_block">
+    <span class="md_line">if else 语句支持嵌套写法，也就是说，可以在 if 或 else 后面的语句块中继续编写 if else 语句。如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">score</span> <span class="o">=</span> <span class="mi">68</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span> <span class="nx">score</span> <span class="o">&gt;</span> <span class="mi">90</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;优秀&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nx">score</span> <span class="o">&gt;=</span> <span class="mi">80</span> <span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;良好&quot;</span><span class="p">);</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;一般&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_8">2.4 else if 语句</h2>
+
+<p class="md_block">
+    <span class="md_line">else if 语句是在 if 语句的基础上，允许提供多个条件判断。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/05.png';this.onerror=null;"  class="" src="imgs/05.png" alt="" title="" ><br /></span>
+    <span class="md_line">else if 语句实际上就是简化了的 if else 语句的嵌套写法。如下述代码:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/06.png';this.onerror=null;"  class="" src="imgs/06.png" alt="" title="" ></span>
+</p>
+
+
+<h1 id="toc_9">2.5 switch case 语句</h1>
+
+<p class="md_block">
+    <span class="md_line">switch case 语句是开关语句，但整体执行流程要比 if else 语句复杂的多。具体参考下述流程图:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/07.png';this.onerror=null;"  class="" src="imgs/07.png" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">switch</span><span class="p">(</span> <span class="nx">num</span> <span class="p">){</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;查询余额&quot;</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;在线充值&quot;</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="k">default</span><span class="o">:</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;转人工服务&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 在实际开发中，switch case 语句与 break 语句同时使用。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">switch case 语句相对于 if else 语句执行性能更优，但也有很多需要注意的地方。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- switch 关键字后面的小括号、case 关键字后面的冒号都不能被省略的。<br /></span>
+    <span class="md_line">- default 关键字只能出现在 switch case 语句的最后面（default 关键字后面不能再出现 case 关键字）。<br /></span>
+    <span class="md_line">- break 语句是跳出语句，一旦被执行，表示后面所有的 case 和 default 语句都不会被执行。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_10">3. 循环语句</h1>
+
+<p class="md_block">
+    <span class="md_line">循环语句是一系列反复执行到复合特定条件的语句。为了更好地理解循环语句，可以将 JavaScript 代码想象成一条条的分支路径。循环语句就是代码路径中的一个回路，可以让一段代码重复执行。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/01-3.png';this.onerror=null;"  class="" src="imgs/01-3.png" alt="" title="" ></span>
+</p>
+
+
+<h2 id="toc_11">3.1 while 语句</h2>
+
+<p class="md_block">
+    <span class="md_line">while 语句是一个基本循环语句，语法结构与 if 语句很类似。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/02-3.png';this.onerror=null;"  class="" src="imgs/02-3.png" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span> <span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">num</span> <span class="p">);</span>
+    <span class="nx">num</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- while 关键字后面的小括号不能被省略。<br /></span>
+    <span class="md_line">- while 关键字后面的条件判断的结果必须是布尔值。如果结果为非布尔值的话，JavaScript 会自动转换为布尔值。<br /></span>
+    <span class="md_line">- while 语句中的大括号（{}）可以被省略，但建议编写，以提高代码阅读性。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_12">3.2 do while 语句</h2>
+
+<p class="md_block">
+    <span class="md_line">do while 语句也是一个基本循环语句，执行流程与 while 语句很类似。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/03-2.png';this.onerror=null;"  class="" src="imgs/03-2.png" alt="" title="" ></span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">do</span><span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">num</span> <span class="p">);</span>
+    <span class="nx">num</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span><span class="k">while</span><span class="p">(</span> <span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- while 关键字后面的小括号不能被省略。<br /></span>
+    <span class="md_line">- while 关键字后面的条件判断的结果必须是布尔值。如果结果为非布尔值的话，JavaScript 会自动转换为布尔值。<br /></span>
+    <span class="md_line">- do while语句中的大括号（{}）可以被省略，但建议编写，以提高代码阅读性。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_13">3.3 do while 与 while 语句的区别</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">do while 语句与 while 语句的差别极小:</span>
+</p>
+
+
+<ul>
+<li>do while 语句: 先执行，再判断。</li>
+<li>while 语句: 先判断，再执行。</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">当 while 关键字后面的条件第一次被执行的时候，如果返回结果是 false 的话：while 语句的语句块一次都不会被执行；而 do while 语句的语句块至少被执行一次。</span>
+</p>
+
+
+<h2 id="toc_14">3.4 for 语句</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">for语句是一种最简洁的循环语句，其中包含三个重要部分:</span>
+</p>
+
+
+<ul>
+<li>初始化表达式: 初始化一个计数器，在循环开始前计算初始状态。</li>
+<li>条件判断表达式: 判断给定的状态是否为true。如果条件为true，则执行语句块，否则跳出循环。</li>
+<li>循环操作表达式: 改变循环条件，修改计数器的值。</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">for 语句的语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">if</span><span class="p">(</span> <span class="nx">初始化表达式</span><span class="p">;</span> <span class="nx">条件判断表达式</span><span class="p">;</span> <span class="nx">循环操作表达式</span> <span class="p">){</span>
+    <span class="nx">语句块</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end--><img onerror="this.src='../../03 ECMASCRIPT/imgs/04-2.png';this.onerror=null;"  class="" src="imgs/04-2.png" alt="" title="" >
+<h2 id="toc_15">3.5 for 语句的特殊用法</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">for 语句的三个表达式都是允许为空的。</span>
+</p>
+
+
+<ul>
+<li>初始化表达式为空的情况:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">初始化表达式</span>
+<span class="k">if</span><span class="p">(</span> <span class="p">;</span> <span class="nx">条件判断表达式</span><span class="p">;</span> <span class="nx">循环操作表达式</span> <span class="p">){</span>
+    <span class="nx">语句块</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>循环操作表达式为空的情况:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="nx">初始化表达式</span><span class="p">;</span> <span class="nx">条件判断表达式</span><span class="p">;</span> <span class="p">){</span>
+    <span class="nx">语句块</span>
+    <span class="nx">循环操作表达式</span> 
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_16">3.6 循环嵌套</h2>
+
+<p class="md_block">
+    <span class="md_line">循环嵌套就是在一个循环语句中包含另一个循环语句。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+    <span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;=</span> <span class="nx">i</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span> <span class="p">){</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span> <span class="o">+</span> <span class="nx">j</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">i</span><span class="o">*</span><span class="nx">j</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> JavaScript 中对循环嵌套的层级没有任何限制。但一般建议循环嵌套三层，不然执行的性能会下降。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_17">4. 跳转语句</h1>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 中另一种语句就是跳转语句。从名称就可以看出，它使得 JavaScript 代码的执行可以从一个位置到另一个位置。<br /></span>
+    <span class="md_line">跳转语句提供了 break 和 continue 两种，用于跳转当前的循环或开始下一次的循环等。</span>
+</p>
+
+
+<h2 id="toc_18">4.1 break 语句</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">break 语句是中断语句，用于终止循环语句或开关语句。</span>
+</p>
+
+
+<ul>
+<li>终止循环语句，例如 while、do while 以及 for 语句等。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nx">i</span> <span class="o">==</span> <span class="mi">5</span> <span class="p">){</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">i</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>终止开关语句（switch case），具体内容参考《switch case语句》一章。</li>
+</ul>
+
+<h2 id="toc_19">4.2 continue 语句</h2>
+
+<p class="md_block">
+    <span class="md_line">continue 语句是连续语句，用于重新开始 while、do while 和 for 语句。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="k">for</span><span class="p">(</span> <span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span> <span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nx">i</span> <span class="o">==</span> <span class="mi">5</span> <span class="p">){</span>
+        <span class="k">continue</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">i</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述代码的执行结果为 1 2 3 4 6 7 8 9。当 i 等于 5 时，结束本次循环，开始下一次的循环执行。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

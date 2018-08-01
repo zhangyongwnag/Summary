@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>函数</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="selected">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 函数 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 函数</h1>
+
+<p class="md_block">
+    <span class="md_line">函数是这样的一段 JavaScript 代码，它只定义一次，但可能被执行或调用多次。<br /></span>
+    <span class="md_line">简单来说，函数就是一组可重用的代码，你可以在你程序的任何地方调用他。<br /></span>
+    <span class="md_line">例如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;this is function&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_1">2. 函数定义</h1>
+
+<p class="md_block">
+    <span class="md_line">定义函数有两种方式:</span>
+</p>
+
+
+<h2 id="toc_2">2.1 函数声明方式</h2>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;this is function&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">2.2 字面量方式</h2>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="nx">fnction</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;this is function&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_4">3. 函数调用</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">定义一个函数并不会自动的执行它。定义了函数仅仅是赋予函数以名称并明确函数被调用时该做些什么。调用函数才会真正执行这些动作。</span>
+</p>
+
+
+<ul>
+<li>定义一个函数fn:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;this is function&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>调用函数fn:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">fn</span><span class="p">();</span><span class="c1">// 输出字符串 this is function</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_5">4. 函数参数</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">函数的参数就相当于在函数中使用的变量（虽然这个比方不是很准确）。JavaScript 中的函数定义并未制定函数参数的类型，函数调用时也未对传入的参数做任何的类型检查。<br /></span>
+    <span class="md_line">函数的参数可以分为以下两种:</span>
+</p>
+
+
+<ul>
+<li>形参: 出现在函数定义文法中的参数列表是函数的形式参数，简称形参 。简单来说，就是定义函数时使用的参数就是形参。</li>
+<li>实参: 函数调用时实际传入的参数是函数的实际参数，简称实参。 简单来说，就是调用函数时使用的参数就是实参。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 一般情况下，形参与实参的个数是相同的。但在 JavaScript 中并不强求这一点，在特殊情况下，函数的形参和实参的个数可以不相同。 </span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(</span> <span class="nx">one</span><span class="p">,</span> <span class="nx">two</span> <span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">one</span> <span class="o">+</span> <span class="nx">two</span> <span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">fn</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">);</span><span class="c1">// 输出 3</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述代码中，定义函数 fn 时，one 和 two 就是函数的形参；调用函数 fn 时，1 和 2 就是函数的实参。</span>
+</p>
+
+
+<h1 id="toc_6">5. return 语句</h1>
+
+<p class="md_block">
+    <span class="md_line">函数还可以包含一个返回语句（return）。当然，这并不是必需的。return 语句使函数可以作为一个值来使用。具体用法如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">){</span>
+    <span class="k">return</span> <span class="s2">&quot;hello&quot;</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 变量 fun 的值为 hello atguigu</span>
+<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="nx">fn</span><span class="p">(</span><span class="s2">&quot;atguigu&quot;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> return 默认情况下返回的是 undefined。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_7">6. 预定义函数</h1>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 预定义了一组函数，又称为全局函数，允许直接使用。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>eval( )</td>
+<td>对一串字符串形式的JavaScript代码字符求值。</td>
+</tr>
+<tr>
+<td>uneval( )</td>
+<td>创建的一个Object的源代码的字符串表示。</td>
+</tr>
+<tr>
+<td>isFinite( )</td>
+<td>判断传入的值是否是有限的数值。</td>
+</tr>
+<tr>
+<td>isNaN( )</td>
+<td>判断一个值是否不是数字值。</td>
+</tr>
+<tr>
+<td>parseInt( )</td>
+<td>解析字符串参数，并返回指定的整数。</td>
+</tr>
+<tr>
+<td>parseFloat( )</td>
+<td>解析字符串参数，并返回一个浮点数。</td>
+</tr>
+<tr>
+<td>decodeURI( )</td>
+<td>对已编码的统一资源标识符(URI)进行解码，并返回其非编码形式。</td>
+</tr>
+<tr>
+<td>encodeURI( )</td>
+<td>对统一资源标识符(URI)进行编码，并返回编码后的URI字符串。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_8">6.1 eval( )函数</h2>
+
+<p class="md_block">
+    <span class="md_line">eval() 函数用于执行以字符串（String）形式出现的 JavaScript 代码。此函数可以实现动态的执行 JavaScript 代码。具体用法如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 定义一个字符串，内容为JavaScript代码</span>
+<span class="kd">var</span> <span class="nx">js</span> <span class="o">=</span> <span class="s2">&quot;console.log(&#39;this is javascript&#39;)&quot;</span><span class="p">;</span>
+
+<span class="c1">// 通过 eval()函数执行上述内容</span>
+<span class="nb">eval</span><span class="p">(</span><span class="nx">js</span><span class="p">);</span><span class="c1">// 输出 this is javascript</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_9">6.2 字符编码与解码</h2>
+
+<p class="md_block">
+    <span class="md_line">encodeURI() 函数可把字符串作为 URI 进行编码。对以下在 URI 中具有特殊含义的 ASCII 标点符号，encodeURI() 函数是不会进行转义的:</span>
+</p>
+
+
+<pre><code>, / ? : @ &amp; = + $ # </code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">decodeURI() 函数可对 encodeURI() 函数编码过的 URI 进行解码。<br /></span>
+    <span class="md_line">decodeURI() 函数和 encodeURI() 函数的具体用法如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">uri</span> <span class="o">=</span> <span class="s2">&quot;http://www.atguigu.com/Web前端开发工程师&quot;</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">encode</span> <span class="o">=</span> <span class="nb">encodeURI</span><span class="p">(</span> <span class="nx">uri</span> <span class="p">);</span>
+<span class="c1">// 输出 http://www.atguigu.com/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">encode</span> <span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">decode</span> <span class="o">=</span> <span class="nb">decodeURI</span><span class="p">(</span> <span class="nx">encode</span> <span class="p">);</span>
+<span class="c1">// 输出 http://www.atguigu.com/Web前端开发工程师</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">decode</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">对以下在 URI 中具有特殊含义的 ASCII 标点符号，可以使用 encodeURIComponent() 函数和decodeURIComponent() 函数。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">uri</span> <span class="o">=</span> <span class="s2">&quot;http://www.atguigu.com/font-end-developer&quot;</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">encode</span> <span class="o">=</span> <span class="nb">encodeURIComponent</span><span class="p">(</span> <span class="nx">uri</span> <span class="p">);</span>
+<span class="c1">// 输出 http%3A%2F%2F www.atguigu.com%2Ffont-end-developer</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">encode</span> <span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">decode</span> <span class="o">=</span> <span class="nb">decodeURIComponent</span><span class="p">(</span> <span class="nx">encode</span> <span class="p">);</span>
+<span class="c1">// 输出 http://www.atguigu.com/font-end-developer</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">decode</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

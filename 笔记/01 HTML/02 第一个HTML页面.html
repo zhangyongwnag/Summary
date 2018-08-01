@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>第一个HTML页面</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="selected">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 第一个HTML页面 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 示例代码</h1>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>helloworld.html<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="c">&lt;!-- 这是第一个页面 helloworld --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">&gt;</span>hello world!<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">示例代码说明:</span>
+</p>
+
+
+<ul>
+<li>html 标签: 定义 HTML 文档，HTML 文档的根标签。</li>
+<li>head 标签: 定义关于文档的基本信息。</li>
+<li>body 标签: 定义文档的主体，运行 HTML 文档时显示的内容。</li>
+<li>title 标签: 定义文档的标题。在运行网页时，页面顶端显示的内容。</li>
+<li>font 标签: 定义文字的字体、尺寸和颜色。</li>
+</ul>
+
+<h2 id="toc_1">1.1 HTML文档</h2>
+
+<pre><code>HTML文档 = 网页</code></pre>
+
+<!--block_code_end-->
+<ul>
+<li>HTML文档描述网页</li>
+<li>HTML文档包含HTML标签和纯文本</li>
+<li>HTML文档也被称为网页</li>
+<li>HTML文档文件的后缀名为“.html”和“.htm”，两种后缀名没有任何区别</li>
+</ul>
+
+<h1 id="toc_2">2. &lt;!DOCTYPE&gt; 声明</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">&lt;!DOCTYPE&gt; 声明有助于浏览器中正确显示网页。网络上有很多不同的文件，如果能够正确声明 HTML 的版本，浏览器就能正确显示网页内容。</span>
+</p>
+
+
+<ul>
+<li>&lt;!DOCTYPE&gt; 声明位于文档中的最前面的位置，处于 <html> 标签之前。</li>
+<li>&lt;!DOCTYPE&gt; 声明不是一个 HTML 标签；它是用来告知 Web 浏览器页面使用了哪种 HTML 版本。</li>
+<li>总是给您的 HTML 文档添加 &lt;!DOCTYPE&gt; 声明，确保浏览器能够预先知道文档类型。</li>
+</ul>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">各个HTML版本的&lt;!DOCTYPE&gt; 声明应如何书写:</span>
+</p>
+
+
+<ul>
+<li>HTML 5</li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>
+<p class="md_block">
+    <span class="md_line">HTML 4.01 Strict</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">这个 DTD 包含所有 HTML 元素和属性，但不包括表象或过时的元素（如 font ）。框架集是不允许的。</span>
+</p></li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>
+<p class="md_block">
+    <span class="md_line">HTML 4.01 Transitional</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">这个 DTD 包含所有 HTML 元素和属性，包括表象或过时的元素（如 font ）。框架集是不允许的。</span>
+</p></li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>
+<p class="md_block">
+    <span class="md_line">HTML 4.01 Frameset</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">这个 DTD 与 HTML 4.01 Transitional 相同，但是允许使用框架集内容。</span>
+</p></li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot; &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_3">3. HTML元素（标签）</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">HTML 标记标签通常被称为 HTML 标签，&quot;HTML 标签&quot; 和&quot;HTML 元素&quot; 通常都是描述同样的意思。（一个 HTML 元素包含了开始标签与结束标签）</span>
+</p>
+
+
+<ul>
+<li>HTML 标签是由尖括号包围的关键词，比如 <code>&lt;html&gt;</code></li>
+<li>HTML 标签通常是成对出现的，比如 <code>&lt;b&gt;</code> 和 <code>&lt;/b&gt;</code></li>
+<li>标签对中的第一个标签是开始标签，第二个标签是结束标签</li>
+<li>开始和结束标签也被称为开放标签和闭合标签</li>
+</ul>
+
+<h2 id="toc_4">3.1 不要忘记结束标签</h2>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">&gt;</span>hello world!
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>即使忘记了使用结束标签，大多数浏览器也会正确地显示 HTML。</li>
+<li>HTML 文档中，关闭标签是可选的。</li>
+<li>不要依赖这种做法。忘记使用结束标签会产生不可预料的结果或错误。</li>
+</ul>
+
+<h2 id="toc_5">3.2 HTML 空元素</h2>
+
+<ul>
+<li>没有内容的 HTML 元素被称为空元素。空元素是在开始标签中关闭的。</li>
+<li><code>&lt;br&gt;</code> 就是没有关闭标签的空元素（<code>&lt;br&gt;</code> 标签定义换行）。</li>
+<li>在 XHTML、XML 以及未来版本的 HTML 中，所有元素都必须被关闭。</li>
+<li>在开始标签中添加斜杠，比如 <code>&lt;br /&gt;</code>，是关闭空元素的正确方法，HTML、XHTML 和 XML 都接受这种方式。</li>
+<li>即使 <code>&lt;br&gt;</code> 在所有浏览器中都是有效的，但使用 <code>&lt;br /&gt;</code> 其实是更长远的保障。</li>
+</ul>
+
+<h2 id="toc_6">3.3 推荐使用小写标签</h2>
+
+<ul>
+<li>HTML 标签对大小写不敏感：<code>&lt;P&gt;</code> 等同于 <code>&lt;p&gt;</code>。许多网站都使用大写的 HTML 标签。</li>
+<li>万维网联盟（W3C）在 HTML 4 中推荐使用小写，而在未来 (X)HTML 版本中强制使用小写。</li>
+</ul>
+
+<h2 id="toc_7">3.4 HTML 基本结构</h2>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_8">4. HTML 头部</h1>
+
+<h2 id="toc_9">4.1 <code>&lt;head&gt;</code> 元素</h2>
+
+<p class="md_block">
+    <span class="md_line"><code>&lt;head&gt;</code> 元素包含了所有的头部标签元素。在 <code>&lt;head&gt;</code> 元素中你可以插入脚本（scripts）, 样式文件（CSS），及各种 meta 信息。<br /></span>
+    <span class="md_line">可以添加在头部区域的元素标签为: <code>&lt;title&gt;</code>, <code>&lt;style&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;noscript&gt;</code>, and <code>&lt;base&gt;</code>。</span>
+</p>
+
+
+<h2 id="toc_10">4.2 <code>&lt;title&gt;</code> 元素</h2>
+
+<p class="md_block">
+    <span class="md_line"><code>&lt;title&gt;</code> 标签定义了不同文档的标题。<code>&lt;title&gt;</code> 在 HTML/XHTML 文档中是必须的。</span>
+</p>
+
+
+<h2 id="toc_11">4.3 <code>&lt;base&gt;</code> 元素</h2>
+
+<p class="md_block">
+    <span class="md_line"><code>&lt;base&gt;</code> 标签描述了基本的链接地址/链接目标，该标签作为 HTML 文档中所有的链接标签的默认链接。</span>
+</p>
+
+
+<h2 id="toc_12">4.4 <code>&lt;link&gt;</code> 元素</h2>
+
+<p class="md_block">
+    <span class="md_line"><code>&lt;link&gt;</code> 标签定义了一个文档和外部资源之间的关系。</span>
+</p>
+
+
+<h2 id="toc_13">4.5 <code>&lt;style&gt;</code> 元素</h2>
+
+<p class="md_block">
+    <span class="md_line"><code>&lt;style&gt;</code> 标签定义了HTML文档的样式文件引用地址。</span>
+</p>
+
+
+<h2 id="toc_14">4.6 <code>&lt;meta&gt;</code> 元素</h2>
+
+<p class="md_block">
+    <span class="md_line">meta 标签描述了一些基本的元数据。<code>&lt;meta&gt;</code> 标签提供了元数据。元数据也不显示在页面上，但会被浏览器解析。<br /></span>
+    <span class="md_line">meta 元素通常用于指定网页的描述，关键词，文件的最后修改时间，作者，和其他元数据。元数据可以使用浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 Web 服务。</span>
+</p>
+
+
+<hr>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line md_line_dom_embed"><strong><code>&lt;meta&gt;</code> 标签使用实例</strong></span>
+</p>
+
+
+<ul>
+<li>为搜索引擎定义关键词:</li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;keywords&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;HTML, CSS, XML, XHTML, JavaScript&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>为网页定义描述内容:</li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;description&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;Free Web tutorials on HTML and CSS&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>定义网页作者:</li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;author&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;King&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>每30秒中刷新当前页:</li>
+</ul>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;refresh&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;30&quot;</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<hr>
+
+<h1 id="toc_15">5. HTML 属性</h1>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">&gt;</span>hello world!<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">属性是 HTML 元素提供的附加信息。</span>
+</p>
+
+
+<ul>
+<li>HTML 元素可以设置属性。</li>
+<li>属性可以在元素中添加附加信息。</li>
+<li>属性一般描述于开始标签。</li>
+<li>属性总是以名称/值对的形式出现，比如：name=&quot;value&quot;。</li>
+</ul>
+
+<h2 id="toc_16">5.1 HTML 属性常用引用属性值</h2>
+
+<ul>
+<li>属性值应该始终被包括在引号内。</li>
+<li>双引号是最常用的，不过使用单引号也没有问题。 在某些个别的情况下，比如属性值本身就含有双引号，那么必须使用单引号。</li>
+</ul>
+
+<h2 id="toc_17">5.2 推荐使用小写属性</h2>
+
+<ul>
+<li>属性和属性值对大小写不敏感。</li>
+<li>万维网联盟在其 HTML 4 推荐标准中推荐小写的属性/属性值。</li>
+<li>新版本的 (X)HTML 要求使用小写属性。</li>
+</ul>
+
+<h1 id="toc_18">6. HTML 注释</h1>
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="c">&lt;!-- 这是一个注释 --&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>开始括号之后（左边的括号）需要紧跟一个叹号，结束括号之前（右边的括号）不需要。</li>
+<li>浏览器会忽略注释，也不会显示它们。</li>
+<li>将注释插入 HTML 代码中，这样可以提高其可读性，使代码更易被人理解。</li>
+<li>合理地使用注释可以对未来的代码编辑工作产生帮助。</li>
+</ul> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+﻿<Reader>
+<Dialogs>
+<Dialog id="101" left="0" top="0" width="536" height="222">
+<dlgitem id="4294967295" text="Log" left="12" top="12" width="501" height="58"/>
+<dlgitem id="1061" text="创建RMS日志文件(&amp;C)" left="23" top="37" width="142" height="18"/>
+</Dialog>
+<Dialog id="102" text="查看权限" left="0" top="0" width="428" height="525">
+<dlgitem id="1004" text="查看：阅读文件" left="23" top="242" width="387" height="13"/>
+<dlgitem id="1005" text="播放多媒体：播放多媒体片段" left="23" top="281" width="387" height="13"/>
+<dlgitem id="1007" text="更改：更改页面内容或表单域" left="23" top="301" width="387" height="13"/>
+<dlgitem id="1008" text="提取：提取文档内容" left="23" top="379" width="387" height="13"/>
+<dlgitem id="1009" text="标注：添加或更改标注，填写表单" left="23" top="398" width="387" height="13"/>
+<dlgitem id="1010" text="填写表单：填写当前表单" left="23" top="418" width="387" height="13"/>
+<dlgitem id="1011" text="组装：组装文档（页面管理）" left="23" top="437" width="387" height="13"/>
+<dlgitem id="65535" text="" left="0" top="0" width="422" height="50"/>
+<dlgitem id="1035" text="列表1" left="20" top="89" width="386" height="120"/>
+<dlgitem id="0" text="" left="22" top="91" width="382" height="17"/>
+<dlgitem id="1037" text="以下用户有权访问该文档：" left="12" top="63" width="396" height="16"/>
+<dlgitem id="1036" text="PDF权限：" left="14" top="223" width="314" height="16"/>
+<dlgitem id="1" text="确定" left="300" top="466" width="75" height="23"/>
+<dlgitem id="1006" text="打印： 打印文档" left="23" top="340" width="387" height="13"/>
+<dlgitem id="1012" text="浏览权限数据：浏览所有用户的权限数据" left="23" top="320" width="387" height="13"/>
+<dlgitem id="1013" text="编辑：编辑文件" left="23" top="262" width="387" height="13"/>
+<dlgitem id="1014" text="高质量打印：高分辨率打印" left="23" top="359" width="387" height="13"/>
+</Dialog>
+<Dialog id="104" text="备注" left="0" top="0" width="711" height="149">
+<dlgitem id="1" text="更改用户(&amp;C)" left="173" top="84" width="140" height="25"/>
+<dlgitem id="2" text="否(&amp;N)" left="422" top="84" width="88" height="25"/>
+<dlgitem id="6" text="是(&amp;Y)" left="324" top="84" width="88" height="25"/>
+<dlgitem id="1054" text="您没有允许打开文档的证书。您可以申请升级权限" left="56" top="12" width="639" height="14"/>
+<dlgitem id="1024" text="static" left="56" top="37" width="578" height="14"/>
+<dlgitem id="1055" text="您是否要请求升级权限？" left="56" top="60" width="578" height="14"/>
+<dlgitem id="65535" text="" left="12" top="12" width="32" height="32"/>
+</Dialog>
+<Dialog id="106" text="备注" left="0" top="0" width="592" height="152">
+<dlgitem id="1" text="确定" left="389" top="77" width="88" height="25"/>
+<dlgitem id="2" text="取消" left="487" top="77" width="88" height="25"/>
+<dlgitem id="1018" text="不再提示该消息" left="12" top="77" width="207" height="18"/>
+<dlgitem id="1057" text="此文档权限受限。程序需要连接 " left="61" top="12" width="511" height="18"/>
+<dlgitem id="1025" text="http://www.fuxinsoftware.com.cn/support/" left="25" top="100" width="282" height="16"/>
+<dlgitem id="65535" text="" left="12" top="12" width="32" height="32"/>
+<dlgitem id="1023" text="static" left="61" top="33" width="511" height="42"/>
+</Dialog>
+<Dialog id="107" text="选择用户" left="0" top="0" width="466" height="240">
+<dlgitem id="1" text="确定" left="238" top="175" width="88" height="25"/>
+<dlgitem id="2" text="取消" left="348" top="175" width="88" height="25"/>
+<dlgitem id="1028" text="从以下列表选择一个账户，创建或打开带有权限限制的内容。如需使用列表外的其他账户，单击“添加”。" left="23" top="14" width="411" height="49"/>
+<dlgitem id="1029" text="" left="21" top="67" width="310" height="91"/>
+<dlgitem id="1015" text="添加(&amp;A)" left="348" top="70" width="88" height="25"/>
+<dlgitem id="4" text="移除(&amp;R)" left="348" top="110" width="88" height="25"/>
+<dlgitem id="1030" text="常用账户(&amp;L)" left="21" top="165" width="187" height="16"/>
+</Dialog>
+<Dialog id="123" text="备注" left="0" top="0" width="416" height="121">
+<dlgitem id="65535" text="" left="18" top="12" width="32" height="32"/>
+<dlgitem id="1058" text="您确定要删除已存储的凭据？您将无法使用此凭据，除非您重新获得授权。" left="60" top="12" width="336" height="33"/>
+<dlgitem id="1" text="确定" left="212" top="56" width="88" height="25"/>
+<dlgitem id="2" text="取消" left="310" top="56" width="88" height="25"/>
+</Dialog>
+<Dialog id="126" text="权限" left="0" top="0" width="429" height="407">
+<dlgitem id="1" text="确定" left="248" top="336" width="75" height="23"/>
+<dlgitem id="2" text="取消" left="336" top="335" width="75" height="23"/>
+<dlgitem id="65535" text="" left="0" top="0" width="422" height="50"/>
+<dlgitem id="1036" text="                       " left="9" top="55" width="404" height="273"/>
+<dlgitem id="1039" text="限制文档权限(&amp;R)" left="18" top="55" width="170" height="13"/>
+<dlgitem id="1028" text="请在&quot;阅读&quot; 框和&quot;更改&quot;框输入用户e-mail (例如someone@example.com) " left="15" top="80" width="390" height="57"/>
+<dlgitem id="1041" text="" left="17" top="154" width="357" height="20"/>
+<dlgitem id="1042" text="" left="20" top="229" width="357" height="20"/>
+<dlgitem id="1043" text="只读，限制复制，限制打印，限制更改" left="18" top="180" width="354" height="34"/>
+<dlgitem id="1044" text="阅读，复制，更改，打印" left="21" top="254" width="354" height="34"/>
+<dlgitem id="1045" text="其他选项(&amp;O)..." left="18" top="304" width="119" height="20"/>
+</Dialog>
+<Dialog id="130" left="0" top="0" width="263" height="153"/>
+<Dialog id="139" text="加密" left="0" top="0" width="438" height="299">
+<dlgitem id="1" text="确定" left="123" top="221" width="75" height="23"/>
+<dlgitem id="2" text="取消" left="258" top="221" width="75" height="23"/>
+<dlgitem id="65535" text="" left="0" top="0" width="422" height="50"/>
+<dlgitem id="65535" text="许可服务器：" left="36" top="85" width="75" height="13"/>
+<dlgitem id="65535" text="证书服务器：" left="36" top="114" width="77" height="13"/>
+<dlgitem id="1052" text="" left="123" top="85" width="210" height="23"/>
+<dlgitem id="1001" text="" left="123" top="114" width="210" height="23"/>
+<dlgitem id="65535" text="创建者：" left="60" top="141" width="53" height="16"/>
+<dlgitem id="1063" text="" left="123" top="141" width="210" height="23"/>
+<dlgitem id="65535" text="模板路径：" left="48" top="167" width="65" height="13"/>
+<dlgitem id="1065" text="" left="123" top="167" width="210" height="23"/>
+<dlgitem id="1066" text="浏览..." left="341" top="167" width="75" height="23"/>
+<dlgitem id="65535" text="设置" left="8" top="63" width="417" height="146"/>
+</Dialog>
+</Dialogs>
+<Strings>
+<string id="1" text="权限管理服务(&amp;M)"/>
+<string id="2" text="查看权限..."/>
+<string id="3" text="选择用户"/>
+<string id="4" text="受限访问"/>
+<string id="5" text="请先选择一个用户！"/>
+<string id="6" text="错误！HTTP请求无法找到服务器 (HTTP 错误 404)! 您是否要离线打开此文档？"/>
+<string id="7" text="错误！无法找到指定服务器。 "/>
+<string id="8" text="此功能无法在没有凭据时使用！"/>
+<string id="9" text="初始化安全环境失败。"/>
+<string id="10" text="发送邮件失败。"/>
+<string id="11" text="福昕阅读器"/>
+<string id="12" text="查看权限..."/>
+<string id="13" text="有限授权。只有特定的用户可以查看该内容。"/>
+<string id="14" text="受限使用  "/>
+<string id="15" text="RMS权限"/>
+<string id="16" text="用户"/>
+<string id="17" text="完全控制"/>
+<string id="18" text="读取"/>
+<string id="19" text="更改"/>
+<string id="20" text="无"/>
+<string id="21" text="连接  "/>
+<string id="22" text="连接至  "/>
+<string id="23" text="与此邮箱相关的域用户"/>
+<string id="24" text="未激活。您确定要激活吗？"/>
+<string id="25" text="校验您的凭据并下载权限。"/>
+<string id="26" text="administrator"/>
+<string id="27" text="缺少权限账户证书！"/>
+<string id="28" text="缺少计算机证书！"/>
+<string id="29" text="缺少客户办法者证书！"/>
+<string id="30" text="没有使用此文档权限！"/>
+<string id="31" text="无法进入域控制器！请试用离线方式！"/>
+<string id="32" text="RMS 错误! HTTP 请求无法找到服务器 (HTTP 错误 404)! 计算机激活失败！"/>
+<string id="33" text="您无法离线打开此文档！"/>
+<string id="34" text="打开文档错误，文档已损坏并且无法修复。"/>
+<string id="35" text="AD RMS"/>
+<string id="36" text="批准中，请稍候..."/>
+<string id="37" text="文档已过期。您需要重新获取。"/>
+<string id="38" text="当前文档被修改。请在更换用户前保存。"/>
+<string id="39" text="RMS 设置"/>
+<string id="40" text="此文档被破坏并无法修复。"/>
+<string id="41" text="您没有权限保存此文档。"/>
+<string id="42" text="福昕阅读器"/>
+<string id="43" text="福昕PDf套件"/>
+</Strings>
+</Reader>

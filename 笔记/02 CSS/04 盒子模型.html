@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>盒子模型</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="selected">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 盒子模型 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 盒子模型</h1>
+
+<h2 id="toc_1">1.1 什么是盒子模型</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">盒子模型，也可以称为框模型。<br /></span>
+    <span class="md_line">所有 HTML 元素可以看作盒子。在 CSS 中，&quot;box model&quot; 这一术语是用来设计和布局时使用。<br /></span>
+    <span class="md_line">CSS 盒模型本质上是一个盒子，封装周围的 HTML 元素，它包括：边距，边框，填充，和实际内容。<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../02 CSS/imgs/01.png';this.onerror=null;"  class="" src="imgs/01.png" alt="" title="" ><br /></span>
+    <span class="md_line">不同部分的说明:</span>
+</p>
+
+
+<ul>
+<li>Margin（外边距）: 清除边框区域。Margin没有背景颜色，它是完全透明。</li>
+<li>Border（边框）: 边框周围的填充和内容。边框是受到盒子的背景颜色影响。</li>
+<li>Padding（内边距）: 清除内容周围的区域。会受到框中填充的背景颜色影响。</li>
+<li>Content（内容）: 盒子的内容，显示文本和图像。</li>
+</ul>
+
+<p class="md_block">
+    <span class="md_line">为了在所有浏览器中的元素的宽度和高度设置正确的话，你需要知道的盒模型是如何工作的。</span>
+</p>
+
+
+<h2 id="toc_2">1.2 元素的宽度和高度</h2>
+
+<p class="md_block">
+    <span class="md_line">下面的例子中的元素的总宽度为 300px:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">width</span><span class="nd">:250px</span><span class="o">;</span>
+<span class="nt">padding</span><span class="nd">:10px</span><span class="o">;</span>
+<span class="nt">border</span><span class="nd">:5px</span> <span class="nt">solid</span> <span class="nt">gray</span><span class="o">;</span>
+<span class="nt">margin</span><span class="nd">:10px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">完整的 HTML 代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span> 
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="nt">div</span><span class="nc">.ex</span>
+    <span class="p">{</span>
+        <span class="nb">width</span><span class="o">:</span><span class="m">220px</span><span class="p">;</span>
+        <span class="nb">padding</span><span class="o">:</span><span class="m">10px</span><span class="p">;</span>
+        <span class="nb">border</span><span class="o">:</span><span class="m">5px</span> <span class="nb">solid</span> <span class="nb">gray</span><span class="p">;</span>
+        <span class="nb">margin</span><span class="o">:</span><span class="m">0px</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ex&quot;</span><span class="p">&gt;</span>The picture above is 250px wide.
+                    The total width of this element is also 250px.<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">上述示例运行的结果如下:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../02 CSS/imgs/02.png';this.onerror=null;"  class="" src="imgs/02.png" alt="" title="" ></span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 当指定一个 CSS 元素的宽度和高度属性时，只是设置内容区域的宽度和高度。要知道，完全大小的元素，还必须添加填充，边框和边距。</span>
+</p>
+
+
+<h1 id="toc_3">2. 边框</h1>
+
+<p class="md_block">
+    <span class="md_line">CSS 边框属性允许指定一个元素边框的样式和颜色。<br /></span>
+    <span class="md_line">CSS 边框属性常见如下:</span>
+</p>
+
+</blockquote>
+
+<ul>
+<li>border-width: 设置边框的宽度</li>
+<li>border-color: 设置边框的颜色</li>
+<li>border-style: 边框的样式</li>
+</ul>
+
+<h2 id="toc_4">2.1 设置边框的宽度</h2>
+
+<p class="md_block">
+    <span class="md_line">如果设置一个值，则同时设置边框的四个方向的宽度。如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-width</span><span class="o">:</span> <span class="nt">10px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述代码则表示同时四个方向的边框宽度为 10px。<br /></span>
+    <span class="md_line">如果设置两个值，则第一个值表示设置边框的上下方向宽度，第二个值表示设置边框的左右方向宽度。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-width</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">20px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置三个值，则第一个值表示设置边框的上边宽度，第二个值表示设置边框的左右方向宽度，第三个值表示设置边框的下边宽度。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-width</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">20px</span> <span class="nt">30px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置四个值，则分别表示设置上、右、下和左四个方向的边框宽度。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-width</span><span class="o">:</span> <span class="nt">10px</span> <span class="nt">20px</span> <span class="nt">30px</span> <span class="nt">40px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">除了上述方式设置边框宽度，CSS 还提供如下方式分别设置上、右、下和左边框的宽度。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>border-top-width</td>
+<td>设置一个元素的顶部边框的宽度。</td>
+</tr>
+<tr>
+<td>border-right-width</td>
+<td>设置一个元素的右边框的宽度。</td>
+</tr>
+<tr>
+<td>border-bottom-width</td>
+<td>设置一个元素的底部边框的宽度。</td>
+</tr>
+<tr>
+<td>border-left-width</td>
+<td>设置一个元素的左边框的宽度。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_5">2.2 设置边框的颜色</h2>
+
+<p class="md_block">
+    <span class="md_line">如果设置一个值，则同时设置边框的四个方向的颜色。如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-color</span><span class="o">:</span> <span class="nt">red</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述代码则表示同时四个方向的边框颜色为 red。<br /></span>
+    <span class="md_line">如果设置两个值，则第一个值表示设置边框的上下方向颜色，第二个值表示设置边框的左右方向颜色。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-color</span><span class="o">:</span> <span class="nt">red</span> <span class="nt">orange</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置三个值，则第一个值表示设置边框的上边颜色，第二个值表示设置边框的左右方向颜色，第三个值表示设置边框的下边颜色。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-color</span><span class="o">:</span> <span class="nt">red</span> <span class="nt">orange</span> <span class="nt">yellow</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置四个值，则分别表示设置上、右、下和左四个方向的边框颜色。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-color</span><span class="o">:</span> <span class="nt">red</span> <span class="nt">orange</span> <span class="nt">yellow</span> <span class="nt">blue</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">除了上述方式设置边框颜色，CSS 还提供如下方式分别设置上、右、下和左边框的颜色。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>border-top-color</td>
+<td>设置一个元素的顶部边框的颜色。</td>
+</tr>
+<tr>
+<td>border-right-color</td>
+<td>设置一个元素的右边框的颜色。</td>
+</tr>
+<tr>
+<td>border-bottom-color</td>
+<td>设置一个元素的底部边框的颜色。</td>
+</tr>
+<tr>
+<td>border-left-color</td>
+<td>设置一个元素的左边框的颜色。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_6">2.3 设置边框的样式</h2>
+
+<p class="md_block">
+    <span class="md_line">边框样式的常用备选想如下:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>边框样式</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>none</td>
+<td>定义无边框。</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>与 &quot;none&quot; 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。</td>
+</tr>
+<tr>
+<td>dotted</td>
+<td>定义点状边框。在大多数浏览器中呈现为实线。</td>
+</tr>
+<tr>
+<td>dashed</td>
+<td>定义虚线。在大多数浏览器中呈现为实线。</td>
+</tr>
+<tr>
+<td>solid</td>
+<td>定义实线。</td>
+</tr>
+<tr>
+<td>double</td>
+<td>定义双线。双线的宽度等于 border-width 的值。</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>规定应该从父元素继承边框样式。</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block">
+    <span class="md_line">如果设置一个值，则同时设置边框的四个方向的样式。如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-style</span><span class="o">:</span> <span class="nt">dotted</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置两个值，则第一个值表示设置边框的上下方向样式，第二个值表示设置边框的左右方向样式。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-style</span><span class="o">:</span> <span class="nt">dotted</span> <span class="nt">solid</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置三个值，则第一个值表示设置边框的上边样式，第二个值表示设置边框的左右方向样式，第三个值表示设置边框的下边样式。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-style</span><span class="o">:</span> <span class="nt">dotted</span> <span class="nt">solid</span> <span class="nt">dashed</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置四个值，则分别表示设置上、右、下和左四个方向的边框样式。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border-style</span><span class="o">:</span> <span class="nt">dotted</span> <span class="nt">solid</span> <span class="nt">dashed</span> <span class="nt">double</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">除了上述方式设置边框样式，CSS 还提供如下方式分别设置上、右、下和左边框的样式。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>border-top-style</td>
+<td>设置一个元素的顶部边框的样式。</td>
+</tr>
+<tr>
+<td>border-right-style</td>
+<td>设置一个元素的右边框的样式。</td>
+</tr>
+<tr>
+<td>border-bottom-style</td>
+<td>设置一个元素的底部边框的样式。</td>
+</tr>
+<tr>
+<td>border-left-style</td>
+<td>设置一个元素的左边框的样式。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_7">2.4 简写设置边框</h2>
+
+<p class="md_block">
+    <span class="md_line">CSS 提供了 <code>border</code> 属性允许同时设置边框的宽度、颜色和样式。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">border</span><span class="o">:</span> <span class="nt">5px</span> <span class="nt">solid</span> <span class="nt">red</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 设置的顺序没有明确要求。</span>
+</p>
+
+</blockquote>
+
+<p class="md_block">
+    <span class="md_line">除了上述方式设置边框，CSS 还提供如下方式分别设置上、右、下和左边框。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>border-top</td>
+<td>设置一个元素的顶部边框。</td>
+</tr>
+<tr>
+<td>border-right</td>
+<td>设置一个元素的右边框。</td>
+</tr>
+<tr>
+<td>border-bottom</td>
+<td>设置一个元素的底部边框。</td>
+</tr>
+<tr>
+<td>border-left</td>
+<td>设置一个元素的左边框。</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_8">3. 内边距</h1>
+
+<p class="md_block">
+    <span class="md_line">CSS Padding（内边距）属性定义元素边框与元素内容之间的距离。<br /></span>
+    <span class="md_line">如果设置一个值，则同时设置内边距的四个方向。如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">padding</span><span class="o">:</span> <span class="nt">25px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置两个值，则第一个值表示设置内边距的上下方向，第二个值表示设置内边距的左右方向。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">padding</span><span class="o">:</span> <span class="nt">25px</span> <span class="nt">50px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置三个值，则第一个值表示设置内边距的上边，第二个值表示设置内边距的左右方向，第三个值表示设置内边距的下边。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">padding</span><span class="o">:</span> <span class="nt">25px</span> <span class="nt">50px</span> <span class="nt">75px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置四个值，则分别表示设置上、右、下和左四个方向的内边距。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">padding</span><span class="o">:</span> <span class="nt">25px</span> <span class="nt">50px</span> <span class="nt">75px</span> <span class="nt">100px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">除了上述方式设置内边距，CSS 还提供如下方式分别设置上、右、下和左边的内边距。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>padding-top</td>
+<td>设置一个元素的顶部内边距。</td>
+</tr>
+<tr>
+<td>padding-right</td>
+<td>设置一个元素的右边内边距。</td>
+</tr>
+<tr>
+<td>padding-bottom</td>
+<td>设置一个元素的底部内边距。</td>
+</tr>
+<tr>
+<td>padding-left</td>
+<td>设置一个元素的左边内边距。</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_9">4. 外边距</h1>
+
+<p class="md_block">
+    <span class="md_line">CSS Margin（外边距）属性定义元素周围的距离。<br /></span>
+    <span class="md_line">外边距不会影响元素的可见大小，但是会影响元素的位置。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性名称</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>margin-top</td>
+<td>设置元素的上外边距。</td>
+</tr>
+<tr>
+<td>margin-right</td>
+<td>设置元素的右外边距。</td>
+</tr>
+<tr>
+<td>margin-left</td>
+<td>设置元素的左外边距。</td>
+</tr>
+<tr>
+<td>margin-bottom</td>
+<td>设置元素的下外边距。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_10">4.1 设置上和左外边距</h2>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">margin-top</span><span class="o">:</span> <span class="nt">100px</span><span class="o">;</span>
+<span class="nt">margin-left</span><span class="o">:</span> <span class="nt">50px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">由于元素在 HTML 页面中默认是靠左靠上显示的。所以默认情况下，修改左外边距和上外边距时，会影响当前元素的位置。</span>
+</p>
+
+
+<h2 id="toc_11">4.2 设置下和右外边距</h2>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">margin-bottom</span><span class="o">:</span> <span class="nt">100px</span><span class="o">;</span>
+<span class="nt">margin-right</span><span class="o">:</span> <span class="nt">50px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">修改右和下外边距时会影响其他元素相对于当前元素的位置。</span>
+</p>
+
+
+<h2 id="toc_12">4.3 简写设置外边距</h2>
+
+<p class="md_block">
+    <span class="md_line">如果设置一个值，则同时设置外边距的四个方向。如下代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">margin</span><span class="o">:</span> <span class="nt">25px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置两个值，则第一个值表示设置外边距的上下方向，第二个值表示设置外边距的左右方向。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">margin</span><span class="o">:</span> <span class="nt">25px</span> <span class="nt">50px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置三个值，则第一个值表示设置外边距的上边，第二个值表示设置外边距的左右方向，第三个值表示设置外边距的下边。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">margin</span><span class="o">:</span> <span class="nt">25px</span> <span class="nt">50px</span> <span class="nt">75px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">如果设置四个值，则分别表示设置上、右、下和左四个方向的外边距。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">margin</span><span class="o">:</span> <span class="nt">25px</span> <span class="nt">50px</span> <span class="nt">75px</span> <span class="nt">100px</span><span class="o">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_13">4.4 外边距重叠</h2>
+
+<p class="md_block">
+    <span class="md_line">当同时为两个相邻的 <code>&lt;div&gt;</code> 标签设置外边距，为第一个 <code>&lt;div&gt;</code> 标签设置下外边距，为第二个 <code>&lt;div&gt;</code> 标签设置上外边距。具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
+            <span class="nc">.box1</span><span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+                <span class="c">/*为上边的元素设置一个下外边距*/</span>
+                <span class="nb">margin-bottom</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="p">}</span>       
+            <span class="nc">.box2</span><span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">background-color</span><span class="o">:</span> <span class="nb">blue</span><span class="p">;</span>
+                <span class="c">/*为下边的元素设置一个上外边距*/</span>
+                <span class="nb">margin-top</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box1&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box2&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>    
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">上述示例代码，最终运行的结果是: 两个 <code>&lt;div&gt;</code> 之间的距离为 100px。<br /></span>
+    <span class="md_line">垂直方向的相邻的外边距会发生外边距的重叠现象，兄弟元素的相邻外边距会取最大值。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 外边距的重叠现象只会出现在垂直方向，而水平方向并不存在外边距重叠现象。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_14">4.5 外边距传递</h2>
+
+<p class="md_block">
+    <span class="md_line">如果定义两个 <code>&lt;div&gt;</code> 标签是父子关系的话，当为作为子元素的 <code>&lt;div&gt;</code> 设置上外边距，该上外边距会传递给作为父元素的 <code>&lt;div&gt;</code>。具体代码如下:</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>     
+        <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span> 
+            <span class="nc">.box3</span><span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nb">background-color</span><span class="o">:</span> <span class="nb">skyblue</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nc">.box4</span><span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+                <span class="c">/*设置一个margin-top*/</span>
+                <span class="nb">margin-top</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="p">}</span>           
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>      
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box3&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述外边距的重叠现象，可以通过为作为父元素的 <code>&lt;div&gt;</code> 下内边距解决。</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>     
+        <span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span> 
+            <span class="nc">.box3</span><span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">background-color</span><span class="o">:</span> <span class="nb">skyblue</span><span class="p">;</span>
+                <span class="nb">padding-top</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nc">.box4</span><span class="p">{</span>
+                <span class="nb">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+                <span class="nb">background-color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+            <span class="p">}</span>           
+        <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>      
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box3&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;box4&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_15">5. 内联元素的盒子模型</h1>
+
+<h2 id="toc_16">5.1 内联元素的宽度和高度</h2>
+
+<p class="md_block">
+    <span class="md_line">内联元素不支持设置宽和高，内联元素元素的大小由内容决定。</span>
+</p>
+
+
+<h2 id="toc_17">5.2 内联元素的内边距</h2>
+
+<ul>
+<li>内联元素支持水平方向的内边距。</li>
+<li>内联元素可以设置垂直方向的内边距，但是不会影响布局。</li>
+</ul>
+
+<h2 id="toc_18">5.3 内联元素的边框</h2>
+
+<ul>
+<li>内联元素支持水平方向的边框。</li>
+<li>内联元素可以设置垂直方向的边框，但是不会影响布局。</li>
+</ul>
+
+<h2 id="toc_19">5.4 内联元素的外边距</h2>
+
+<p class="md_block">
+    <span class="md_line">内联元素支持水平方向的外边距 , 不支持垂直方向的外边距。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

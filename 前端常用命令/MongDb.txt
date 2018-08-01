@@ -1,0 +1,75 @@
+MongoDB
+	- MongoDB是一款文档型数据库
+	- 数据库被用来保存程序运行当中产生的一些数据
+		比如：用户信息、产品信息、文章 。。。。。。
+	- 所谓文档型数据库，指的是在MongoDB中存储的数据都是以文档的形式保存在数据库中，
+		文档实际上就是一个类似于JSON的对象，但是它是一个JSON的增强版，我们称为BSON
+	- MongoDB的基本的概念
+		数据库 database
+			- 数据库用来存放集合
+			
+		集合 collection
+			- 集合用来存放文档
+			
+		文档 document
+			- 文档是我们要操作的数据
+			
+		- 默认情况下数据库和集合都不需要创建，当第一次向集合中插入文档时，
+			它所在的数据库和集合会被自动创建
+			
+	- MongoDB的基本操作
+		show dbs / databases
+			- 显示所的数据库
+			
+		use 数据库名
+			- 进入到指定的数据
+			
+		db
+			- 变量，代表当前的数据库
+			
+		show collections
+			- 显示当前数据库中的所有集合
+			
+	- MongoDB的CRUD（增删改查）
+		- 增加
+			db.collection.insert(doc(s));
+			db.collection.insertOne(doc);
+			db.collection.insertMany(docs);
+			
+		- 查询
+			db.collection.find(query);
+				- 查询符合条件的所有文档（数组）
+				
+			db.collection.findOne(query);
+				- 查询符合条件的第一个文档（文档）
+				
+			db.collection.count(query);
+				- 统计当前满足条件的文档数量
+				
+			db.collection.find().limit(size).skip(count)
+				- limit()用于限制显示文档最大数量
+				- skip()用于指定跳过的文档的数量
+				
+		- 修改
+			db.collection.update(query,doc);
+			db.collection.updateOne(query,doc);
+			db.collection.updateMany(query,doc);
+			db.collection.replaceOne(query,doc);
+			
+		- 删除 (注意删除在开发中很少使用)
+			db.collection.remove(query);
+			db.collection.deleteOne(query);
+			db.collection.deleteMany(query);
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

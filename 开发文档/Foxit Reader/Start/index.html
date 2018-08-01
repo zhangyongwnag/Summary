@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Foxit Reader</title>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="skin.css" rel="stylesheet" type="text/css" id="cssfile" />
+<link href="css/tabs.css" rel="stylesheet" type="text/css" />
+<link href="css/tabs-ie.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/jquery.tabs.js"></script>
+<script type="text/javascript" src="js/nor.js"></script>
+<script type="text/javascript">
+function pageselectCallback(page_index, jq){
+ var new_content = $('#ad_list div.ad_content:eq('+page_index+')').clone();
+ $('#ad_show').empty().append(new_content);
+ return false;
+}
+function initPagination() {
+ var num_entries = $('#ad_list div.ad_content').length;
+ $("#Pagination").pagination(num_entries, {
+   num_edge_entries: 0,
+   num_display_entries: 8,
+   callback: pageselectCallback,
+   items_per_page:1,
+   next_text:"",
+   prev_text:""
+   //next_show_always:false
+  });
+}
+$(document).ready(function(){      
+  $('#ad_list').load('ad.html', null, initPagination);
+  $('#read_history').load('history.txt');
+  $("#pages_tab").tabs();
+});
+
+</script>
+
+</head>
+
+<body>
+<div id="body_bg">
+<div id="content">
+<div class="top_tb">
+  <div id="ad_show"></div>
+    <div id="ad_list" style="display:none;"></div>
+<div id="Pagination" class="pagination"></div>
+  </div>
+    
+   <div class="sub_content">
+    <div id="content_right">
+    <div id="pages_tab">
+    <ul>
+    <li><a href="#fra1"><span>福昕PDF套件</span></a></li>
+    
+    </ul>
+    <div id="fra1">
+    
+    <div class="sub_content_right">
+    	<h3>购买福昕PDF套件</h3><p>
+请到指定代理商处购买福昕PDF套件
+
+</p>
+    	<p align="right"><a href="http://www.fuxinsoftware.com.cn/products/phantomPDF/" target="_blank"><img src="images/learn_more.png" width="115" height="40" border="0" /></a></p>
+                <p align="center"> <a href="http://www.fuxinsoftware.com.cn/reseller_chn.htm" target="_blank"><img src="images/buy_phantom.png" width="292" height="141" border="0" /></a></p>
+    
+    </div>
+    <div class="sub_content_left">
+      <h3>企业必备PDF工具套件
+      </h3>
+      <p>        <strong>福昕PDF电子文档处理套件</strong>（简称&ldquo;福昕PDF套件&rdquo;）集创建、阅读、打印、编辑、设计/填写表单、加解密PDF文档、页面管理、数字签名等多功能为一体的完整的PDF解决方案，适用于政府、企业等用户对PDF文档进行综合处理。此版本有标准版和企业版，前者在安全的基础上更侧重于快速；后者功能更加丰富更稳定。       
+      <p><strong>福昕PDF套件标准版</strong>
+      <p>        此版本包含了福昕风腾的所有功能。同时，能够快速简单地创建符合专业标准的PDF文档。除了简单的高亮和标注功能，还能编辑文本、管理PDF页面。            
+      <p><strong>福昕PDF套件企业版</strong>             
+此版本在标准版的功能上进行延伸和拓展，提供最安全的PDF解决方案，帮助企业在符合法规要求和公司管理制度的基础上确保重要文件和档案不被篡改。</div>
+    
+    </div>
+    
+    </div>
+           
+      
+     </div>
+      
+    </div>
+    <div id="content_left">
+    	<div class="menu_lefttop"><div class="right"><a href="clear_history.cls" title="删除所有历史记录"><img src="images/blank.gif" border="0"></a></div><div class="title">历史记录</div>
+    	</div>
+    <div class="menu_leftcontent">
+      <div class="menu_left_mid_content">
+        <ol id="read_history"></ol>
+      </div>
+    </div>
+    
+    </div>
+  
+   </div> 
+
+</div>
+</div>
+
+</body>
+</html>

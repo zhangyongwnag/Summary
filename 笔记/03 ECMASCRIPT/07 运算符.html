@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>运算符</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="selected">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 运算符 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 运算符</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">JavaScript 提供了一组用于操作数据值的运算符。</span>
+</p>
+
+
+<ul>
+<li>算数运算符（+  -  *  /  %  ++  --）</li>
+<li>比较运算符（&gt;  &gt;=  &lt;  &lt;=  ==  !=  ===  !==）</li>
+<li>逻辑运算符（&amp;&amp;  ||  !）</li>
+<li>赋值运算符（=  +=  -=  *=  /=  %=  ）</li>
+<li>字符串连接运算符（+）</li>
+<li>三元运算符（? :）</li>
+<li>特殊运算符（typeof  instanceof  delete）</li>
+</ul>
+
+<h1 id="toc_1">2. 算数运算符</h1>
+
+<p class="md_block">
+    <span class="md_line">给定 A=20 B=10 条件，下述表格描述算数运算符:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>例子</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>+</td>
+<td>两个运算数相加</td>
+<td>A + B = 30</td>
+</tr>
+<tr>
+<td>-</td>
+<td>第一个运算数减去第二个运算数</td>
+<td>A – B = 10</td>
+</tr>
+<tr>
+<td>*</td>
+<td>两个运算数相乘</td>
+<td>A * B = 200</td>
+</tr>
+<tr>
+<td>/</td>
+<td>第一个运算数除以第二个运算数</td>
+<td>A / B = 2</td>
+</tr>
+<tr>
+<td>%</td>
+<td>求余运算符，计算整除后的余数</td>
+<td>A % B = 0</td>
+</tr>
+<tr>
+<td>++</td>
+<td>增量运算符，整数值逐次加 1</td>
+<td>A++ = 21</td>
+</tr>
+<tr>
+<td>--</td>
+<td>减量运算符，整数值逐次减 1</td>
+<td>A-- = 19</td>
+</tr>
+</tbody>
+</table>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">算数运算符的基本操作比较简单，但下述情况需要特别注意:</span>
+</p>
+
+
+<ul>
+<li>如果运算数中的一个或两个是字符串类型，JavaScript 会自动转换为数字值，再进行计算。</li>
+<li>如果运算数中的一个或两个是字符串类型，但其中的字符不是数字，JavaScript 会自动转换数字值失败，得到 NaN 结果。</li>
+<li>任何一个运算数是 NaN，结果都是 NaN。</li>
+<li>布尔值 false 和 true 会转换为 0 和 1 进行计算。</li>
+</ul>
+
+<h2 id="toc_2">2.1 求余运算符</h2>
+
+<p class="md_block">
+    <span class="md_line">求余运算符，用于计算两个运算数整除后的余数。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">3</span> <span class="p">);</span><span class="c1">// 输出 1</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">-</span><span class="mi">10</span> <span class="o">%</span> <span class="mi">3</span> <span class="p">);</span><span class="c1">// 输出 -1</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="mi">10</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span> <span class="p">);</span><span class="c1">// 输出 1</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">-</span><span class="mi">10</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span> <span class="p">);</span><span class="c1">// 输出 -1</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">2.2 自增运算符</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">自增运算符，用于整数值逐次加 1。分别具有两种用法:</span>
+</p>
+
+
+<ul>
+<li>前置型：自增运算符位于运算数之前。先加 1，再赋值。</li>
+<li>后置型：自增运算符位于运算数之后。先赋值，再加 1。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span><span class="o">++</span> <span class="p">);</span><span class="c1">// 输出 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span> <span class="p">);</span><span class="c1">// 输出 4</span>
+
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">++</span><span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 4</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 4</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">2.3 自减运算符</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">自减运算符，用于整数值逐次减 1。分别具有两种用法:</span>
+</p>
+
+
+<ul>
+<li>前置型：自增运算符位于运算数之前。先减 1，再赋值。</li>
+<li>后置型：自增运算符位于运算数之后。先赋值，再减 1。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span><span class="o">--</span> <span class="p">);</span><span class="c1">// 输出 3</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span> <span class="p">);</span><span class="c1">// 输出 2</span>
+
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">--</span><span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 2</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_5">3. 比较运算符</h1>
+
+<p class="md_block">
+    <span class="md_line">给定 A=20 B=10条件，下述表格描述比较运算符:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>例子</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>==</td>
+<td>检查两个运算数的值是否相等，如果相等则结果为 true</td>
+<td>A == B 为 false</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>检查两个运算数的值是否不等，如果不等则结果为 true</td>
+<td>A != B 为 true</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>检查左边运算数是否大于右边运算数，如果是则结果为 true</td>
+<td>A &gt; B 为 true</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>检查左边运算数是否大于或等于右边运算数，如果是则结果为 true</td>
+<td>A &gt;= B 为 true</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>检查左边运算数是否小于右边运算数，如果是则结果为 true</td>
+<td>A &lt; B 为 false</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>检查左边运算数是否小于或等于右边运算数，如果是则结果为 true</td>
+<td>A &lt;= B 为 false</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_6">3.1 全等与不全等</h2>
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>===</td>
+<td>两个运算数的值相等并且类型相同时，结果为 true</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>两个运算数的值不等或者类型不同时，结果为 true</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="s1">&#39;10&#39;</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span> <span class="o">==</span> <span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span> <span class="o">===</span> <span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span> <span class="o">!=</span> <span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">x</span> <span class="o">!==</span> <span class="nx">y</span> <span class="p">);</span><span class="c1">// 输出 true</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">3.2 isNaN 函数</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">isNaN() 函数用于判断其参数是否为 NaN（非数字值）。<br /></span>
+    <span class="md_line">多用于检测使用类型转换函数进行数据类型转换后的结果是否为合法的数字值。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> NaN 与任何值（包括自身）进行比较，结果都是 false。不能使用 <code>==</code> 或者 <code>===</code> 运算符判断某个值是否是 NaN，而只能使用isNaN() 函数。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="s1">&#39;123.45a&#39;</span><span class="p">)));</span><span class="c1">// 输出 true</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="s1">&#39;123.45a&#39;</span><span class="p">));</span><span class="c1">// 输出 true</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nb">Number</span><span class="p">(</span><span class="s1">&#39;123.45a&#39;</span><span class="p">)));</span><span class="c1">// 输出 true</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_8">4. 逻辑运算符</h1>
+
+<p class="md_block">
+    <span class="md_line">下述表格描述比较运算符:</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>例子</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>逻辑与运算符。如果两个运算数都是 true，则返回 true</td>
+<td>A &amp;&amp; B 为 true</td>
+</tr>
+<tr>
+<td><code>||</code></td>
+<td>逻辑或运算符。如果两个运算数中任何一个是 true，则返回 true</td>
+<td>A <code>||</code> B 为 true</td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td>逻辑非运算符。用于改变运算数的逻辑状态。如果逻辑状态为 true，则通过逻辑非运算符是逻辑状态改为 false</td>
+<td>!(A &amp;&amp; B) 为 false</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_9">4.1 逻辑与运算符</h2>
+
+<table>
+<thead>
+<tr>
+<th>B1</th>
+<th>B2</th>
+<th>B1 &amp;&amp; B2</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="kc">false</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="kc">true</span> <span class="o">&amp;&amp;</span> <span class="kc">true</span> <span class="p">);</span><span class="c1">// 输出 true</span>
+
+<span class="c1">// 数字值 1 和 0 转换为布尔值 true 和 false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="mi">0</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+
+<span class="c1">// 空字符串转换为布尔值 false，非空字符串转换为布尔值 true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;&quot;</span> <span class="o">&amp;&amp;</span> <span class="s2">&quot;atguigu&quot;</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_10">4.2 逻辑或运算符</h2>
+
+<table>
+<thead>
+<tr>
+<th>B1</th>
+<th>B2</th>
+<th>B1 或 B2</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>false</td>
+<td>false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td>true</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>true</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="kc">false</span> <span class="o">||</span> <span class="kc">true</span> <span class="p">);</span><span class="c1">// 输出 true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="kc">false</span> <span class="o">||</span> <span class="kc">false</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+
+<span class="c1">// 数字值 1 和 0 转换为布尔值 true 和 false</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="mi">1</span> <span class="o">||</span> <span class="mi">0</span> <span class="p">);</span><span class="c1">// 输出 true</span>
+
+<span class="c1">// 空字符串转换为布尔值 false，非空字符串转换为布尔值 true</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="s2">&quot;&quot;</span> <span class="o">||</span> <span class="s2">&quot;atguigu&quot;</span> <span class="p">);</span><span class="c1">// 输出 true</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_11">4.3 逻辑非运算符</h2>
+
+<table>
+<thead>
+<tr>
+<th>B1</th>
+<th>!B1</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">!</span><span class="kc">true</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">!</span><span class="mi">1</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="o">!</span><span class="s2">&quot;atguigu&quot;</span> <span class="p">);</span><span class="c1">// 输出 false</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 能被转换为 false 的值有null, 0, NaN, 空字符串(&quot;&quot;) 和 undefined。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_12">4.4 逻辑短路原则</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">所谓短路原则，就是只要确定运算符前面的运算数为 true 或 false，就可以确定返回结果为 true 或 false。</span>
+</p>
+
+
+<ul>
+<li>逻辑与运算符
+
+<ul>
+<li>逻辑与运算符前面为false，结果都将返回逻辑与运算符前面的。</li>
+<li>逻辑与运算符前面为true，结果都将返回逻辑与运算符后面的值。</li>
+</ul></li>
+<li>逻辑或运算符
+
+<ul>
+<li>逻辑或运算符前面为false，结果都将返回逻辑或运算符后面的值。</li>
+<li>逻辑或运算符前面为true，结果都将返回逻辑或运算符前面的值。</li>
+</ul></li>
+</ul>
+
+<h1 id="toc_13">5. 赋值运算符</h1>
+
+<p class="md_block">
+    <span class="md_line">赋值运算符用于为变量或属性进行赋值操作。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">atguigu</span> <span class="o">=</span> <span class="s2">&quot;atguigu&quot;</span><span class="p">;</span><span class="c1">// 将字符串 &quot;atguigu&quot; 赋值给变量 atguigu</span>
+<span class="kd">var</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span><span class="c1">// 将数字值 1 赋值给 obj 对象的 x 属性</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">赋值运算符就是将右边运算数的值赋给左边运算数。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">C</span> <span class="o">=</span> <span class="nx">A</span> <span class="o">+</span> <span class="nx">B</span><span class="p">;</span><span class="c1">// 将A+B的值赋给C</span>
+</pre></div>
+
+<!--block_code_end-->
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>例子</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>+=</td>
+<td>加等赋值运算符，将右边运算符与左边运算符相加并将运算结果赋给左边运算数</td>
+<td>C += A 相当于 C = C + A</td>
+</tr>
+<tr>
+<td>-=</td>
+<td>减等赋值运算符，将左边运算数减去右边运算数并将运算结果赋给左边运算数</td>
+<td>C -= A 相当于 C = C - A</td>
+</tr>
+<tr>
+<td>*=</td>
+<td>乘等赋值运算符，将右边运算数乘以左边运算数并将运算结果赋给左边运算数</td>
+<td>C *= A 相当于 C = C * A</td>
+</tr>
+<tr>
+<td>/=</td>
+<td>除等赋值运算符， 将左边运算数除以右边运算数并将运算结果赋值给左边运算数</td>
+<td>C /= A 相当于 C = C / A</td>
+</tr>
+<tr>
+<td>%=</td>
+<td>模等赋值运算符，用两个运算数做取模运算并将运算结果赋值给左边运算数</td>
+<td>C %= A 相当于 C = C % A</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> C += A由于运行时可以进行优化，执行效率都要优于C = C + A。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_14">6. 字符串连接运算符</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">字符串连接运算符使用的是加法运算符（+）。</span>
+</p>
+
+
+<ul>
+<li>两个运算数都是数字值时，&quot;+&quot;用于两个运算数相加计算。</li>
+<li>两个运算数中的一个是字符串时，&quot;+&quot;用于字符串连接计算。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">num3</span> <span class="o">=</span> <span class="nx">num1</span> <span class="o">+</span> <span class="nx">num2</span><span class="p">;</span> <span class="c1">// 加法计算</span>
+
+<span class="kd">var</span> <span class="nx">num4</span> <span class="o">=</span> <span class="s2">&quot;4&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">num5</span> <span class="o">=</span> <span class="nx">num1</span> <span class="o">+</span> <span class="nx">num4</span><span class="p">;</span> <span class="c1">//字符串拼接计算 </span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_15">7. 条件运算符</h1>
+
+<p class="md_block">
+    <span class="md_line">条件运算符，首先判断一个表达式是真或假，然后根据判断结果执行两个给定指令中的一个。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>说明</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>? :</td>
+<td>条件表达式</td>
+<td>如果条件为真 ? X值 : Y值</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="nx">age</span> <span class="o">&gt;</span> <span class="mi">18</span> <span class="o">?</span> <span class="s2">&quot;成年人&quot;</span> <span class="o">:</span> <span class="s2">&quot;未成年人&quot;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_16">7.1 条件运算符嵌套</h2>
+
+<p class="md_block">
+    <span class="md_line">条件运算符中，每个表达式可以又是一个条件运算表达式，称为条件运算的嵌套。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">score</span> <span class="o">=</span> <span class="mi">85</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">score</span> <span class="o">&gt;=</span> <span class="mi">80</span> <span class="o">?</span> <span class="s2">&quot;优秀&quot;</span> <span class="o">:</span> <span class="p">(</span>
+            <span class="nx">score</span> <span class="o">&gt;=</span> <span class="mi">60</span> <span class="o">?</span> <span class="s2">&quot;合格&quot;</span> <span class="err">：</span><span class="s2">&quot;不合格&quot;</span>
+        <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ol">
+    <span class="md_line">上述代码的执行顺序如下:</span>
+</p>
+
+
+<ol>
+<li>执行 score &gt;= 60 ? &quot;合格&quot; ：&quot;不合格&quot; 条件运算符。</li>
+<li>根据上一行的计算结果，再执行 score &gt;= 80 ? &quot;优秀&quot; : 条件运算符</li>
+</ol>
+
+<h1 id="toc_17">8. 运算符的优先级</h1>
+
+<p class="md_block">
+    <span class="md_line">下面的表将所有运算符按照优先级的不同从高到低排列:<br /></span>
+    <span class="md_line md_line_dom_embed"><img onerror="this.src='../../03 ECMASCRIPT/imgs/01-2.png';this.onerror=null;"  class="" src="imgs/01-2.png" alt="" title="" ></span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS语法</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="selected">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> CSS语法 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 语法格式</h1>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="err">选择器</span> <span class="p">{</span><span class="err">属性名称</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="err">属性名称</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span><span class="o">...</span><span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">语法特点:</span>
+</p>
+
+
+<ul>
+<li>CSS声明总是以键值对(key\value)形式存在。</li>
+<li>CSS声明总是以分号(;)结束。</li>
+<li>声明组以大括号({})括起来。</li>
+<li>为了让CSS可读性更强，每行只描述一个属性。</li>
+</ul>
+
+<h1 id="toc_1">2. CSS 注释</h1>
+
+<p class="md_block">
+    <span class="md_line">注释是用来解释你的代码，并且可以随意编辑它，浏览器会忽略它。CSS注释以 <code>/*</code> 开始, 以 <code>*/</code> 结束。</span>
+</p>
+
+<div class="codehilite code_lang_html  highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
+    <span class="c">/* 这是一个注释 */</span>
+    <span class="nt">div</span> <span class="p">{</span>
+        <span class="c">/* 这是另一个注释 */</span>
+        <span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_2">3.  块级元素与内联元素</h1>
+
+<p class="md_block">
+    <span class="md_line">大多数 HTML 元素被定义为<strong>块级元素</strong>或<strong>内联元素</strong>。</span>
+</p>
+
+
+<h2 id="toc_3">3.1. 块级元素</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">块级元素在浏览器显示时，通常会以新行来开始（和结束）。<br /></span>
+    <span class="md_line">我们已经学习过的块级元素有: <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;table&gt;</code> 等。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> <code>&lt;p&gt;</code> 标签中不能包含任何块级元素。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_4">3.2 <code>&lt;div&gt;</code> 元素</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line"><code>&lt;div&gt;</code> 元素是块级元素，它可用于组合其他 HTML 元素的容器。<br /></span>
+    <span class="md_line"><code>&lt;div&gt;</code> 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。<br /></span>
+    <span class="md_line">如果与 CSS 一同使用，<code>&lt;div&gt;</code> 元素可用于对大的内容块设置样式属性。<br /></span>
+    <span class="md_line"><code>&lt;div&gt;</code> 元素的另一个常见的用途是文档布局。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> <code>&lt;div&gt;</code> 取代了使用表格定义布局的老式方法。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_5">3.3 内联元素</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">内联元素在显示时通常不会以新行开始。<br /></span>
+    <span class="md_line">我们已经学习过的内联元素有: <code>&lt;td&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code> 等。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> <code>&lt;a&gt;</code> 标签中不能包含 <code>&lt;a&gt;</code> 标签，但可以包含其他任何元素。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_6">3.4 <code>&lt;span&gt;</code> 元素</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line"><code>&lt;span&gt;</code> 元素是内联元素，可用作文本的容器。<code>&lt;span&gt;</code> 元素也没有特定的含义。<br /></span>
+    <span class="md_line">当与 CSS 一同使用时，<code>&lt;span&gt;</code> 元素可用于为部分文本设置样式属性。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 内联元素中不能包含块级元素。一般都是块级元素中包含内联元素。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_7">4.  css 选择器</h1>
+
+<h2 id="toc_8">4.1 元素选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">元素选择器就是通过 HTML 页面的元素名称来设置 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="err">元素名称</span> <span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">div</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_9">4.2 类选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">类选择器就是通过 HTML 元素的 class 属性值来设置 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nc">.className</span> <span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nc">.myDiv</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_10">4.3 ID选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">ID选择器就是通过 HTML 元素的 id 属性值来设置 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#id</span> <span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#show1</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_11">4.4 属性选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">属性选择器就是通过 HTML 元素的属性名称来设置 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="o">[</span><span class="err">属性名称</span><span class="o">]</span> <span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="o">[</span><span class="nt">name</span><span class="o">]</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>[attribute]</td>
+<td>用于选取带有指定属性的元素。</td>
+</tr>
+<tr>
+<td>[attribute=value]</td>
+<td>用于选取带有指定属性和值的元素。</td>
+</tr>
+<tr>
+<td>[attribute~=value]</td>
+<td>用于选取属性值中包含指定词汇的元素。</td>
+</tr>
+<tr>
+<td>[attribute^=value]</td>
+<td>匹配属性值以指定值开头的每个元素。</td>
+</tr>
+<tr>
+<td>[attribute$=value]</td>
+<td>匹配属性值以指定值结尾的每个元素。</td>
+</tr>
+<tr>
+<td>[attribute*=value]</td>
+<td>匹配属性值中包含指定值的每个元素。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_12">4.5 后代选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">后代选择器就是设置 HTML 页面的指定元素的后代元素（中间使用空格）的 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="err">祖先元素</span> <span class="err">后代元素</span> <span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">div</span> <span class="nt">em</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_13">4.6 子元素选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">子选择器就是设置 HTML 页面的指定元素的子元素的 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="err">祖先元素</span> <span class="o">&gt;</span> <span class="err">子元素</span><span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">em</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_14">4.7 相邻元素选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">相邻元素选择器就是设置 HTML 页面的指定元素的下一个兄弟元素的 CSS 样式。具体语法如下:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="err">指定元素</span> <span class="o">+</span> <span class="err">兄弟元素</span> <span class="p">{</span> <span class="err">属性名</span> <span class="o">:</span> <span class="err">属性值</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">示例代码:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">div</span> <span class="o">+</span> <span class="nt">div</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_15">4.8 组合选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">组合选择器就是将不同选择器相同声明的内容“压缩”在一起，得到更简洁的样式表。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="c">/* no grouping */</span>
+<span class="nt">h1</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+<span class="nt">h2</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+<span class="nt">h3</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+<span class="nt">h4</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+<span class="nt">h5</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+<span class="nt">h6</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+
+<span class="c">/* grouping */</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class="nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">blue</span><span class="p">;}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_16">4.9 通配符选择器</h2>
+
+<p class="md_block">
+    <span class="md_line">CSS2 引入了一种新的简单选择器 - 通配选择器（universal selector），显示为一个星号（*）。该选择器可以与任何元素匹配，就像是一个通配符。</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="o">*</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span><span class="nb">red</span><span class="p">;}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 通配符选择器的性能并不好。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_17">4.10  选择器的优先级</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">在实际开发中，经常会为同一个标签设置多个样式。使用不同方式的选择器，由于其优先级不同，导致最终的效果也会不同。<br /></span>
+    <span class="md_line">选择器的优先级，具体如下:</span>
+</p>
+
+
+<ul>
+<li>内联样式的优先级为 1000</li>
+<li>ID 选择器的优先级为 100</li>
+<li>类选择器的优先级为 10</li>
+<li>元素选择器的优先级为 1</li>
+<li>通配符选择器的优先级为 0</li>
+<li>继承的样式没有任何优先级</li>
+</ul>
+
+<h1 id="toc_18">5. 伪类</h1>
+
+<p class="md_block">
+    <span class="md_line">CSS 伪类用于向某些选择器添加特殊的效果。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>:active</td>
+<td>向被激活的元素添加样式。</td>
+</tr>
+<tr>
+<td>:focus</td>
+<td>向拥有键盘输入焦点的元素添加样式。</td>
+</tr>
+<tr>
+<td>:hover</td>
+<td>当鼠标悬浮在元素上方时，向元素添加样式。</td>
+</tr>
+<tr>
+<td>:link</td>
+<td>向未被访问的链接添加样式。</td>
+</tr>
+<tr>
+<td>:visited</td>
+<td>向已被访问的链接添加样式。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_19">5.1 锚伪类</h2>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">a</span><span class="nd">:link</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="m">#FF0000</span><span class="p">}</span>     <span class="c">/* 未访问的链接 */</span>
+<span class="nt">a</span><span class="nd">:visited</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="m">#00FF00</span><span class="p">}</span>  <span class="c">/* 已访问的链接 */</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="m">#FF00FF</span><span class="p">}</span>    <span class="c">/* 鼠标移动到链接上 */</span>
+<span class="nt">a</span><span class="nd">:active</span> <span class="p">{</span><span class="nb">color</span><span class="o">:</span> <span class="m">#0000FF</span><span class="p">}</span>   <span class="c">/* 选定的链接 */</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_20">6. 值得注意的问题</h1>
+
+<h2 id="toc_21">6.1 颜色的表现形式</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">例如在设置字体颜色时，以下几种方式效果相同。</span>
+</p>
+
+
+<ul>
+<li>第一种方式</li>
+</ul>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#show1</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">red</span><span class="p">;}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>第二种方式</li>
+</ul>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#show2</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="m">#ff0000</span><span class="p">;}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">像上面这种使用十六进制设置颜色时，如果两两相同，可以写成如下格式:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#show2</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="m">#f00</span><span class="p">;}</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>第三种方式</li>
+</ul>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#show3</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="p">);}</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上面的格式还可以写成如下格式:</span>
+</p>
+
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nn">#show3</span> <span class="p">{</span><span class="nb">color</span> <span class="o">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">100%</span><span class="o">,</span><span class="m">0%</span><span class="o">,</span><span class="m">0%</span><span class="p">);}</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 当使用 RGB 百分比时，即使当值为 0 时也要写百分比符号。但是在其他的情况下就不需要这么做了。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_22">6.2 值为若干单词，记得写引号</h2>
+<div class="codehilite code_lang_css  highlight"><pre><span></span><span class="nt">div</span> <span class="p">{</span><span class="nb">font-family</span> <span class="o">:</span> <span class="n">Courier</span><span class="o">,</span> <span class="s2">&quot;Courier New&quot;</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_23">6.3 多重声明</h2>
+
+<p class="md_block">
+    <span class="md_line">如果要定义不止一个声明，则需要用分号将每个声明分开。</span>
+</p>
+
+
+<h2 id="toc_24">6.4 空格和大小写</h2>
+
+<p class="md_block">
+    <span class="md_line">大多数样式表包含不止一条规则，而大多数规则包含不止一个声明。多重声明和空格的使用使得样式表更容易被编辑。</span>
+</p> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+﻿<Reader>
+<Dialogs>
+<Dialog id="10857" left="0" top="0" width="551" height="278">
+<dlgitem id="10856" text="自动更新" left="14" top="12" width="515" height="133"/>
+<dlgitem id="10858" text="每7天自动检查安全更新，并更新广告栏和启动页面。(&amp;E)" left="26" top="65" width="492" height="32"/>
+<dlgitem id="10860" text="不需要自动更新。(&amp;D)" left="26" top="105" width="492" height="18"/>
+<dlgitem id="10859" text="福昕推荐您勾选该选项，及时更新安全版本。" left="26" top="37" width="492" height="26"/>
+</Dialog>
+</Dialogs>
+<Strings>
+<string id="10850" text="%s不存在！"/>
+<string id="10851" text="更新"/>
+<string id="10852" text="立即检查更新(&amp;C)..."/>
+<string id="10853" text="安装更新(&amp;I)..."/>
+<string id="10854" text="单击获取自动更新插件"/>
+<string id="10855" text="单击安装插件"/>
+</Strings>
+</Reader>

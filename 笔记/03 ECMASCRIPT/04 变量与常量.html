@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>变量与常量</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="selected">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 变量与常量 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 变量</h1>
+
+<h2 id="toc_1">1.1 什么是变量</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">变量是存储数据信息的容器。<br /></span>
+    <span class="md_line">变量被认为是有名字的容器。在代码中，使用变量名为值命名，需要遵守一定的规则。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> <br /></span>
+    <span class="md_line">- 在 JavaScript 代码中，必须先声明一个变量，这个变量才能被使用。<br /></span>
+    <span class="md_line">- JavaScript 中的变量是弱类型的，也称之为松散类型的。所谓弱类型/松散类型就是可以用来保存任何类型的数据。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">v</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">v</span> <span class="o">=</span> <span class="s2">&quot;string&quot;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_2">1.2 变量的声明</h2>
+
+<p class="md_block">
+    <span class="md_line">在 JavaScript 代码中，使用变量前应当先声明。变量是使用关键字 <code>var</code> 声明的。</span>
+</p>
+
+
+<h3 id="toc_3">1.2.1 只声明未初始化，变量的值自动取值为 undefined</h3>
+
+<ul>
+<li>一行代码只声明一个变量:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">sum</span><span class="p">;</span><span class="c1">// 值为undefined</span>
+<span class="kd">var</span> <span class="nx">msg</span><span class="p">;</span><span class="c1">// 值为undefined</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>一行代码声明多个变量</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="nx">z</span><span class="p">;</span><span class="c1">// 值为undefined</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_4">1.2.2 将变量的声明和初始化合写在一起</h3>
+
+<ul>
+<li>一行代码只声明一个变量并赋值:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span><span class="c1">// 值为 100</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 值为 this is message</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>一行代码声明多个变量并赋值:</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 等号（=）是赋值运算符。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_5">1.3 命名规则</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">变量的命名需要遵守一定的规则的，具体规则如下:</span>
+</p>
+
+
+<ul>
+<li>必须以字母、下划线（_）、美元符号（$）开始。</li>
+<li>不能以数字开头。</li>
+<li>不能使用关键字和保留字作为名称。</li>
+<li>由于 JavaScript 是区分大小写的，大写字母与小写字母并不冲突。</li>
+<li>名称最好有明确的含义。</li>
+<li>可以采用“下划线命名法”、“小驼峰命名法”或“大驼峰命名法” 之一，在开发团队内进行协调统一。</li>
+</ul>
+
+<h2 id="toc_6">1.4 声明的问题</h2>
+
+<h3 id="toc_7">1.4.1 重复的声明</h3>
+
+<p class="md_block">
+    <span class="md_line">使用 <code>var</code> 语句重复声明变量是合法且无害的。但是如果重复声明并初始化的，这就表示重复声明并初始化。由于 JavaScript 变量只能存储一个数据，之前存储的数据会被覆盖。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 值为 this is message</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span><span class="c1">// 值为 100</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_8">1.4.2 遗漏的声明</h3>
+
+<ul>
+<li>直接读取一个没有声明的变量的值，JavaScript会报错。</li>
+<li>为一个没有声明的变量初始化，是合法的，但并不推荐这样使用。</li>
+</ul>
+
+<h2 id="toc_9">1.5 变量的使用</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">对声明的变量既可以读取操作，也可以赋值操作。</span>
+</p>
+
+
+<ul>
+<li>读取操作</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">message</span><span class="p">;</span><span class="c1">// 只声明未初始化</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">);</span><span class="c1">// 输出 undefined</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="err">“</span><span class="k">this</span> <span class="nx">is</span> <span class="nx">message</span><span class="err">”</span><span class="p">;</span><span class="c1">// 声明并初始化</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span><span class="c1">// 输出 this is message</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>赋值操作</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">message</span><span class="p">;</span><span class="c1">// 只声明未初始化</span>
+<span class="nx">message</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 初始化操作</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 值会被覆盖</span>
+<span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is another message&quot;</span><span class="p">;</span><span class="c1">// 重新赋值</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_10">2. 常量</h1>
+
+<h2 id="toc_11">2.1 什么是常量</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">常量就是一个只读（read-only）的变量。<br /></span>
+    <span class="md_line">常量与变量类似，同样用于存储数据信息。只是常量的数据一旦被定义，便不能被修改。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> <br /></span>
+    <span class="md_line">- 常量名习惯使用全大写形式。<br /></span>
+    <span class="md_line">- ECMAScript 5新增了声明常量使用的关键字 const。<br /></span>
+    <span class="md_line">- 如果省略const关键字，JavaScript会认为是一个变量。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_12">2.2 常量的声明</h2>
+
+<ul>
+<li>在 ECMAScript 5 版本前，没有定义常量的语法。使用 <code>var</code> 关键字定义变量，人为规定值不改变，也可以是不严格的常量。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">MY_CONST</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<ul>
+<li>在 ECMAScript 5 版本后，提供了关键字 <code>const</code> 定义常量。</li>
+</ul>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kr">const</span> <span class="nx">MY_FAV</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 常量的声明，必须进行初始化操作，否则会报错误。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kr">const</span> <span class="nx">FOO</span><span class="p">;</span> <span class="c1">// SyntaxError: missing = in const declaration</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_13">2.3 常量的使用</h2>
+
+<p class="md_block">
+    <span class="md_line">常量一旦被声明并初始化，值并不能被改变。常量的使用只能进行读取操作:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="c1">// 定义常量MY_FAV并赋值7</span>
+<span class="kr">const</span> <span class="nx">MY_FAV</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+
+<span class="c1">// 在 Firefox 和 Chrome 这会失败但不会报错(在 Safari这个赋值会成功)</span>
+<span class="nx">MY_FAV</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">MY_FAV</span><span class="p">);</span> <span class="c1">// 输出 7</span>
+<span class="kr">const</span> <span class="nx">MY_FAV</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> <span class="c1">// 尝试重新声明会报错 </span>
+<span class="kd">var</span> <span class="nx">MY_FAV</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span><span class="c1">// MY_FAV 保留给上面的常量，这个操作会失败</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">MY_FAV</span><span class="p">);</span><span class="c1">// MY_FAV 依旧为7</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

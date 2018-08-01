@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--不要随便修改，否则将导致Foxit PhantomPDF没有权限运行-->
+<config_info >
+<!--本地化语种，需要框架、第三方程序语言id一致，不一致需要根据这个进行对应转换-->
+<LangId name="langid" value="49007"/>
+<!--key会有授权的语种，与这个不一致，将视为当前的PhantomPDF没有得到授权-->
+<KeyLang name="keylang" value="en_us"/>
+</config_info>

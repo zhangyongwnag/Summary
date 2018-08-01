@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>作用域</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="selected">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 作用域 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 作用域</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">变量和函数都具有作用域。作用域就是变量和函数的可被访问的范围，控制着变量和函数的可见性和生命周期。<br /></span>
+    <span class="md_line">变量的作用域可被分为全局作用域和函数作用域（局部作用域）。如果变量是被定义在全局作用域的话，在 JavaScript 代码中的任何位置都可以访问该变量；如果变量是被定义在指定函数内部的话，在 JavaScript 代码中只能在该函数内访问该变量。<br /></span>
+    <span class="md_line">函数的作用域也可被分为全局作用域和函数作用域（局部作用域）。被定义在指定函数内部的函数被称之为局部函数或内部函数。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> ECMAScript 6 之前的 JavaScript 没有语句块作用域。</span>
+</p>
+
+</blockquote>
+
+<h1 id="toc_1">2. 变量的作用域</h1>
+
+<h2 id="toc_2">2.1 全局变量</h2>
+
+<p class="md_block">
+    <span class="md_line">在所有函数之外声明的变量，叫做全局变量，因为它可被当前文档中的其他代码所访问。具体内容如下述代码所示:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 定义全局变量 msg</span>
+
+<span class="c1">// 在全局作用域访问变量 msg</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出 this is message</span>
+
+<span class="kd">function</span> <span class="nx">fn</span><span class="p">(){</span>
+    <span class="c1">// 在函数作用域访问变量 msg</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出 this is message</span>
+<span class="p">}</span>
+<span class="nx">fn</span><span class="p">();</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">除了上述定义全局变量外，还有一种比较特殊的方式定义全局变量（具体用法如下述代码）。但这种特殊用法并不推荐！</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fun</span><span class="p">(){</span>
+    <span class="c1">// 定义变量时没有使用关键字 var</span>
+    <span class="nx">atguigu</span> <span class="o">=</span> <span class="s2">&quot;this is atguigu&quot;</span><span class="p">;</span>
+    <span class="c1">// 在函数作用域访问变量 atguigu</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">atguigu</span> <span class="p">);</span><span class="c1">// 输出 this is atguigu</span>
+<span class="p">}</span>
+<span class="nx">fun</span><span class="p">();</span>
+
+<span class="c1">// 在全局作用域访问变量 atguigu</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">atguigu</span> <span class="p">);</span><span class="c1">// 输出 this is atguigu</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_3">2.2 局部变量</h2>
+
+<p class="md_block">
+    <span class="md_line">在函数内部声明的变量，叫做局部变量，因为它只能在该函数内部访问。具体用法如下述代码所示:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fun</span><span class="p">(){</span>
+    <span class="c1">// 定义局部变量 neworigin</span>
+    <span class="kd">var</span> <span class="nx">atguigu</span> <span class="o">=</span> <span class="s2">&quot;this is atguigu&quot;</span><span class="p">;</span>
+    <span class="c1">// 在函数作用域访问变量 atguigu</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">atguigu</span> <span class="p">);</span><span class="c1">// 输出 this is atguigu</span>
+<span class="p">}</span>
+<span class="nx">fun</span><span class="p">();</span>
+
+<span class="c1">// 在全局作用域访问变量 atguigu</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">atguigu</span> <span class="p">);</span><span class="c1">// 输出报错</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_4">2.3 声明提前</h2>
+
+<p class="md_block">
+    <span class="md_line">JavaScript 变量的另一特别之处是，你可以引用稍后声明的变量，而不会引发异常。这一概念称为变量声明提升。<br /></span>
+    <span class="md_line">JavaScript 变量感觉上是被“举起”或提升到了所有函数和语句之前。然而提升后的变量将返回 undefined 值，所以即使在使用或引用某个变量之后存在声明和初始化操作，仍将得到 undefined 值。</span>
+</p>
+
+
+<h3 id="toc_5">2.3.1 全局变量声明提前</h3>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 不会报错，输出 undefined</span>
+<span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 定义全局变量 msg</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出 this is message</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">上述代码中的第一行输出不会报错，而是输出 undefined值。效果等同于如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">msg</span><span class="p">;</span><span class="c1">// 定义全局变量 msg，但未初始化</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 不会报错，输出 undefined</span>
+<span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 初始化全局变量 msg</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出 this is message</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_6">2.3.2 局部变量声明提前</h3>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 不会报错，输出 undefined</span>
+    <span class="kd">var</span> <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 定义全局变量 msg</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出 this is message</span>
+<span class="p">}</span>
+<span class="nx">fn</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出报错</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">效果等同于如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">msg</span><span class="p">;</span><span class="c1">// 定义局部变量 msg，但未初始化</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 不会报错，输出 undefined</span>
+    <span class="nx">msg</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span><span class="c1">// 定义全局变量 msg</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">msg</span> <span class="p">);</span><span class="c1">// 输出 this is message</span>
+<span class="p">}</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">2.4 按值传递</h2>
+
+<p class="md_block">
+    <span class="md_line">按值传递就是指将实参变量的值复制一份副本给函数的形参变量。JavaScript 中为函数传递参数时，都是按值传递的。<br /></span>
+    <span class="md_line">如果向函数传递的参数是原始类型数据，则在函数中修改参数变量的值，不会影响外部实参的变量。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">n</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span><span class="c1">// 全局变量n</span>
+<span class="kd">function</span> <span class="nx">fun</span><span class="p">(</span> <span class="nx">n</span> <span class="p">){</span><span class="c1">// 参数变量也是局部变量</span>
+    <span class="nx">n</span> <span class="o">-=</span> <span class="mi">3</span><span class="p">;</span><span class="c1">// 修改的是局部变量n</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">n</span> <span class="p">);</span><span class="c1">// 输出的是局部变量n</span>
+<span class="p">}</span>
+<span class="nx">fun</span><span class="p">(</span> <span class="nx">n</span> <span class="p">);</span><span class="c1">// 按值传递，方法内输出 97</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">n</span> <span class="p">);</span><span class="c1">// 输出全局变量的值 100</span>
+</pre></div>
+
+<!--block_code_end-->
+<h1 id="toc_8">3. 函数的作用域</h1>
+
+<h2 id="toc_9">3.1 全局函数</h2>
+
+<p class="md_block">
+    <span class="md_line">函数与变量类似，具有全局作用域和函数作用域（局部作用域）。与全局变量类似，全局函数是被定义在全局作用域的，在任何位置都可以访问或调用该函数。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">fn</span><span class="p">(</span> <span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">num1</span> <span class="o">+</span> <span class="nx">num2</span> <span class="p">);</span><span class="c1">// 输出 3</span>
+<span class="p">}</span>
+<span class="nx">fn</span><span class="p">(</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_10">3.2 内部函数</h2>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">function</span> <span class="nx">outer</span><span class="p">(){</span><span class="c1">// 全局函数</span>
+    <span class="kd">function</span> <span class="nx">inner</span><span class="p">(){</span><span class="c1">// 局部函数</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;inner&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">inner</span><span class="p">();</span><span class="c1">// 调用正常</span>
+<span class="p">}</span>
+<span class="nx">inner</span><span class="p">();</span><span class="c1">// 输出报错</span>
+</pre></div>
+
+<!--block_code_end--> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>

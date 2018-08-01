@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>11_表单输入绑定</title>
+</head>
+<body>
+<!--
+1. 使用v-model(双向数据绑定)自动收集数据
+  text/textarea
+  checkbox
+  radio
+  select
+2. 失去焦点才更新: .lazy
+-->
+<div id="demo">
+  <input type="text"><br>
+  <textarea></textarea>
+
+  <hr>
+  <input type="checkbox" id="checkbox">
+  <label for="checkbox"></label>
+
+  <hr>
+  <input type="checkbox" id="jack">
+  <label for="jack">Jack</label>
+  <input type="checkbox" id="john">
+  <label for="john">John</label>
+  <input type="checkbox" id="mike">
+  <label for="mike">Mike</label>
+  <br>
+  <span>Checked names:</span>
+
+  <hr>
+  <input type="radio" id="female">
+  <label for="female">MALE</label>
+  <br>
+  <input type="radio" id="male">
+  <label for="male">FEMALE</label>
+  <br>
+  <span>Sex:</span>
+
+  <hr>
+  <select >
+    <option value="">未选择</option>
+  </select>
+  <span>selection:</span>
+
+  <hr>
+  <input placeholder="失去焦点才更新">
+  <p>输入的数据为:</p>
+</div>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

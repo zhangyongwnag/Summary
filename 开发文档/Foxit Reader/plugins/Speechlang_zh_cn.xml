@@ -1,0 +1,37 @@
+﻿<Reader>
+<Dialogs>
+<Dialog id="2005">
+<dlgitem id="2000" text="音量:"/>
+<dlgitem id="2003" text="默认语音" />
+<dlgitem id="2004" text="语音:" />
+<dlgitem id="2006" text="朗读选项" />
+<dlgitem id="2007" text="默认属性"/>
+<dlgitem id="2008" text="音频:" />
+<dlgitem id="2010" text="音速:"/>
+<dlgitem id="2012" text="朗读注释内容"/>
+</Dialog>
+<Dialog id="20004" text="对话框"/>
+</Dialogs>
+<Strings>
+<string id="3" text="朗读当前页"/>
+<string id="4" text="朗读文档"/>
+<string id="5" text="暂停"/>
+<string id="6" text="恢复"/>
+<string id="7" text="停止"/>
+<string id="8" text="朗读"/>
+<string id="9" text="语音"/>
+<string id="13" text="加速"/>
+<string id="14" text="减速"/>  
+<string id="15" text="缺少语音语言包。"/>
+<string id="16" text="朗读"/> 
+
+<string id="10" text="朗读当前文档页面"/>
+<string id="11" text="朗读整个PDF文档"/>
+<string id="12" text="停止朗读发音"/>
+<string id="17" text="提高朗读速度"/>
+<string id="18" text="减缓朗读速度"/>
+<string id="19" text="继续朗读"/>
+<string id="20" text="暂停朗读"/>
+
+</Strings>
+</Reader>

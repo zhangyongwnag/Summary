@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>14_自定义过滤器</title>
+</head>
+<body>
+<!--
+1. 理解过滤器
+  功能: 对要显示的数据进行特定格式化后再显示
+  注意: 并没有改变原本的数据, 可是产生新的对应的数据
+2. 编码
+  1). 定义过滤器
+    Vue.filter(filterName, function(value[,arg1,arg2,...]){
+      // 进行一定的数据处理
+      return newValue
+    })
+  2). 使用过滤器
+    <div>{{myData | filterName}}</div>
+    <div>{{myData | filterName(arg)}}</div>
+-->
+<!--需求: 对当前时间进行指定格式显示-->
+<div id="test">
+  <p>当前时间为: {{currentTime}}</p>
+  <p>当前时间1为: {{currentTime | dateStr}}</p>
+  <p>当前时间2为: {{currentTime | dateStr('YYYY-MM-DD')}}</p>
+  <p>当前时间3为: {{currentTime | dateStr('HH:mm:ss')}}</p>
+</div>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/moment.js/2.19.0/moment.js"></script>
+<script>
+  // 注册过滤器
+  Vue.filter('dateStr', function (value, format) {
+    return moment(value).format(format || 'YYYY-MM-DD HH:mm:ss')
+  })
+
+  new Vue({
+    el: '#test',
+    data: {
+      currentTime: new Date()
+    }
+  })
+</script>
+</body>
+</html>

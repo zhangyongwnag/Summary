@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>数据类型</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/farbox/basic.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/farbox/main.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+    
+        <a href="../index.html" id="go_to_home"> &lt; home </a>
+    
+    <div id="sidebar">
+        <ul id="sidebar_body">
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">HTML</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/01 HTML介绍.html" class="">HTML介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/02 第一个HTML页面.html" class="">第一个HTML页面</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/03 HTML基本元素.html" class="">HTML基本元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/04 列表.html" class="">列表</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/05 链接元素.html" class="">链接元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/06 图片元素.html" class="">图片元素</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/07 HTML表格.html" class="">HTML表格</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/08 HTML表单.html" class="">HTML表单</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../01 HTML/09 HTML实体.html" class="">HTML实体</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">CSS</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/01 CSS介绍.html" class="">CSS介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/02 如何使用CSS.html" class="">如何使用CSS</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/03 CSS语法.html" class="">CSS语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/04 盒子模型.html" class="">盒子模型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/05 显示与隐藏.html" class="">显示与隐藏</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/06 内容溢出.html" class="">内容溢出</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/07 文档流.html" class="">文档流</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/08 浮动.html" class="">浮动</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../02 CSS/09 定位.html" class="">定位</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">ECMASCRIPT</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/01 JavaScript介绍.html" class="">JavaScript介绍</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/02 如何使用JavaScript.html" class="">如何使用JavaScript</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/03 基础语法.html" class="">基础语法</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/04 变量与常量.html" class="">变量与常量</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/05 数据类型.html" class="selected">数据类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/06 类型转换.html" class="">类型转换</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/07 运算符.html" class="">运算符</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/08 语句.html" class="">语句</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/09 函数.html" class="">函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/10 作用域.html" class="">作用域</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/11 特殊函数.html" class="">特殊函数</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/12 对象.html" class="">对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/13 JSON.html" class="">JSON</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/14 Function 对象.html" class="">Function 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/15 原型.html" class="">原型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/16 引用类型.html" class="">引用类型</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/17 数组.html" class="">数组</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/18 正则表达式.html" class="">正则表达式</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../03 ECMASCRIPT/19 字符串.html" class="">字符串</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">DOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/01 DOM是什么.html" class="">DOM是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/02 DOM 节点树.html" class="">DOM 节点树</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/03 初识事件.html" class="">初识事件</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/04 Document 对象.html" class="">Document 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/05 Node 对象.html" class="">Node 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/06 Element 对象.html" class="">Element 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/07 CSS 操作.html" class="">CSS 操作</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../04 DOM/08 事件.html" class="">事件</a>
+                </li>
+                
+            </ul>
+            
+        
+            
+            
+            
+            
+
+            
+                
+                <li class="level_1 directory not_valid_directory">
+                    <a href="#" class="">BOM</a>
+                </li>
+            
+
+            
+            <ul>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/01 BOM 是什么.html" class="">BOM 是什么</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/02 Window 对象.html" class="">Window 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/03 其他 BOM 对象.html" class="">其他 BOM 对象</a>
+                </li>
+                
+                
+                
+                
+                 <li class="level_2">
+                    <a href="../05 BOM/04 定时器.html" class="">定时器</a>
+                </li>
+                
+            </ul>
+            
+        
+        </ul>
+    </div>
+
+    <div id="main">
+        <div class="content_body">
+            <h1 class="title"> 数据类型 </h1>
+            <div class="doc_post"> <h1 id="toc_0">1. 数据类型</h1>
+
+<p class="md_block">
+    <span class="md_line">在 JavaScript 代码中，能够表示并操作值的类型称之为<strong>数据类型</strong>。<br /></span>
+    <span class="md_line">数据类型可分为可变类型和不可变类型。可变类型的值是可修改的，对象和数据就属于可变类型；不可变类型的值是不可修改的，数字、布尔值、null 和 undefined 都属于不可变类型。<br /></span>
+    <span class="md_line">字符串可以看成由字符组成的数组，可能被误认为是可变的。但在 JavaScript 中，字符串的值是不可变的。</span>
+</p>
+
+
+<h1 id="toc_1">2. 原始类型</h1>
+
+<p class="md_block">
+    <span class="md_line">原始类型，又称为原始值，是直接代表 JavaScript 语言实现的最底层的数据。<br /></span>
+    <span class="md_line">原始类型分别为 boolean 类型、number 类型和 string 类型三种。当然，有些资料将undefined 和 null 也归为原始类型（这里表示为特殊类型）。<br /></span>
+    <span class="md_line">声明变量并初始化值为原始类型，一般称之为字面量方式定义变量，也可以称之为直接量方式定义变量。</span>
+</p>
+
+
+<h2 id="toc_2">2.1 boolean 类型</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">布尔（boolean）类型是指真或假、开或关、是或否。这个类型只有两个值：true 和 false。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- 由于 JavaScript 是区分大小写的，布尔类型的 true 和 false 全部是小写。<br /></span>
+    <span class="md_line">- JavaScript 也可以将其他类型的数据，自动转换为布尔类型。</span>
+</p>
+
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>转换为 true 的值</th>
+<th>转换为 false 的值</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>boolean类型</td>
+<td>true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>string类型</td>
+<td>任何非空字符串</td>
+<td>“”（空字符串）</td>
+</tr>
+<tr>
+<td>number类型</td>
+<td>任何非零数字值（包括无穷大）</td>
+<td>0和NaN</td>
+</tr>
+<tr>
+<td>object类型</td>
+<td>任何对象</td>
+<td>null</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td></td>
+<td>undefined</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_3">2.2 number 类型</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">number 类型是指数字，JavaScript 不区分整数类型和浮点类型。</span>
+</p>
+
+
+<ul>
+<li>整数类型: 包括负整数、0和正整数等。</li>
+<li>浮点类型: 表示小数，JavaScript 中的所有数字均用浮点类型表示。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 八进制或十六进制的数值最终会被转换成十进制数值。</span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_4">2.2.1 浮点类型</h3>
+
+<p class="md_block">
+    <span class="md_line">浮点类型，就是指该数值包含整数部分、小数点和小数部分。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">floatNum1</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">floatNum2</span> <span class="o">=</span> <span class="p">.</span><span class="mi">1</span><span class="p">;</span><span class="c1">// 有效，但不推荐</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line md_line_dom_embed"><strong>值得注意的是:</strong><br /></span>
+    <span class="md_line">- JavaScript允许小数点前可以没有整数，但不推荐这种写法。<br /></span>
+    <span class="md_line">- 保存浮点类型需要的空间是保存整数类型的两倍。<br /></span>
+    <span class="md_line">- 如果小数点后面没有任何数字，那这个数值作为整数类型保存。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">floatNum3</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.;</span><span class="c1">// 小数点后面没有数字 —— 解析为 1</span>
+<span class="kd">var</span> <span class="nx">floatNum4</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">;</span><span class="c1">// 整数 —— 解析为 10</span>
+</pre></div>
+
+<!--block_code_end-->
+<h3 id="toc_5">2.2.2 四舍五入误差</h3>
+
+<p class="md_block">
+    <span class="md_line">整数有无数个，但JavaScript通过浮点类型只能表示有限的个数（确切地说是 18 437 736 874 454 810 627个）。也就是说，当在JavaScript中使用浮点类型时，常常只是真实值的一个近似表示。如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">.</span><span class="mi">3</span> <span class="o">-</span> <span class="p">.</span><span class="mi">2</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="p">.</span><span class="mi">2</span> <span class="o">-</span> <span class="p">.</span><span class="mi">1</span><span class="p">;</span>
+<span class="nx">x</span> <span class="o">==</span> <span class="nx">y</span><span class="p">;</span><span class="c1">// 值为false，表示两值不相等</span>
+<span class="nx">x</span> <span class="o">==</span> <span class="p">.</span><span class="mi">1</span><span class="p">;</span><span class="c1">// 值为false，.3-.2 不等于 .1</span>
+<span class="nx">y</span> <span class="o">=</span> <span class="p">.</span><span class="mi">1</span><span class="p">;</span><span class="c1">// 值为true，.2-.1 等于 .1</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 建议使用大整数表示金额。例如使用分作为单位，而不是使用元作为单位。</span>
+</p>
+
+</blockquote>
+
+<h3 id="toc_6">2.2.3 NaN</h3>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">NaN（Not a Number），即非数值，是一个特殊的数值。<br /></span>
+    <span class="md_line">特点:</span>
+</p>
+
+
+<ul>
+<li>任何涉及NaN的操作都会返回NaN。</li>
+<li>NaN与任何值都不相等，包括NaN本身。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 针对上述特点，JavaScript提供了isNaN( )函数。该函数用于判断计算结果是否为数值。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="mi">10</span><span class="p">));</span><span class="c1">// 输出false（10是一个数值）</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="s2">&quot;10&quot;</span><span class="p">));</span><span class="c1">// 输出false（可以被转换成数值 10）</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="s2">&quot;blue&quot;</span><span class="p">));</span><span class="c1">// 输出true（不能转换成数值）</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">true</span><span class="p">));</span><span class="c1">// 输出false（可以被转换成数值 1）</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_7">2.3 string 类型</h2>
+
+<p class="md_block">
+    <span class="md_line">string 类型用于表示由零或多个 16 位 Unicode 字符组成的字符序列，被称之为字符串。字符串可以由双引号（&quot;）或单引号（&#39;）表示。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">firstString</span> <span class="o">=</span> <span class="s2">&quot;Nicholas&quot;</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">secondString</span> <span class="o">=</span> <span class="s1">&#39;Zakas&#39;</span><span class="p">;</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">string类型包含一些特殊的转义字符，用于表示非打印字符。</span>
+</p>
+
+
+<table>
+<thead>
+<tr>
+<th>转义字符</th>
+<th>含义</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>退格符</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车符</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页符</td>
+</tr>
+<tr>
+<td>\</td>
+<td>斜杠</td>
+</tr>
+<tr>
+<td>\&#39;</td>
+<td>单引号（&#39;），在用单引号表示的字符串中使用。</td>
+</tr>
+<tr>
+<td>&quot;</td>
+<td>双引号（&quot;），在用双引号表示的字符串中使用。</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_8">2.4 typeof 运算符</h2>
+
+<p class="md_block">
+    <span class="md_line">由于 JavaScript 是弱类型/松散类型的，因此需要有一种手段来检测给定变量的数据类型。typeof 运算符就是负责提供这方面信息，如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">message</span><span class="p">);</span><span class="c1">// 输出 string</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="nx">message</span><span class="p">));</span><span class="c1">// 输出 string</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> typeof 运算符加上圆括号，会像是函数，而不是运算符，并不建议这种写法。</span>
+</p>
+
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>类型</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>true或false</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>任意数字或NaN</td>
+<td>number</td>
+</tr>
+<tr>
+<td>任意字符串</td>
+<td>string</td>
+</tr>
+<tr>
+<td>null</td>
+<td>object</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="toc_9">3. 引用类型</h1>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">在 JavaScript 中，对应原始类型提供了引用类型。通过引用类型可以创建原始类型的对象（后面的课程学习）。<br /></span>
+    <span class="md_line">由于 JavaScript 是区分大小写的，从写法上来说，原始类型是全部小写，引用类型则是大写。<br /></span>
+    <span class="md_line">一般不建议使用引用类型定义对应的数据类型，但引用类型提供了操作相应值的方法。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 引用类型涉及到对象的概念，具体技术内容会在后面的课程学习。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_10">3.1 Boolean 类型</h2>
+
+<p class="md_block">
+    <span class="md_line">Boolean 类型是原始类型 boolean 类型对应的引用类型。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">bool</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Boolean</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">boolean 类型与 Bollean 类型的区别:</span>
+</p>
+
+
+<ul>
+<li>typeof 运算符对原始类型返回 &quot;boolean&quot;，而对包装类型为 &quot;object&quot;。</li>
+<li>instanceof 运算符测试 Boolean 类型返回 true，而测试 boolean 类型返回 false。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 不建议使用 Boolean 类型。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_11">3.2 Number 类型</h2>
+
+<p class="md_block">
+    <span class="md_line">Number 类型是原始类型 number 类型对应的引用类型。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Number</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">number 类型与 Number 类型的区别:</span>
+</p>
+
+
+<ul>
+<li>typeof 运算符对原始类型返回 &quot;number&quot;，而对包装类型为 &quot;object&quot;。</li>
+<li>instanceof 运算符测试 Number 类型返回 true，而测试 number 类型返回 false。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 不建议使用 Number 类型。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_12">3.3 String 类型</h2>
+
+<p class="md_block">
+    <span class="md_line">String 类型是原始类型 string 类型对应的引用类型。</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s2">&quot;hello world&quot;</span><span class="p">);</span>
+</pre></div>
+
+<!--block_code_end-->
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">string 类型与 String 类型的区别:</span>
+</p>
+
+
+<ul>
+<li>typeof 运算符对原始类型返回 &quot;string&quot;，而对包装类型为 &quot;object&quot;。</li>
+<li>instanceof 运算符测试 String 类型返回 true，而测试 string 类型返回 false。</li>
+</ul>
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 不建议使用 String 类型。</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_13">3.4 instanceof 运算符</h2>
+
+<p class="md_block">
+    <span class="md_line">instanceof 运算符的左操作数是一个包装类型的变量，右操作数是对应的数据类型。如果左侧的变量是右侧的数据类型，则表达式返回 true；否则返回 false。例如下述代码:</span>
+</p>
+
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">str</span> <span class="o">=</span> <span class="s2">&quot;this is message&quot;</span><span class="p">;</span>
+<span class="nx">str</span> <span class="k">instanceof</span> <span class="nb">String</span><span class="p">;</span><span class="c1">// 计算结果为 true, str是String类型</span>
+<span class="nx">str</span> <span class="k">instanceof</span> <span class="nb">Object</span><span class="p">;</span><span class="c1">// 计算结果为 true, 所有包装类型都是Object的实例</span>
+<span class="nx">str</span> <span class="k">instanceof</span> <span class="nb">Number</span><span class="p">;</span><span class="c1">// 计算结果为 false</span>
+</pre></div>
+
+<!--block_code_end-->
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 所有对象都是 Object 类型的实例对象，通过 instanceof 运算符判断一个对象是否为具体数据类型，也包含&quot;父类&quot;。（后面课程会学习）</span>
+</p>
+
+</blockquote>
+
+<h2 id="toc_14">3.5 undefined</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_ul">
+    <span class="md_line">JavaScript 中有两个表示空的数据类型，undefined 和 null，其中比较有用的是 undefined。undefined 类型只有一个值，就是 undefined。<br /></span>
+    <span class="md_line">下列情况会返回undefined:</span>
+</p>
+
+
+<ul>
+<li>访问未修改的变量 undefined</li>
+<li>没有定义 return 表达式的函数隐式返回 undefined</li>
+<li>return 表达式没有显式的返回任何内容</li>
+<li>访问不存在的属性</li>
+<li>任何被设置为 undefined 值的变量</li>
+</ul>
+
+<h2 id="toc_15">3.6 null</h2>
+
+<p class="md_block md_has_block_below md_has_block_below_blockquote">
+    <span class="md_line">null 类型是 JavaScript 中的一个特殊类型，用于表示一个不再指向任何内存空间地址的变量。<br /></span>
+    <span class="md_line">null 值多用于释放 JavaScript 中的资源（变量、数组和函数等）。</span>
+</p>
+
+
+<blockquote>
+
+<p class="md_block">
+    <span class="md_line"><strong>值得注意的是:</strong> 使用 typeof 运算符计算 null 的话，返回的是 object。</span>
+</p>
+
+</blockquote>
+<div class="codehilite code_lang_javascript  highlight"><pre><span></span><span class="kd">var</span> <span class="nx">atguigu</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">atguigu</span><span class="p">);</span><span class="c1">// 输出 null</span>
+</pre></div>
+
+<!--block_code_end-->
+<h2 id="toc_16">3.7 undefined 与 null</h2>
+
+<ul>
+<li>共同点: 都是原始类型，保存在栈中。</li>
+<li>不同点:
+
+<ul>
+<li>undefined: 表示变量声明但未被赋值，是所有未赋值变量的默认值。一般很少主动使用。</li>
+<li>null: 表示一个没有指向任何内存地址的变量，将来可能指向某个具体内存地址。一般用于主动释放资源。</li>
+</ul></li>
+</ul> </div>
+        </div>
+
+    </div>
+
+
+
+
+
+<script>
+    // auto focus for menu
+    window.onload = function(){
+        var sidebar = document.getElementById('sidebar');
+        var current = document.getElementsByClassName('selected')[0];
+        if (current && sidebar){
+            sidebar.scrollTop = current.offsetTop - sidebar.clientHeight/2 + 100
+        }
+    };
+</script>
+
+
+
+
+</body>
+
+</html>
